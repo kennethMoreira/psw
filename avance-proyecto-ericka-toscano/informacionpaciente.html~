@@ -1,0 +1,124 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Información del paciente</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+	<meta name="copyright" content="© 2015 PSW"/>
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">		
+		 
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		 
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		 
+	<!-- Google Fonts -->
+	<!-- <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'> -->
+
+</head>
+<body>
+	
+	<div class="container">
+		<div class="main row">
+			<header>	
+				<h1>Sistema Dental</h1>	
+			</header>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="main row">
+			<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<p>
+					<h3>Información del paciente</h3>
+					<br>
+				</p>
+			</article>
+
+		<div class="row">
+			<div class="image col-xs-12 col-sm-6 col-md-3">
+				
+				<img src="img/iconopaciente.png">
+
+			</div>
+
+
+			<div class="color1 col-xs-12 col-sm-6 col-md-3">
+				
+				<b>Nombre Completo:</b> Sergio Jonathan<br><br>
+
+				<b>Apellidos:</b> Macías Lopez<br><br>
+
+				<b>Cédula:</b> 0930297460<br><br>
+
+				<b>Celular:</b> 0989706346<br><br>
+
+				<b>Cita:</b> 28/Diciembre/2015<br><br>
+		
+
+			</div>
+
+			<div class="color3 col-xs-12 col-sm-6 col-md-3">
+				
+				<div class="titul">Historial de enfermedades</div>
+
+				Yo he tenido hepatitis, soy 
+
+				hipertenso y hemofílico.
+
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			</div>
+
+
+
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<br>
+				<br>
+				<br>
+				<br>
+				<a href= " " class="btn btn-lg btn-info">Aceptar</a>
+				<br>
+				<br>
+			</div>
+
+
+		</div>
+
+		
+
+	<footer>
+		<div class="container">
+			
+			<p>info@espol.com</p>
+			<p>© 2015 Sistema Dental. Todos los derechos reservados</p>
+		
+		</div>
+	</footer>
+	
+	</div>
+
+</div>
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
