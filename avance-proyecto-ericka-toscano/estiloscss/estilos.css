@@ -28,16 +28,22 @@ h3 {
 
 
 .image {
-	width: 450px;
+	width: 500px;
 	height: auto;
 	padding-right: 20px;
+}
+
+.image img{
+	width: 200px;
+	height: 200px;
+	text-align: center;
 }
 .color1 {
 	width: 400px;
 	background: #E2E2E2;
 	color: #000;
 	text-align: left;
-	padding-left: 30px;
+	padding-left: 60px;
 	padding-top: 60px;
 	padding-bottom: 50px;
 	border-color: black;
