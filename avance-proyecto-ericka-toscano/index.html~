@@ -24,10 +24,9 @@
 	<div class="container">
 		<div class="main row">
 			<header>
-				<h1>
+	<h1>
 				<img src="imagenes/logo.png">
-				Sistema Dental
-				</h1>	
+				Sistema Dental</h1>	
 			</header>
 		</div>
 	</div>
