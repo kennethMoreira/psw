@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Información del paciente</title>
+	<title>|Información del paciente|</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="estiloscss/estilos.css">
 
 	<meta name="copyright" content="© 2015 PSW"/>
 
@@ -26,7 +26,10 @@
 	<div class="container">
 		<div class="main row">
 			<header>	
-				<h1>Sistema Dental</h1>	
+				<h1>
+				<img src="imagenes/logo.png">
+				Sistema Dental
+				</h1>	
 			</header>
 		</div>
 	</div>
@@ -36,20 +39,20 @@
 		<div class="main row">
 			<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<p>
-					<h3>Información del paciente</h3>
+					<h3> Información del paciente</h3>
 					<br>
 				</p>
 			</article>
 
 		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-md-3">
+			<div class="image col-xs-12 col-sm-6 col-md-3">
 				
-				<img src="img/iconopaciente.png" class="img-responsive" alt="Inicio">
+				<img src="imagenes/iconopaciente.png">
 
 			</div>
 
 
-			<div class="col-xs-12 col-sm-6 col-md-3">
+			<div class="color1 col-xs-12 col-sm-6 col-md-3">
 				
 				<b>Nombre Completo:</b> Sergio Jonathan<br><br>
 
@@ -107,7 +110,7 @@
 		<div class="container">
 			
 			<p>info@espol.com</p>
-			<p>© 2015 Sistema Dental. Todos los derechos reservados</p>
+			<p>© 2015 Sistema Dental. Todos los derechos reservados|PSW</p>
 		
 		</div>
 	</footer>
