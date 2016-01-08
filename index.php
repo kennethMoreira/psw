@@ -24,7 +24,7 @@
 		<div class="main row">
 			<header>
 				<h1>
-				<img src="img/logo.png" alt="Inicio">
+				<a href="index.php"><img src="img/logo.png" alt="Inicio"></a>
 				Sistema Dental
 				</h1>	
 			</header>
@@ -88,5 +88,4 @@
 
 </body>
 </html>
-
 
