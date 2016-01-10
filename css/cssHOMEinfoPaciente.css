@@ -30,13 +30,6 @@ h3 {
 	width: 420;
 }
 
-.cerrar {
-	text-align: right;
-	padding-right: 20px;
-	color: white;
-}
-
-
 .main {
 	background:#f2f2f2;
 }
@@ -75,6 +68,7 @@ h3 {
 
 }
 .titul{
+	color: #AF0C0C;
 	text-align: center;
 	font-size: 20px;
 	padding-top: 10px;
@@ -89,10 +83,15 @@ aside {
 	color:#fff;
 }
 
+a:link{
+  text-decoration:none;
+  color: #C9C9C9;
+}
 
 footer {
-	background-color: #8FBDD1;
+	 background-color: #8FBDD1;
   	color: white;
   	padding-top: 30px;
   	font-size: 10px;
+
 }

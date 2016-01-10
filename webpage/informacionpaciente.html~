@@ -4,20 +4,17 @@
 	<meta charset="UTF-8">
 	<title>Información del paciente</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../css/cssHOMEinfoPaciente.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/cssHOMEinfoPaciente.css">
 
-	<meta name="copyright" content="© 2015 PSW"/>
+        <!-- jQuery library -->
+        <script src="../js/jquery.min.js"></script>
 
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">	<link rel="stylesheet" type="text/css" href="css/estilos.css">		
-		 
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		 
-	<!-- Latest compiled JavaScript -->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		 
-	<!-- Google Fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+        <!-- Latest compiled JavaScript -->
+        <script src="../js/bootstrap.min.js"></script>
+
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
+
 
 </head>
 <body>
@@ -25,7 +22,7 @@
 		<div class="main row">
 			<header>
 				<h1>
-				<img src="../img/logo.png" alt="Inicio">
+				<a href="../index.php"><img src="../img/logo.png" alt="Inicio"></a>
 				Sistema Dental
 				</h1>	
 			</header>
@@ -82,7 +79,7 @@
 				<br>
 				<br>
 				<br>
-				<a href= " " class="btn btn-lg btn-info" onmouseDown="alert('Gracias!')">Aceptar</a>
+				<a href= "pacientesASerTratados" class="btn btn-lg btn-info" >Aceptar</a>
 				
 			</div>
 
