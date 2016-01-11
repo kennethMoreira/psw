@@ -29,7 +29,7 @@
 .dent{
 	margin-top: 40px;
 	
-	font-family: 'Lucida Handwriting', Cursive;
+	font-family: 'Lucida Handwriting', Italic;
 	font-size: 2em;
 	margin-top: 50px;
 }
