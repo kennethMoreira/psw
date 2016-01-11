@@ -1,15 +1,40 @@
-header{
+.cas {
+	background-color: #65AADA;
+}
+
+.cabecera{
   padding-top: 20px;
   padding-bottom: 5px;
   background-color: #65AADA;
   padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  padding-left: 5px;
+  height: 130px;
   color: white;
+
+  
 }
 
-header img{
+.cuerpo{
+	font-family: 'Myriad Pro';
+	font-size: 11pt;
+}
+.sist{
+	
+	
+	font-family: 'MoolBoran';
+	font-size: 5em;
+
+}
+
+.dent{
+	margin-top: 40px;
+	
+	font-family: 'Lucida Handwriting';
+	font-size: 2em;
+	margin-top: 50px;
+}
+
+.cabecera img{
 	width: 90px;
 	height: 90px;
 }
@@ -28,6 +53,9 @@ h3 {
 	text-align: center;
 	height: 785; 
 	width: 420;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
 }
 
 .main {
@@ -62,11 +90,13 @@ h3 {
 
 }
 
-.boton{
+.botones {
 	text-align: center;
-
-
+	margin-top: 80px;
+	margin-bottom: 80px; 
 }
+
+
 .titul{
 	color: #AF0C0C;
 	text-align: center;
@@ -77,21 +107,47 @@ h3 {
 
 .color3{
 	padding-top: 50px;
+	font-family: 'Myriad Pro';
 }
+
 aside {
 	background:#648F9E;
 	color:#fff;
+	padding-bottom: 15px;
 }
 
-a:link{
-  text-decoration:none;
-  color: #C9C9C9;
+.cerrar{
+	text-align: right;
+	color: #fff;
 }
 
-footer {
-	 background-color: #8FBDD1;
+.pie {
+	background-color: #8FBDD1;
   	color: white;
-  	padding-top: 30px;
-  	font-size: 10px;
+  	font-size: 15px;
+  	padding-left: 20px;
+  	padding-top: 10px;
+  	padding-bottom: 5px;
+  	text-align: center;
+  	font-family: 'Myriad Pro';
 
+}
+
+.informacion{
+	
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	font-family: 'Myriad Pro';
+	background-color: #F7F6F6;
+}
+
+.historial {
+	font-family: 'Myriad Pro';
+	margin-left: 80px;
+}
+
+.vid {
+	width: 105%;
+	height: 105%;
 }
