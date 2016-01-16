@@ -1,0 +1,79 @@
+.cabecera{
+
+  padding-top: 20px;
+
+  padding-bottom: 5px;
+
+  background-color: #65AADA;
+
+  padding-right: 15px;
+
+  padding-left: 5px;
+
+  height: 130px;
+
+  color: white;
+
+ }
+
+
+
+.cabecera img{
+
+  width: 90px;
+
+  height: 90px;
+
+}
+
+
+
+.cuerpo{
+
+  font-family: 'Myriad Pro';
+
+  font-size: 11pt;
+
+}
+
+
+
+.sist{
+  font-family: 'MoolBoran';
+  font-size: 5em;
+
+}
+
+
+
+.dent{
+  margin-top: 60px;
+  font-family: 'Lucida Handwriting';
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+.pie {
+  background-color: #8FBDD1;
+    color: white;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: 'Myriad Pro';
+
+}
+
+.cerrar{
+  color: #fff;
+  float: right;
+}
+
+@media screen and (max-width: 400px){
+  .sist {
+    font-size: 3em;
+  }
+  
+
+}

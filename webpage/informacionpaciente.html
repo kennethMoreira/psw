@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Información del paciente</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css/generico.css">
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../css/cssHOMEinfoPaciente.css">
+        
         <link rel="icon" type="image/png" href="../img/favicon.ico"/>
 
         <!-- jQuery library -->
@@ -19,25 +21,48 @@
 
 </head>
 <body>
-	<div class="container-fluid">
-		<div class="main row">
+
+	<!--		COPIAR DESDE AQUI LA CABECERA 		-->
+
+	<nav class="menu navbar navbar-default" role="navigation">
+  <!-- El logotipo y el icono que despliega el menú se agrupan
+       para mostrarlos mejor en los dispositivos móviles -->
+  
+    <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Desplegar navegación</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+	
 			<div class="cabecera">
 				
-					<a class="col-xs-4 col-sm-4 col-md-1 col-lg-1" href="../index.php"><img src="../img/logo.png" alt="Inicio"></a>
-					<div class="sist col-xs-1 col-sm-1 col-md-1 col-lg-1">Sistema </div>
-					<div class="dent col-xs-1 col-sm-1 col-md-1 col-lg-1">Dental</div>
-				
+						<a class="col-xs-4 col-sm-4 col-md-1 col-lg-1" href="../index.php"><img src="../img/logo.png" alt="Inicio"></a>
+						<div class="sist col-xs-1 col-sm-1 col-md-1 col-lg-1">Sistema </div>
+						<div class="dent col-xs-1 col-sm-1 col-md-1 col-lg-1">Dental</div>
 			</div>
-		</div>
-	</div>
+	
+  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+       otro elemento que se pueda ocultar al minimizar la barra -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="../index.php">Cerrar sesion</a></li>
+     
+    </ul>
+  </div>
+</nav>
+
+     <!--	HASTA AQUI 	-->
+
 
 	<div class="container-fluid">
 		<div class="main row">
 			<article class="cuerpo col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<p>
+				
 					<h3>Información del paciente</h3>
 					<br>
-				</p>
+				
 			</article>
 
 		
@@ -85,6 +110,9 @@
 
 </div>
 		
+
+	<!--		COPIAR DESDE AQUI EL PIE DE PAGINA		-->
+
 	<div class="main row">
 		<div class="pie">		
 				
@@ -92,7 +120,8 @@
 			</div>
 	</div>
 
-	
+	<!--		HASTA AQUI		-->
+
 
 </div>
 

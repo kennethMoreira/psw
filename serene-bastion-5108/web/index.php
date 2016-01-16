@@ -9,6 +9,7 @@
 	<link rel="icon" type="image/png" href="img/favicon.ico"/>
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/generico.css">
 	<link rel="stylesheet" type="text/css" href="css/cssHOMEinfoPaciente.css">		
 		 
 	<!-- jQuery library -->
