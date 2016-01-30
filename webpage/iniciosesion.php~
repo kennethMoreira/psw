@@ -30,7 +30,7 @@
   <div class = "sesion">
     <div class="iniciar">
                 
-<form action='../mvc/ColectorDeObjetos/ingresarUsuario.php'  method="post">
+<form action='../mvc/Colector de Objetos/ingresarUsuario.php'  method="post">
         
             <fieldset>
                 
