@@ -1,4 +1,9 @@
-<!DOCTYPE html> 
+<?php
+$action=$_REQUEST['action'];
+if($action=="") /* Mostrar el contenido de la página web */
+{
+?>
+<!DOCTYPE html>
 <html lang="es-EC">
 	<head>
 		<meta charset="UTF-8">
@@ -33,7 +38,9 @@
 		
 		<style>
 			
+
 		</style>
+
 	</head> 
 	
 	<body>
@@ -69,7 +76,7 @@
 					<img class="img-responsive" src="../img/image-02-estudiantes.jpg" alt="Estudiantes de Odontología"> 
 				</div>
 				<div class="col-sm-4 home-page-col-sm-4-second">
-					<form role="form">
+					<form role="form" action="">
 						<!-- Nombre completo -->
 						<div class="form-group">
 							<label for="nombres">Nombre completo:</label>
@@ -112,3 +119,9 @@
 		
 	</body> 
 </html>
+<?php
+}
+else
+{
+}
+?>
