@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -58,7 +62,7 @@
 					<h3>¡Comenzemos!</h3>
 					
 					
-						<h3><a href="webpage/iniciosesion.html" class="btn btn-lg btn-success">Iniciar sesion</a><br></h3>	
+						<h3><a href="webpage/iniciosesion.php" class="btn btn-lg btn-success">Iniciar sesion</a><br></h3>	
 						<h3><a href="webpage/registro-estudiante.html" class="btn btn-lg btn-success">  Registro estudiante  </a><br></h3>
 						<h3><a href="webpage/registro-paciente.html" class="btn btn-lg btn-success">  Registro paciente  </a><br></h3>
 					
