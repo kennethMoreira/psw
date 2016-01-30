@@ -1,42 +1,29 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Iniciar sesión</title>
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="icon" type="image/png" href="../img/logo.png"/>
-</head>
-<body class="fondo">
-  <header>
-    <div class="cabecera">
-      <div class="elementos"><a href="../index.php"><img id="logo" src="../img/logo.png" alt=""></a></div>
-      <div class="elementos"><h1>Sistema Dental</h1></div>
-    </div>
-  </header>
-  <div class="body">
-    <div>Bienvenidos</div>
-  </div>
-  
-  <div class = "sesion">
-    <div class="iniciar">
-      <lable>Correo electronico:</lable>
-      
-      <label>Contraseña:</label>
-      
-        
-<div><a href="casosClinicos.html" class="btn btn-primary">Iniciar sesión paciente</a></div>
-<div><a href="pacientesASerTratados.html" class="btn btn-primary">Iniciar sesión estudiante</a></div>
-    </div>
-  </div>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Formulario</title>
+	</head>
+	<body>
+<?php
 
-<footer>
-  <div class="footer"><p>© 2015 Sistema Dental. Todos los derechos reservados</p></div>
-</footer>
+if (isset($_SESSION['nombre'])){
+	echo "<p> Hola usuario:(" . $_SESSION['nombre']. ") [<a
+href='logout.php'>Salir</a>]</p>";
+}
+else{
+?>
 
-  <script src="../js/jquery.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-</body>
+		<form action ="login.php" method="post">
+				<p>Nombre: <input type="text" name="nombre" /></p>
+				<p><input type="submit" value="enviar" /></p>
+		</form>
+<?php } ?>
 
+	</body>
 </html>
+
