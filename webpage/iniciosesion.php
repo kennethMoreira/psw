@@ -12,6 +12,17 @@
   <link rel="stylesheet" href="../css/main.css">
   <link rel="icon" type="image/png" href="../img/logo.png"/>
     
+    <script type="text/javascript">
+<!--//
+function crearlink(Sel){
+if (Sel.ad.selectedIndex != 0){
+var link = Sel.ad.options[Sel.ad.selectedIndex].value
+document.write("<a href='" + link + "'>" + link + "<\/a><br>");
+document.write("<a href='javascript:history.back\(\)\;'>volver<\/a><br>");
+}
+}
+//-->
+</script>
     
     
     
@@ -30,7 +41,7 @@
   <div class = "sesion">
     <div class="iniciar">
                 
-<form action='../mvc/Colector de Objetos/ingresarUsuario.php'  method="post">
+<form action='../mvc/ColectorDeObjetos/ingresarUsuario.php'  method="post">
         
             <fieldset>
                 
