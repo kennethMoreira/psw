@@ -80,32 +80,32 @@ if($action=="") /* Mostrar el contenido de la página web */
 						<!-- Nombre completo -->
 						<div class="form-group">
 							<label for="nombres">Nombre completo:</label>
-							<input type="text" class="form-control" id="nombres">
+							<input type="text" class="form-control" name="nombres">
 						</div>
 						<!-- Número de matrícula-->
 						<div class="form-group">
 							<label for="registration-number">N&uacutemero de matr&iacutecula:</label>
-							<input type="text" class="form-control" id="registration-number">
+							<input type="text" class="form-control" name="registration-number">
 						</div>
 						<!-- Nivel de estudio -->
 						<div class="form-group">
 							<label for="nivel-estudio">Nivel de estudio:</label>
-							<input type="number" min="100" max="500" step="100" class="form-control" id="nivel-estudio">
+							<input type="number" min="100" max="500" step="100" class="form-control" name="nivel-estudio">
 						</div>
 						<!-- Teléfono -->
 						<div class="form-group">
 							<label for="phone">Tel&eacutefono:</label>
-							<input type="tel" class="form-control" id="phone">
+							<input type="tel" class="form-control" name="phone">
 						</div>
 						<!-- Email -->
 						<div class="form-group">
 							<label for="email">Email:</label>
-							<input type="email" class="form-control" id="email">
+							<input type="email" class="form-control" name="email">
 						</div>
 						<!-- Contraseña -->
 						<div class="form-group">
 							<label for="pwd">Contrase&ntildea:</label>
-							<input type="password" class="form-control" id="pwd">
+							<input type="password" class="form-control" name="pwd">
 							<button type="submit" class="btn btn-default btn-override">Registrar</button>
 						</div>
 					</form>
@@ -123,5 +123,16 @@ if($action=="") /* Mostrar el contenido de la página web */
 }
 else
 {
+$nombres=$_REQUEST['nombres'];
+$registrationNumber=$REQUEST['registration-number'];
+$nivelEstudio=$_REQUEST['nivel-estudio'];
+$phone=$_REQUEST=['phone'];
+$email=$_REQUEST=['email'];
+$pwd=$_REQUEST=['pwd'];
+
+if(($name=="")||($registrationNumber=="")||($nivelEstudio="")||($phone="")||($email="")||($pwd=""))
+{
+echo"Debe llenar todos los campos requeridos, <a href=\"\">intente</a> nuevamente.";
+}
 }
 ?>
