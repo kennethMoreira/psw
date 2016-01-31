@@ -128,21 +128,29 @@ else
 	$emailTo="rafabarr@espol.edu.ec";
 	$emailSubject="[Prueba] Notificación de nuevo estudiante registrado.";
 
-	function died($error) {
-	$errorMessage="Lo sentimos pero hay error(es) en el formulario.\nPor favor intente nuevamente.\n\n".$errorMessage;
-	echo"<script>alert(\"$errorMessage\")</script>";
-	echo"<script type='text/javascript'>window.history.back();</script>";
-	die();
-	}
+		function died($error) {
+		$errorMessage="Lo sentimos pero hay error(es) en el formulario.\nPor favor intente nuevamente.\n\n".$errorMessage;
+		echo"<script>alert(\"$errorMessage\")</script>";
+		echo"<script type='text/javascript'>window.history.back();</script>";
+		die();
+		}
+
+		if(!isset($_POST['nombres']) || !isset('registration-number') ||
+		   !isset($_POST['nivel-estudio']) || !isset('phone') ||
+		   !isset($_POST['email']) || !isset($_POST['pwd']))
+		{died('Lo sentimos, faltan datos por ingresar en el formulario.')}
+
+$nombres=$_POST['nombres'];
+$registrationNumber=$_POST['registration-number'];
+$nivelEstudio=$_POST['nivel-estudio'];
+$phone=$_POST=['phone'];
+$email=$_POST=['email'];
+$pwd=$_POST=['pwd'];
+$errorMessage="";
 
 }
 
-$nombres=$_REQUEST['nombres'];
-$registrationNumber=$REQUEST['registration-number'];
-$nivelEstudio=$_REQUEST['nivel-estudio'];
-$phone=$_REQUEST=['phone'];
-$email=$_REQUEST=['email'];
-$pwd=$_REQUEST=['pwd'];
+
 
 if(($name=="")||($registrationNumber=="")||($nivelEstudio="")||($phone="")||($email="")||($pwd=""))
 {
