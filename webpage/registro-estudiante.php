@@ -1,6 +1,6 @@
 <?php
 $action=$_REQUEST['action'];
-if($action=="") /* Mostrar el contenido de la página web */
+if($action=="") // Mostrar el contenido de la página web
 {
 ?>
 <!DOCTYPE html>
@@ -76,7 +76,7 @@ if($action=="") /* Mostrar el contenido de la página web */
 					<img class="img-responsive" src="../img/image-02-estudiantes.jpg" alt="Estudiantes de Odontología"> 
 				</div>
 				<div class="col-sm-4 home-page-col-sm-4-second">
-					<form role="form" action="">
+					<form role="form" action="" method="POST">
 						<!-- Nombre completo -->
 						<div class="form-group">
 							<label for="nombres">Nombre completo:</label>
@@ -123,6 +123,20 @@ if($action=="") /* Mostrar el contenido de la página web */
 }
 else
 {
+
+	if(isset($_POST['email'])) {
+	$emailTo="rafabarr@espol.edu.ec";
+	$emailSubject="[Prueba] Notificación de nuevo estudiante registrado.";
+
+	function died($error) {
+	$errorMessage="Lo sentimos pero hay error(es) en el formulario.\nPor favor intente nuevamente.\n\n".$errorMessage;
+	echo"<script>alert(\"$errorMessage\")</script>";
+	echo"<script type='text/javascript'>window.history.back();</script>";
+	die();
+	}
+
+}
+
 $nombres=$_REQUEST['nombres'];
 $registrationNumber=$REQUEST['registration-number'];
 $nivelEstudio=$_REQUEST['nivel-estudio'];
