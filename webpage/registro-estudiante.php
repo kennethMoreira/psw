@@ -148,18 +148,30 @@ else
 	$pwd=$_POST=['pwd'];
 	$errorMessage="";
 
-$emailRegex='/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+	$emailRegex='/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
-if(!(preg_match)($emailRegex,$email))
-{$errorMessage.='La direcci\xF3n de email ingresada no es v\xE1lida.\n';}
+	if(!(preg_match)($emailRegex,$email))
+	{$errorMessage.='La direcci\xF3n de email ingresada no es v\xE1lida.\n';}
 
-if(strlen($message)<2)
-{$errorMessage.='El mensaje ingresado no es v\xE1lido.\n';}
+	if(strlen($message)<2)
+	{$errorMessage.='El mensaje ingresado no es v\xE1lido.\n';}
 
-if(strlen($errorMessage)>0)
-{died($errorMessage);}
+	if(strlen($errorMessage)>0)
+	{died($errorMessage);}
 
-$emailMessage="Detalles del formulario:\n\n";
+	$emailMessage="Detalles del formulario:\n\n";
+
+function cleanString($string) {
+$bad=array("content-type","bcc:","to:","cc:","href");
+return str_replace($bad,"",$string)
+}
+
+$emailMessage.=cleanString($nombres)."\n";
+$emailMessage.=cleanString($registrationNumber)."\n";
+$emailMessage.=cleanString($nivelEstudio)."\n";
+$emailMessage.=cleanString($phone)."\n";
+$emailMessage.=cleanString($email)."\n";
+$emailMessage.=cleanString($pwd)."\n";
 
 }
 
