@@ -161,25 +161,29 @@ else
 
 	$emailMessage="Detalles del formulario:\n\n";
 
-function cleanString($string) {
-$bad=array("content-type","bcc:","to:","cc:","href");
-return str_replace($bad,"",$string)
+	function cleanString($string) {
+	$bad=array("content-type","bcc:","to:","cc:","href");
+	return str_replace($bad,"",$string)
+	}
+
+	$emailMessage.=cleanString($nombres)."\n";
+	$emailMessage.=cleanString($registrationNumber)."\n";
+	$emailMessage.=cleanString($nivelEstudio)."\n";
+	$emailMessage.=cleanString($phone)."\n";
+	$emailMessage.=cleanString($email)."\n";
+	$emailMessage.=cleanString($pwd)."\n";
+
+	$headers='Nuevo mensaje enviado a través del formulario de registro.'."\r\n".'PHP/'.phpversion();
+
+	@mail($emailTo, $emailSubject, utf8_decode($emailMessage), utf8_decode($headers), '-f'.$email);
+
+?>
+
+	<script type='text/javascript'>alert('Registro completado. \nMuy pronto nos pondremos en contacto con usted.')</script>
+	<script type='text/javascript'>location.assign("https://serene-bastion-5108.herokuapp.com/");</script>
+
+<?php
+
 }
 
-$emailMessage.=cleanString($nombres)."\n";
-$emailMessage.=cleanString($registrationNumber)."\n";
-$emailMessage.=cleanString($nivelEstudio)."\n";
-$emailMessage.=cleanString($phone)."\n";
-$emailMessage.=cleanString($email)."\n";
-$emailMessage.=cleanString($pwd)."\n";
-
-}
-
-
-
-if(($name=="")||($registrationNumber=="")||($nivelEstudio="")||($phone="")||($email="")||($pwd=""))
-{
-echo"Debe llenar todos los campos requeridos, <a href=\"\">intente</a> nuevamente.";
-}
-}
 ?>
