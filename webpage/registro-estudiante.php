@@ -121,9 +121,8 @@ if($action=="") // Mostrar el contenido de la página web
 </html>
 <?php
 }
-else
+else  // Obtener datos, verificarlos y enviar correo con mensaje.
 {
-
 	if(isset($_POST['email'])) {
 	$emailTo="rafabarr@espol.edu.ec";
 	$emailSubject="[Prueba] Notificación de nuevo estudiante registrado.";
