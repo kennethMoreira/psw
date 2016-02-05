@@ -18,13 +18,16 @@
 <body>
      
        <div class= "visible-lg mcabecera row">
-           <div class="col-lg-1"><a href="../index.php"><img id="logo" src="../img/logo.png" alt = "icono1"></img></a></div>
+           <div class="col-lg-1"><a href="../index.php"><img id="logo" src="../img/logo.png" alt = "icono1"></a></div>
            <div class="visible-lg col-lg-3"> <h1> Sistema dental </h1> </div>
            
 
 	   <div class="row">
            <div class="visible-lg col-lg-10">
                 <nav class = "navegacion nav-justified">
+                    
+                     
+                    
                        
                        <a class ="menu"  href="pacientesASerTratados.html" > Mis pacientes</a>
                        <a class ="menu"  href="informacionpaciente.html" > Informacion Pacientes</a>
