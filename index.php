@@ -56,7 +56,7 @@
   
       <ul class="nav navbar-nav navbar-right">
           <li><a href="webpage/iniciosesion.php" title="Inicie sesion"><img class="icono" src="img/log-in.png"></a></li>
-          <li><a href="webpage/registro-estudiante.html" title="Registrar"><img class="icono" src="img/refresh.png"></a></li>
+          <li><a href="webpage/registro-estudiante.html" title="Registrar"><img class="icono" src="img/registro.png"></a></li>
           <li><a href="webpage/ayuda.php" title="Ayuda"><img class="icono" src="img/help.png"></a></li>
 
           <li><a href="#"> </a></li>
@@ -68,6 +68,7 @@
   </nav>
     
     <div class="container-fluid">
+        
         
         
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

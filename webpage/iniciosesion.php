@@ -10,64 +10,62 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/generico.css">
   <link rel="icon" type="image/png" href="../img/logo.png"/>
     
-    <script type="text/javascript">
-<!--//
-function crearlink(Sel){
-if (Sel.ad.selectedIndex != 0){
-var link = Sel.ad.options[Sel.ad.selectedIndex].value
-document.write("<a href='" + link + "'>" + link + "<\/a><br>");
-document.write("<a href='javascript:history.back\(\)\;'>volver<\/a><br>");
-}
-}
-//-->
-</script>
-    
-    
-    
-</head>
-<body class="fondo">
-  <header>
-    <div class="cabecera">
-      <div class="elementos"><a href="../index.php"><img id="logo" src="../img/logo.png" alt=""></a></div>
-      <div class="elementos"><h1>Sistema Dental</h1></div>
-    </div>
-  </header>
-  <div class="body">
-    <div>Bienvenidos</div>
-  </div>
+        </head>
+<body>
   
-  <div class = "sesion">
-    <div class="iniciar">
+    
+    <?php include '../plantillasPhp/cabecar.php' ; ?>  
+    
+	<div class="col-md-9 hidden-xs hidden-sm">
+			<img class="img-responsive" src="../img/dentistry.jpg" alt="fondo">
+		</div>
                 
-<form action='../mvc/ColectorDeObjetos/ingresarUsuario.php'  method="post">
+		
+	<aside class="col-md-3">
+		<h3>Iniciar sesión</h3>
+
+			<div class="form-group">
+				<label for="email">Correo electrónico:</label>
+				<input type="email" class="form-control" id="email">
+			</div>
+        
+			<div class="form-group">
+				<label for="pwd">contraseña:</label>
+				<input type="password" class="form-control" id="pwd">
+			</div>
+        
+			<div class="checkbox">
+				<label><input type="checkbox"> Recordarme</label>
+			</div>
+        <form action='../mvc/ColectorDeObjetos/ingresarUsuario.php'  method="post">
         
             <fieldset>
-                
-                <label>Usuario:</label>
-                <input type="text" name="user" required/> <br>
-                
-                <label>Contraseña:</label>
-                <input type="text" name="contra" required/> <br>
-                
+                                
                 <label>Especialidad:</label>
-                <SELECT NAME='selCombo' SIZE=1 > 
-                    <OPTION VALUE='1'>Estudiante</OPTION>
-                    <OPTION VALUE='2'>Paciente</OPTION>
-                    <input type='submit' value='enviar' /><br>
-                </SELECT>
+                <select name='selCombo' size=1> 
+                    <option value='1'>Estudiante</option>
+                    <option value='2'>Paciente</option>
+                    <br>
+                    <input type='submit' value='Ingresar'><br>
+                </select>
             </fieldset>
                 
 </form>                
+
+        
+		<h3>Regístrate</h3>
+		<div class="alert alert-info">Crea una cuenta como estudiante o como paciente.</div>
+		<a href="#" class="btn btn btn-success">  Crear cuenta  </a>
+			
+	</aside>
             
-    </div>
-  </div>
 
-<footer>
-  <div class="footer"><p>© 2015 Sistema Dental. Todos los derechos reservados</p></div>
-</footer>
-
+    <?php include '../plantillasPhp/foot.php' ; ?>
+ 
+    
   <script src="../js/jquery.js"></script>
   <script src="../js/bootstrap.min.js"></script>
 </body>
