@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/generico.css">
+    <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/png" href="../img/logo.png"/>
     
         </head>
