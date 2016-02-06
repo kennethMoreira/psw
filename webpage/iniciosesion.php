@@ -47,8 +47,7 @@
 
         
 		<h3>Regístrate</h3>
-		<div class="alert alert-info">Crea una cuenta como estudiante o como paciente.</div>
-		<a href="#" class="btn btn btn-success">  Crear cuenta  </a>
+		<div class="alert alert-info">Crea una cuenta como <a href="../webpage/registro-estudiante.html">estudiante</a> o como <a href="../webpage/registro-paciente.html">paciente</a>.</div>
 			
 	</aside>
             
