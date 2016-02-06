@@ -1,4 +1,5 @@
 <?php
+// Revisión de archivo, prueba pendiente
 $action=$_REQUEST['action'];
 if($action=="") // Mostrar el contenido de la página web
 {
