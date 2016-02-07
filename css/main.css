@@ -89,10 +89,7 @@
 body{
 	background-color: #efefef;
 }
-.cuerpo{
-	text-align: center;
-	margin-bottom: 20px;
-}
+
 .hijocuerpo{
 	display: inline-block;
 	margin-left: 50px;

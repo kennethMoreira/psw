@@ -1,5 +1,9 @@
 .perfil{
-    margin-top: 30px;
+    margin-top: 90px;
+}
+.persona{
+    height: 50px;
+    width: 40px;
 }
 .titu{
     font-family: 'Georgia';
@@ -7,21 +11,32 @@
     text-align: center;
     margin-top: 20px;
 }
+titulo{
+    font-family: 'Georgia';
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
 .tituloPagina{
     font-family: 'Georgia';
     font-size: 2em;
     text-align: center;
     margin-top: 20px;
+    padding-bottom: 40px;
+    padding-top: 20px;
 }
 .botonesGhost{
-
+   
     /* definimos los estilos del texto */
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     font-size: 16px;
     color: blue;
     text-decoration: none;
    padding-bottom: 30px;
-
+  
     /* agregamos un borde y lo separamos del texto */
     border: 0.15em solid blue;
     padding: 0.4em 0.6em;
@@ -67,6 +82,14 @@
 .cuerpo{
   font-family: 'Myriad Pro';
   font-size: 11pt;
+    margin-top: 10px;
+}
+
+.cuerpoCentral{
+    font-family: 'Myriad Pro';
+    font-size: 11pt;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 .cuerpo1{
@@ -206,7 +229,23 @@ video{
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     
-    color: #FFF;
+    color: #0DB9BF;
+    text-align: center;
+    font-family: 'Berlin Sans Fb';
+    font-size: 5em;
+}
+
+.loguito{
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #fff;
+    color: #0DB9BF;
+    padding: 20px 50px 20px 50px;
     text-align: center;
     font-family: 'Berlin Sans Fb';
     font-size: 5em;
