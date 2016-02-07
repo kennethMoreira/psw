@@ -14,12 +14,20 @@
                 <img src="../img/perfil-hombre.png" class="perfil img-responsive">
             </div>
             <div class="col-lg-3">
+                <? php
+                include_once("UsuarioCollector.php");
+	            include_once("Usuario.php");    
+                
+                
+                ?>
+                
+                
                 <div class="tituloPagina">
                     Información Personal 
                 </div>
-                <?php include '../mvc/ColectorDeObjetos/ingresarUsuario.php' ; ?>
+                
                 <div class="cuerpo1">
-                <span><b>Nombre: </b>
+                <span><b>Nombre: </b> <?php  ?>
                 <br>
                 <b>Cédula:</b>
                 <br>
@@ -61,7 +69,7 @@
             <div class="col-lg-12">
                 <a class="botonesGhost" href="casosClinicos.php">Mis casos clinicos</a>
                 
-                <a class="botonesGhost" href="pacientesASerTratados.html">Mis pacientes</a>
+                <a class="botonesGhost" href="pacientesASerTratados.php">Mis pacientes</a>
             </div>
                  
     </div>

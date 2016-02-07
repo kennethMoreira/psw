@@ -79,11 +79,10 @@
         </div>
         <div class="cajaFantasma">
             
-              <!-- Hero Section -->
-            
+             
                 <h2 class="logo">Sistema <span class="light">Dental</span></h2>
                 <p class="tagline">Amamos tu sonrisa</p>
-                <a class="ghost" href="#1">¡Comencemos!</a>
+                <a class="ghost" href="webpage/iniciosesion.php">Inicia sesion</a>
 				
 			
 		</div>
@@ -105,7 +104,7 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             	<div class="imagen" align="center">
 				<img src="img/hacer.png" class="img-responsive">
-				¿Que hacemos?
+				<h3>¿Que hacemos?</h3>
                     <span>Brindar una facilidad de comunicacion entre paciente/doctor</span>
 				</div>
 			</div>
@@ -114,7 +113,7 @@
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 				<div class="imagen" align="center">
 				<img src="img/objetivo.png" class="img-responsive">
-				Objetivos
+				<h3>Objetivos</h3>
                     <span>Liderar en el mercado de salud en Internet</span>
 				</div>
 			</div>
@@ -124,7 +123,7 @@
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 				<div class="imagen" align="center">
 				<img src="img/mision.png" class="img-responsive">
-				Nuestra misión
+                    <h3>Nuestra misión</h3>
                     <span>Ser la mejor aplicacion web, con servicios profesionales, integrales y personalizados para nuestros pacientes.</span>
 				</div>
 			</div>
@@ -133,7 +132,7 @@
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 				<div class="imagen" align="center">
 				<img src="img/vision.png" class="img-responsive">
-				Nuestra Visión
+                    <h3>Nuestra Visión</h3>
                     <span>Liderar en el cuidado de la salud bucal</span>
 				</div>
 			</div>

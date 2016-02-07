@@ -14,6 +14,6 @@
 		echo "<meta http-equiv='Refresh' content='1;../../webpage/perfil-estudiante.php'>";
 		
 		}else{
-			 echo "<meta http-equiv='Refresh' content='1;../../webpage/estudianteAsignadoAPaciente.php'>";
+			 echo "<meta http-equiv='Refresh' content='1;../../webpage/perfil-paciente.php'>";
 			}
 ?>

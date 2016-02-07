@@ -1,8 +1,3 @@
-<?php
-	session_start();
-?>
-
-
  <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -94,22 +89,22 @@
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <br><br>
                          <img src="../img/paciente.png">
-                          <h6><a href="informacionpaciente.html"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
+                          <h6><a href="informacionpaciente.php"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
                     </div>
                   <div class="col-xs-12 col-sm-6 col-md-3">
                        <br><br> 
                       <img src="../img/paciente.png">
-                        <h6><a href="informacionpaciente.html"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
+                        <h6><a href="informacionpaciente.php"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
                     </div>
                   <div class="col-xs-12 col-sm-6 col-md-3">
                        <br><br> 
                       <img src="../img/paciente.png">
-                        <h6><a href="informacionpaciente.html"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
+                        <h6><a href="informacionpaciente.php"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
                     </div>
                   <div class="col-xs-12 col-sm-6 col-md-3">
                        <br><br> 
                       <img src="../img/paciente.png" >
-                        <h6><a href="informacionpaciente.html"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
+                        <h6><a href="informacionpaciente.php"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
                     </div>
                   
                </div>
@@ -118,22 +113,22 @@
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <br><br>
                          <img src="../img/paciente.png">
-                          <h6><a href="informacionpaciente.html"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
+                          <h6><a href="informacionpaciente.php"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
                     </div>
                   <div class="col-xs-12 col-sm-6 col-md-3">
                        <br><br> 
                       <img src="../img/paciente.png">
-                        <h6><a href="informacionpaciente.html"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
+                        <h6><a href="informacionpaciente.php"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
                     </div>
                   <div class="col-xs-12 col-sm-6 col-md-3">
                        <br><br> 
                       <img src="../img/paciente.png">
-                        <h6><a href="informacionpaciente.html"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
+                        <h6><a href="informacionpaciente.php"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
                     </div>
                   <div class="col-xs-12 col-sm-6 col-md-3">
                        <br><br> 
                       <img src="../img/paciente.png" >
-                        <h6><a href="informacionpaciente.html"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
+                        <h6><a href="informacionpaciente.php"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
                     </div>
                   
                </div>
@@ -142,22 +137,22 @@
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <br><br>
                          <img src="../img/paciente.png">
-                          <h6><a href="informacionpaciente.html"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
+                          <h6><a href="informacionpaciente.php"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
                     </div>
                   <div class="col-xs-12 col-sm-6 col-md-3">
                        <br><br> 
                       <img src="../img/paciente.png">
-                        <h6><a href="informacionpaciente.html"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
+                        <h6><a href="informacionpaciente.php"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
                     </div>
                   <div class="col-xs-12 col-sm-6 col-md-3">
                        <br><br> 
                       <img src="../img/paciente.png">
-                        <h6><a href="informacionpaciente.html"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
+                        <h6><a href="informacionpaciente.php"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
                     </div>
                   <div class="col-xs-12 col-sm-6 col-md-3">
                        <br><br> 
                       <img src="../img/paciente.png" >
-                        <h6><a href="informacionpaciente.html"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
+                        <h6><a href="informacionpaciente.php"><button type="button" class="btn btn-info"> Paciente</button></a></h6>
                     </div>
                   
                </div>

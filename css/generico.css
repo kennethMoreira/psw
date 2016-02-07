@@ -1,10 +1,31 @@
+.perfil{
+    margin-top: 30px;
+}
 .titu{
     font-family: 'Georgia';
     font-size: 3em;
     text-align: center;
     margin-top: 20px;
 }
+.tituloPagina{
+    font-family: 'Georgia';
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+}
+.botonesGhost{
 
+    /* definimos los estilos del texto */
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 16px;
+    color: blue;
+    text-decoration: none;
+   padding-bottom: 30px;
+
+    /* agregamos un borde y lo separamos del texto */
+    border: 0.15em solid blue;
+    padding: 0.4em 0.6em;
+}
 .cuerp{
     font-family: 'Open Sans';
     font-size: 18px;
@@ -47,6 +68,21 @@
   font-family: 'Myriad Pro';
   font-size: 11pt;
 }
+
+.cuerpo1{
+   
+    font-family: 'Georgia';
+    font-size: 2em;
+    padding-top: 20px;
+}
+
+.cuerpo1 span{
+    text-align: left;
+  font-family: 'Myriad Pro';
+  font-size: 11pt;
+   
+}
+
 
 .pie {
   background-color: #8FBDD1;
