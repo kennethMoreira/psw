@@ -1,18 +1,16 @@
-	<div class="container-fluid">
-		<div class="main row">
-			<div class="cabecera">
-				
-					<a class="col-xs-4 col-sm-4 col-md-1 col-lg-" href="../index.php"><img src="../img/logo.png" alt="Inicio"></a>
-                    <div class="logotipo">Sistema Dental
-                    <p>Nuestra pasión es su sonrisa</p></div>				
-			</div>
-                    <div class="salir">
-            <a href="../index.php"><img src="../img/log-out.png"></a>
-        </div>
-		</div>
-        
 
-	</div> 
+<footer>
+				<div class="wrapper">
+                    <div class="pie col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<div class="pieD">		
+            
+            <a href="facebook.com"><img class="iconos" src="../img/social-facebook-outline.png"></a>
+            <a href="twitter.com"><img class="iconos" src="../img/social-twitter-outline.png"></a>
+            <a href="instagram.com"><img class="iconos" src="../img/social-instagram-outline.png"></a>
+            
+	
+        </div>
+        
         <div class="pieI">
             <a href="../webpage/nosotros.php">Nosotros</a>
             <br>
@@ -24,3 +22,5 @@
 	</div>
     </div>
 </footer>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
