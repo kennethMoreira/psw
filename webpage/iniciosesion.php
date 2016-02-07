@@ -5,9 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<body>
-  
-    
+
     <?php include '../plantillasPhp/cabecar.php' ; ?>  
     
 	<div class="col-md-9 hidden-xs hidden-sm">
@@ -55,8 +53,7 @@
     <?php include '../plantillasPhp/foot.php' ; ?>
  
     
-  <script src="../js/jquery.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
