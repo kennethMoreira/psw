@@ -2,34 +2,12 @@
 	session_start();
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Atención médica</title>
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" type="image/png" href="../img/logo.png" />
-</head>
-<body>
-  <header>
-    <div class="cabecera">
-      <div class="elementos"><a href="../index.php"><img id="logo" src="../img/logo.png" alt=""></a></div>
-      <div class="elementos"><h1>Sistema Dental</h1></div>
 
-
-      <!--menu para escrotorio-->
-      <div class="visible-lg col-g-13">
-                     <nav class = "elementos navegacion nav-justified">
-                          <a class ="menu"  href="iniciosesion.html" > Cerrar sesion</a>
-                    </nav>
-      </div>
-
-    </div>
-  </header>
+  
+    
+    <?php include '../plantillasPhp/cabecar.php' ; ?>  
 
   <div class="cuerpo">
 
@@ -48,17 +26,18 @@
           </div>
 
 
-    <div class="hijocuerpo"> <img id="pasante" src="../img/pasante.png" alt=""> </img> </div>
+    <div class="hijocuerpo"> <img id="pasante" src="../img/pasante.png" alt=""> </div>
     <div class="hijocuerpo"><h1>Atención médica</h1></div>
     <div id="especificacion">En caso de que usted conozca la enfermedad a tratar seleccionelas en el recuadro de la izquierda, caso contrario separar cita en la parte derecha.</div>
   <div class="cuadroa">
     <div class="cuerpo"><h4>Cita general</h4>
-        <div><a href="estudianteAsignadoAPaciente.html" class="btn btn-primary">Siguiente</a></div>
+        <div><a href="estudianteAsignadoAPaciente.php" class="btn btn-primary">Siguiente</a></div>
     </div>
   </div>
   <div class="cuadrob">
+       <form method="post" action="estudianteAsignadoAPaciente.php">
     <ul class="enfermedades">
-      <ol>Caries</ol>
+      <ol>Caries </ol>
       <hr/>
       <ol>Gingivitis</ol>
       <hr/>
@@ -71,27 +50,44 @@
       <ol>Afta</ol>
     </ul>
    
-    <ul class="enfermedades" >
-      <ol><a href="estudianteAsignadoAPaciente.html" class="btn btn-primary">Añadir</a></ol>
+     
+          <ul class="enfermedades" >
+      <ol><input type="checkbox" name="check" value="caries"><br></ol>
       <hr/>
-      <ol><a href="estudianteAsignadoAPaciente.html" class="btn btn-primary">Añadir</a></ol>
+      <ol><input type="checkbox" name="gingivitis" value="gingivitis"><br></ol>
       <hr/>
-      <ol><a href="estudianteAsignadoAPaciente.html" class="btn btn-primary">Añadir</a></ol>
+      <ol><input type="checkbox" name="periodontitis" value="periodontitis"><br></ol>
       <hr/>
-      <ol><a href="estudianteAsignadoAPaciente.html" class="btn btn-primary">Añadir</a></ol>
+      <ol><input type="checkbox" name="profilaxis" value="profilaxis"><br></ol>
       <hr/>
-      <ol><a href="estudianteAsignadoAPaciente.html" class="btn btn-primary">Añadir</a></ol>
+      <ol><input type="checkbox" name="alitosis" value="alitosis"><br></ol>
       <hr/>
-      <ol><a href="estudianteAsignadoAPaciente.html" class="btn btn-primary">Añadir</a></ol>
-   </ul>             
+      <ol><input type="checkbox" name="afta" value="afta"><br></ol>
+      <hr/>
+   </ul>  
+     
+      <input type="submit" class="btn btn-primary" name="next" value="Siguiente">
+      
+      <?php
+      //Si se pulsa el botón de enviar
+      if (isset($_POST['next'])) {
+        //Si el checkbox condiciones tiene valor y es igual a 1
+          echo "<meta http-equiv='Refresh' content='1;estudiante.php'>";
+       
+}
+       
+        else
+            echo '<div style="color:red">Debes aceptar las condiciones de uso.</div>';    
+?>
+      
+      
+      </form>
+    
   </div>
 
-  <footer>
-    <div class="container"><p>© 2015 Sistema Dental. Todos los derechos reservados</p></div>
-  </footer>
 
-  <script src="../js/jquery.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
+        <?php include '../plantillasPhp/foot.php' ; ?>
+
 </body>
 
 </html>
