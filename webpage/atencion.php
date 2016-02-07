@@ -35,7 +35,7 @@
     </div>
   </div>
   <div class="cuadrob">
-       <form method="post" action="estudianteAsignadoAPaciente.php">
+       <form action="atencion.php" method="post">
     <ul class="enfermedades">
       <ol>Caries </ol>
       <hr/>
@@ -54,34 +54,37 @@
           <ul class="enfermedades" >
       <ol><input type="checkbox" name="check" value="caries"><br></ol>
       <hr/>
-      <ol><input type="checkbox" name="gingivitis" value="gingivitis"><br></ol>
+      <ol><input type="checkbox" name="check" value="gingivitis"><br></ol>
       <hr/>
-      <ol><input type="checkbox" name="periodontitis" value="periodontitis"><br></ol>
+      <ol><input type="checkbox" name="check" value="periodontitis"><br></ol>
       <hr/>
-      <ol><input type="checkbox" name="profilaxis" value="profilaxis"><br></ol>
+      <ol><input type="checkbox" name="check" value="profilaxis"><br></ol>
       <hr/>
-      <ol><input type="checkbox" name="alitosis" value="alitosis"><br></ol>
+      <ol><input type="checkbox" name="check" value="alitosis"><br></ol>
       <hr/>
-      <ol><input type="checkbox" name="afta" value="afta"><br></ol>
+      <ol><input type="checkbox" name="check" value="afta"><br></ol>
       <hr/>
    </ul>  
      
       <input type="submit" class="btn btn-primary" name="next" value="Siguiente">
+           <input type="reset"  class="btn btn-primary" value="Limpiar">
+
       
       <?php
       //Si se pulsa el botón de enviar
       if (isset($_POST['next'])) {
         //Si el checkbox condiciones tiene valor y es igual a 1
-          echo "<meta http-equiv='Refresh' content='1;estudiante.php'>";
-       
+          if ((isset($_POST['check'])) )
+          echo "<meta http-equiv='Refresh' content='1;estudianteAsignadoAPaciente.php'>";
+         
+       else
+      echo '<div style="color:red">Seleccione una opcion</div>';
 }
-       
-        else
-            echo '<div style="color:red">Debes aceptar las condiciones de uso.</div>';    
+
 ?>
       
       
-      </form>
+     </form>
     
   </div>
 
