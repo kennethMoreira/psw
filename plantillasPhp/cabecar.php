@@ -30,11 +30,9 @@
                 <li role="presentation"><a href=" ">Contacto</a></li>
             </ul>
             </nav>
-        
 		</div>
-        
-
 	</div>
+    
     <div class="search">
                                 <form role="form">
                                     <input type="text" class="search-form" autocomplete="off" placeholder="Search">
