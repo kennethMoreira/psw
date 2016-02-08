@@ -5,16 +5,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <?php include 'plantillasPhp/plantilla_index.php' ; ?>  
+    <?php include 'plantillasPhp/cabeceraIndex_plantilla.php' ; ?>  
        
         
-        <div class="container-fluid">
-        <div class="cuerpo">
-            <section id="1">
+        <div class="container">
+        <div class="inicio">
+            
             <div class="texto" >
                 
 
-            <h3>Bienvenidos</h3>
+                <h3><b>Bienvenidos</b></h3>
 					Nuestro propósito es establecer una comunicación entre estudiantes de odontología y personas de escasos recursos económicos que padecen de enfermedades dentales.
 					<br>
 					<br>
@@ -24,7 +24,7 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             	<div class="imagen" align="center">
 				<img src="img/hacer.png" class="img-responsive">
-				<h3>¿Que hacemos?</h3>
+                    <h3><b>¿Que hacemos?</b></h3>
                     <span>Brindar una facilidad de comunicacion entre paciente/doctor</span>
 				</div>
 			</div>
@@ -33,7 +33,7 @@
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 				<div class="imagen" align="center">
 				<img src="img/objetivo.png" class="img-responsive">
-				<h3>Objetivos</h3>
+                    <h3><b>Objetivos</b></h3>
                     <span>Liderar en el mercado de salud en Internet</span>
 				</div>
 			</div>
@@ -43,7 +43,7 @@
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 				<div class="imagen" align="center">
 				<img src="img/mision.png" class="img-responsive">
-                    <h3>Nuestra misión</h3>
+                    <h3><b>Nuestra misión</b></h3>
                     <span>Ser la mejor aplicacion web, con servicios profesionales, integrales y personalizados para nuestros pacientes.</span>
 				</div>
 			</div>
@@ -52,7 +52,7 @@
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 				<div class="imagen" align="center">
 				<img src="img/vision.png" class="img-responsive">
-                    <h3>Nuestra Visión</h3>
+                    <h3><b>Nuestra Visión</b></h3>
                     <span>Liderar en el cuidado de la salud bucal</span>
 				</div>
 			</div>
@@ -60,7 +60,7 @@
            </div>
                 
                 </div>		
-                </section>
+              
         </div>
         
     
@@ -83,31 +83,14 @@
     
 		
 
-	<div class="pie main row">
-		<div class="pieD">		
-            
-            <a href="facebook.com"><img class="iconos" src="img/social-facebook-outline.png"></a>
-            <a href="twitter.com"><img class="iconos" src="img/social-twitter-outline.png"></a>
-            <a href="instagram.com"><img class="iconos" src="img/social-instagram-outline.png"></a>
-            
-	
-        </div>
-        
-        <div class="pieI">
-            <a href="webpage/nosotros.php">Nosotros</a>
-            <br>
-            <a href="webpage/servicios.php">Servicios</a>
-        </div>
-        <div class="medio">		<p>© 2015 Sistema Dental. Todos los derechos reservados|PSW</p></div>
-	</div>
 
 	
 
 </div>
-
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+	 
+    <?php include 'plantillasPhp/footIndex.php' ; ?>  
+    
+    
 </body>
 </html>
 
