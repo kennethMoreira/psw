@@ -59,19 +59,7 @@ titulo{
     width: 30px;
     height: 30px;
 }
-.logotipo {
-    padding-left: 115px;
-    font-family: 'Berlin Sans Fb';
-    font-size: 3em;
-    
-}
 
-.subLogo{
-    padding-left: 15px;
-    display: inline;
-    font-size: 16px;
-    font-family: 'Open Sans';
-}
 
 .salir{
     position: absolute;
@@ -85,14 +73,41 @@ titulo{
 .cabecera{
   background-color: #65AADA;
   padding-top: 20px;
-  height: 130px;
+  height: 220px;
   color: white;
 }
 
 .cabecera img{
-  width: 90px;
-  height: 90px;
+    display: inline;
+    
+    width: 130px;
+    height: 130px;
+    
 }
+.logotipo {
+    display: inline;
+    font-family: 'Berlin Sans Fb';
+    font-size: 3em;
+}
+.subLogo{
+    
+    padding-left: 15px;
+    display: inline;
+    font-size: 16px;
+    font-family: 'Open Sans';
+}
+
+.menu {
+    font-family: 'Courier New';
+    font-size: 20px;
+   
+    padding: 10px 10px 10px 10px;
+    
+}
+a{
+    color: #fff;
+}
+
 
 .cuerpo{
   font-family: 'Myriad Pro';
@@ -125,12 +140,12 @@ titulo{
 .pie {
   background-color: #8FBDD1;
     color: white;
-    font-size: 15px;
+    font-size: 13px;
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 5px;
     margin-top: 50px;
-    font-family: 'Myriad Pro';
+    font-family: 'Open Sans';
 }
 
 .pieD{

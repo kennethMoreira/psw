@@ -17,16 +17,30 @@
 			
 
 				
-					<a class="col-xs-4 col-sm-4 col-md-1 col-lg-" href="../index.php"><img src="../img/logo.png" alt="Inicio"></a>
+					<a class=" " href="../index.php"><img src="../img/logo.png" alt="Inicio"></a>
             <div class="logotipo">Sistema Dental</div>
-            <div class="subLogo">    Nuestra pasión es su sonrisa</div>				
 			</div>
+            
+            
+            <nav>
+            <ul class="menu nav nav-pills navbar-right">
+                <li role="presentation"><a href=" ">Mi perfil</a></li>
+                <li role="presentation"><a href=" ">Quienes somos</a></li>
+                <li role="presentation"><a href=" ">Servicios</a></li>
+                <li role="presentation"><a href=" ">Contacto</a></li>
+            </ul>
+            </nav>
         
 		</div>
         
 
 	</div>
-    
+    <div class="search">
+                                <form role="form">
+                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                                    <i class="fa fa-search"></i>
+                                </form>
+                           </div>
         <div class="salir">
           <?php
             echo "<a href='../mvc/ColectorDeObjetos/logout.php'><img src='../img/log-out.png'></a>"
