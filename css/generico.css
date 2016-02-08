@@ -1,6 +1,12 @@
 .perfil{
     margin-top: 90px;
 }
+.editar {
+    font-family: 'Open Sans';
+    float: right;
+    margin-bottom: 20px;
+}
+
 .persona{
     height: 50px;
     width: 40px;
@@ -36,6 +42,7 @@ titulo{
     color: blue;
     text-decoration: none;
    padding-bottom: 30px;
+    
   
     /* agregamos un borde y lo separamos del texto */
     border: 0.15em solid blue;
@@ -48,20 +55,28 @@ titulo{
     margin-left: 50px;
     margin-right: 50px;
 }
+.logoImg{
+    width: 30px;
+    height: 30px;
+}
 .logotipo {
+    padding-left: 115px;
     font-family: 'Berlin Sans Fb';
     font-size: 3em;
+    
 }
 
-.logotipo p{
+.subLogo{
+    padding-left: 15px;
+    display: inline;
     font-size: 16px;
     font-family: 'Open Sans';
 }
 
 .salir{
     position: absolute;
-    right: 5px;
-    top: 10px;
+    right: 50px;
+    top: 20px;
 }
 .salir img{
     height: 20px;
@@ -96,7 +111,7 @@ titulo{
    
     font-family: 'Georgia';
     font-size: 2em;
-    padding-top: 20px;
+    
 }
 
 .cuerpo1 span{
@@ -132,12 +147,11 @@ titulo{
 
 
 
-
 @media screen and (max-width: 400px){
-  .logo {
+  .logotipo {
       font-size: 2em;}
-    .logo p{
-      padding-left: 50px;
+    .subLogo
+      font-size: 10px;
         
     }
     

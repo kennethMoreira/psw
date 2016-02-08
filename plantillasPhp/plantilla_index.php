@@ -36,7 +36,7 @@
       </button>
       <!--logo-->  
     	<div class="logoI">
-        	<a class="navbar-brand" href="index.html"><img src=" " class="img-responsive"></a>
+        	<a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logoImg img-responsive"></a>
 		</div>
     
     

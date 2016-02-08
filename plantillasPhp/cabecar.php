@@ -11,15 +11,22 @@
         </head>
 <body>
   	
-<div class="container-fluid">
-		<div class="main row">
-			<div class="cabecera">
+    <div class="cabecera">
+        <div class="container">
+		<div class="row">
+			
+
 				
 					<a class="col-xs-4 col-sm-4 col-md-1 col-lg-" href="../index.php"><img src="../img/logo.png" alt="Inicio"></a>
-            <div class="logotipo">Sistema Dental
-             <p>Nuestra pasión es su sonrisa</p></div>				
+            <div class="logotipo">Sistema Dental</div>
+            <div class="subLogo">    Nuestra pasión es su sonrisa</div>				
 			</div>
         
+		</div>
+        
+
+	</div>
+    
         <div class="salir">
           <?php
             echo "<a href='../mvc/ColectorDeObjetos/logout.php'><img src='../img/log-out.png'></a>"
@@ -27,8 +34,3 @@
           
         </div>
 
-		</div>
-        
-
-	</div>
-    

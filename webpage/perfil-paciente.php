@@ -9,8 +9,9 @@
     
     <div class="container">
         <div class="row">
-             <a class="col-md-12" href="editar-estudiante.php">Editar perfil</a>
             <?php include '../plantillasPhp/paciente-perfil-plantilla.php' ; ?>  
+                         <a class="editar col-md-12" href="editar-estudiante.php">Editar perfil</a>
+
 
             <div class="col-lg-12">
                 <a class="botonesGhost" href="atencion.php">Solicitar consulta</a>

@@ -1,11 +1,9 @@
-            <div class="col-lg-3">
-               <center>
-                   
+<div class="col-lg-3">
+    <center>
                 <img src="../img/perfil-hombre.png" class="perfil img-responsive">
-                   </center>
+            </center>
             </div>
             <div class="col-lg-3">
-                
                 
                 
                 <div class="tituloPagina">
@@ -26,22 +24,20 @@
                 </span>
             </div>
         </div>
-            
             <div class="col-lg-3">
                 <div class="tituloPagina">
-                    Ficha clínica
+                    Informacion academica
                 </div>
                 <div class="cuerpo1">
-                    
-                    <br>
+
                     <span>
-                    <b>Enfermedades dentales:</b>
+                    <b>Universidad</b>
                     <br>
-                    <b>Enfermedades prexistentes:</b>
+                    <b>Semestre:</b>
                     </span>
-                </div>    
+                </div>
+                
             </div>
-            
             <div class="col-lg-3">
                 <div class="tituloPagina">
                     Informacion de contacto
@@ -55,5 +51,5 @@
                     <b>Email:</b>
                 <br>
                 </span>
-                    </div>
+                </div>
             </div>
