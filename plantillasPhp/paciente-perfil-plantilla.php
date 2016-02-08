@@ -8,11 +8,11 @@
                 
                 
                 
-                <div class="tituloPagina">
+                <div class="titu">
                     Información Personal 
                 </div>
                 
-                <div class="cuerpo1">
+                <div class="cuerpo">
                 <span><b>Nombre: </b> <?php  ?>
                 <br>
                 <b>Cédula:</b>
@@ -28,10 +28,10 @@
         </div>
             
             <div class="col-lg-3">
-                <div class="tituloPagina">
+                <div class="titu">
                     Ficha clínica
                 </div>
-                <div class="cuerpo1">
+                <div class="cuerpo">
                     
                     <br>
                     <span>
@@ -43,10 +43,10 @@
             </div>
             
             <div class="col-lg-3">
-                <div class="tituloPagina">
+                <div class="titu">
                     Informacion de contacto
                 </div>
-                <div class="cuerpo1">
+                <div class="cuerpo">
                 <span>
                     <b>Telefono:</b>
                 <br>

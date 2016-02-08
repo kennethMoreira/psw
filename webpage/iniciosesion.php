@@ -7,12 +7,12 @@
 
 
     <?php include '../plantillasPhp/cabecar.php' ; ?>  
-    
+    <div class="container-fluid">
 	<div class="col-md-9 hidden-xs hidden-sm">
         <img class="img-responsive" src="../img/dentistry.jpg" alt="fondo">
     </div>        
 	<div class="main row">	
-	<aside class="col-md-3">
+	<aside class="cuerpo col-md-3">
         <h3>Iniciar sesión</h3>
         <form action='../mvc/ColectorDeObjetos/ingresarUsuario.php'  method="POST">
             <fieldset>
@@ -30,9 +30,12 @@
                 <select name='selCombo' size=1> 
                     <option value='1'>Estudiante</option>
                     <option value='2'>Paciente</option>
-                    <br>
-                    <input type='submit' value='Ingresar'><br>
                 </select>
+                <br>
+                    <br>
+                <center>
+                <input class="botonesGhost" type='submit' value='Ingresar'><br>
+                    </center>
             </fieldset>
         </form>                
 
@@ -40,6 +43,7 @@
         <div class="alert alert-info">Crea una cuenta como <a href="../webpage/registro-estudiante.html">estudiante</a> o como <a href="../webpage/registro-paciente.html">paciente</a>.</div>
     </aside>
     </div>
+        </div>
     <?php include '../plantillasPhp/foot.php' ; ?>
 
     </body>

@@ -30,20 +30,32 @@
             
             
             <nav>
-            <ul class="menu nav nav-pills navbar-right">
-                <li role="presentation"><a href=" ">Mi perfil</a></li>
-                <li role="presentation"><a href=" ">Quienes somos</a></li>
-                <li role="presentation"><a href=" ">Servicios</a></li>
-                <li role="presentation"><a href=" ">Contacto</a></li>
+            <ul class="menu visible-lg visible-md hidden-xs hidden-sm nav nav-pills navbar-right">
+                <li role="presentation"><a href="nosotros.php">Quienes somos</a></li>
+                <li role="presentation"><a href="servicios.php">Servicios</a></li>
+                <li role="presentation"><a href="contacto.php">Contacto</a></li>
+                <li role="presentation"><a href="ayuda.php">Ayuda</a></li>
             </ul>
             </nav>
 		</div>
 	</div>
     
-    <div class="search">
+     <div class="hidden-lg hidden-md">
+           <div class="col-xs-3">
+                <nav role="presentation" class="dropdown">
+                       
+                       <a href="#" class ="dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span></a>
+                           <ul class="dropdown-menu">
+                               <li role="presentation"><a href="nosotros.php">Quienes somos</a></li>
+                               <li role="presentation"><a href="servicios.php">Servicios</a></li><li role="presentation"><a href="contacto.php">Contacto</a></li>
+                               <li role="presentation"><a href="ayuda.php">Ayuda</a></li>                           </ul>
+                </nav>
+            </div>
+          </div>
+    <div class="busqueda search">
         <form role="form">
             <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-            <i class="fa fa-search"></i>
+            <i class="glyphicon glyphicon-search"></i>
         </form>
     </div>
         

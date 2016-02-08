@@ -9,7 +9,7 @@
         <div class="container">
               <div class="row">
                   <center>
-                  <div class="tituloPagina col-xs-12 col-md-12 col-lg-12">
+                  <div class="titu col-xs-12 col-md-12 col-lg-12">
                       
                   Pacientes en espera a ser tratados: <br>
                   </div>

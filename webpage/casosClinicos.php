@@ -9,16 +9,10 @@
         
  
               
-             <div class="titulo row">
-                 
-                 <div class="visible-lg"> <img id="pasante" src="../img/pasante.png" alt=""> <span> Casos Clinicos</span> 
-                 
-                 
-             </div>
-             <div class="fuentesub">Casos de clientes a tratar en futuras citas</div>
-    </div>
+             <div class="titu row"> <img id="pasante" src="../img/pasante.png" alt="">  Casos de clientes <br> a tratar en futuras citas</div>
+    
              
-             <div class="casos">
+             <div class="cuerpo casos">
                  <ul class="textocasos" >
                     <ol>Caries</ol>
                     <hr/>

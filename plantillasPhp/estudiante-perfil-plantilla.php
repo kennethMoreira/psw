@@ -6,11 +6,11 @@
             <div class="col-lg-3">
                 
                 
-                <div class="tituloPagina">
+                <div class="titu">
                     Información Personal 
                 </div>
                 
-                <div class="cuerpo1">
+                <div class="cuerpo">
                 <span><b>Nombre: </b> <?php  ?>
                 <br>
                 <b>Cédula:</b>
@@ -25,10 +25,10 @@
             </div>
         </div>
             <div class="col-lg-3">
-                <div class="tituloPagina">
+                <div class="titu">
                     Informacion academica
                 </div>
-                <div class="cuerpo1">
+                <div class="cuerpo">
 
                     <span>
                     <b>Universidad</b>
@@ -39,10 +39,10 @@
                 
             </div>
             <div class="col-lg-3">
-                <div class="tituloPagina">
+                <div class="titu">
                     Informacion de contacto
                 </div>
-                <div class="cuerpo1">
+                <div class="cuerpo">
                 <span>
                     <b>Telefono:</b>
                 <br>

@@ -1,27 +1,41 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Nosotros</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="copyright" content="© 2015 PSW"/>
-	<link rel="icon" type="image/vnd.microsoft.icon" href="../img/favicon.ico"/>
+<?php
+	session_start();
+?>
 
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/generico.css">		
-		 
-	<!-- jQuery library -->
-	<script src="../js/jquery.min.js"></script>
-		 
-	<!-- Latest compiled JavaScript -->
-	<script src="../js/bootstrap.min.js"></script>
-		 
-	<script src="../js/ie10-viewport-bug-workaround.js"></script>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <?php include '../plantillasPhp/cabecar.php' ; ?>  
     
-<body>
-    <?php include '../plantillasPhp/cabecar.php' ; ?>
-    
+    <div class="cuerpoCentral">
+        <div class="container">
+        <div class="row">
+            <div class="titu col-lg-12 col-md-12" style="margin-bottom: 10px;">Nuestros servicios</div>
+            <br>
+            <br>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <img align="center" src="../img/3.jpg" alt=" " class="img-responsive">
+                
+                Brindar una correcta relacion entre paciente-doctor
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                <img align="center" src="../img/2.jpg" alt=" "class="img-responsive">
+                
+                Permitir a estudiantes de odontologia que cursan sus ultimos años de carrera unviertistaria tener la oprotunidad de ejercer sus conocimientos y adquiriendo nuevos que complementen su vida laboral
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                <img align="center" src="../img/1.jpg" alt=" " class="img-responsive">
+                
+                Ofrecer a la sociedad asistencia dental gratuita siempre supervisada por un especialista encargado del tema con vastos conocimientos en la area determinada
+            </div>
+                        
+            
+            
+            
+        </div>
+    </div>
+    </div>
     
     <?php include '../plantillasphp/foot.php' ; ?>
     </body>

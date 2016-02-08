@@ -9,12 +9,12 @@
        
         
         <div class="container">
-        <div class="inicio">
+        
             
-            <div class="texto" >
+            <div class="cuerpoCentral" >
                 
 
-                <h3><b>Bienvenidos</b></h3>
+                <div class="titu">Bienvenidos</div>
 					Nuestro propósito es establecer una comunicación entre estudiantes de odontología y personas de escasos recursos económicos que padecen de enfermedades dentales.
 					<br>
 					<br>
@@ -61,7 +61,6 @@
                 
                 </div>		
               
-        </div>
         
     
     <!-- 
