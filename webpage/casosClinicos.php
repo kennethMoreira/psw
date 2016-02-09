@@ -45,8 +45,6 @@
              
            
              <?php include '../plantillasPhp/foot.php' ; ?>  
-            <script src="../js/jquery.min.js"></script>
-            <script src="../js/bootstrap.min.js"></script>
             
    
 </html>

@@ -17,10 +17,10 @@
         <form action='../mvc/ColectorDeObjetos/ingresarUsuario.php'  method="POST">
             <fieldset>
                 <label for="usuario">Usuario:</label>
-                <input name="usuario" type="user" class="form-control" id="user">
+                <input name="usuario" type="user" class="form-control" id="user" required>
 			     
-                <label for="pwd">contraseña:</label>
-                <input name="contraseña" type="password" class="form-control" id="pwd">
+                <label for="pwd">Contraseña:</label>
+                <input name="contraseña" type="password" class="form-control" id="pwd" required>
                 
                 <div class="checkbox">
                     <label><input type="checkbox"> Recordarme</label>
@@ -40,7 +40,7 @@
         </form>                
 
         <h3>Regístrate</h3>
-        <div class="alert alert-info">Crea una cuenta como <a href="../webpage/registro-estudiante.html">estudiante</a> o como <a href="../webpage/registro-paciente.html">paciente</a>.</div>
+        <div class="alert alert-info">Crea una cuenta como <a href="../webpage/registro-estudiante.php">estudiante</a> o como <a href="../webpage/registro-paciente.php">paciente</a>.</div>
     </aside>
     </div>
         </div>

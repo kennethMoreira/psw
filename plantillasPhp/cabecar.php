@@ -25,7 +25,7 @@
 
 				
 					<a class=" " href="../index.php"><img src="../img/logo.png" alt="Inicio"></a>
-            <div class="logotipo">Sistema Dental</div>
+            <div class="logotipo hidden-xs hidden-sm">Sistema Dental</div>
 			</div>
             
             

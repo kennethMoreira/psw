@@ -1,42 +1,12 @@
-<!DOCTYPE html> 
-<html lang="es-EC">
-	<head>
-		<meta charset="UTF-8">
-			
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<?php
+	session_start();
+?>
 
-	    	<meta name="copyright" content="© 2015 PSW"/>
+<!DOCTYPE html>
+<html lang="en">
 
-		<title>Registro nuevo estudiante</title>
-		<!-- <base href='https://dsw-grupal-rafabarr.c9.io/'> -->
-
-		<link rel="icon" type="image/vnd.microsoft.icon" href="../img/favicon.ico"/>
-		
-		<!-- Recursos Bootstrap -->
-
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="../css/bootstrap.min.css">
-		<link rel="stylesheet" href="../css/override-styles.css">
-
-		<!-- jQuery library -->
-		<script src="../js/jquery.min.js"></script>
-
-		<!-- Latest compiled JavaScript -->
-		<script src="../js/bootstrap.min.js"></script>
-
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<script src="../js/ie10-viewport-bug-workaround.js"></script>
-		 
-		<!-- Google Fonts -->
-		<!-- <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'> -->
-		
-		<style>
-			
-		</style>
-	</head> 
-	
-	<body>
+    <?php include '../plantillasPhp/cabecar.php' ; ?>  
+        
 		<nav class="navbar navbar-default custom-navbar">
 			<div class="container-fluid">
 				<!-- Botón de 'Inicio' -->
@@ -46,19 +16,14 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Asistencia Dental Comunitaria</a>
+					<a class="titu navbar-brand" href="#">Asistencia Dental Comunitaria</a>
 				</div>
 				<!-- Elementos de navegación 'Registro | Iniciar sesión' -->
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav navbar-right">
-						<!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registro</a></li> -->
-						<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Iniciar sesi&oacuten</a></li>
-					</ul>
-				</div>
+				
 			</div>
 		</nav>
 		
-		<div class="container custom-container">
+		<div class="cuerpo container custom-container">
 			<div class="row">
 				<div class="col-sm-8 home-page-col-sm-8-first">
 					<!-- <div class="container custom-div">
@@ -105,10 +70,7 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class="container custom-container text-center">
-		<p>&copy 2015 PSW - Todos los derechos reservados.</p>
-		</div>
-		
-	</body> 
+             <?php include '../plantillasPhp/foot.php' ; ?>  
+            
+   
 </html>

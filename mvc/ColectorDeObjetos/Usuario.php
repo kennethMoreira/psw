@@ -3,14 +3,14 @@
       
       private $idUsuario;
       private $usuario;
+      private $correo;
       private $contrasena;
-     
       
-      function construc($idUsuario,$usuario,$contrasena){
+      function construc($idUsuario,$usuario,$correo,$contrasena){
           $this->idUsuario=$idUsuario;
           $this->usuario=$usuario;
-          $this->ContraseÃ±a=$contrasena;
-          
+          $this->Correo=$correo;
+          $this->Contraseña=$contrasena;
       }
       
       function setId_Usuario($idUsuario){
@@ -27,6 +27,13 @@
          return $this->usuario;
       }
       
+      function setCorreo($correo){
+          $this->correo=$correo;
+      }
+      function getCorreo(){
+          return $this->correo;
+      }
+      
       function setContrasena($contrasena){
           $this->contrasena=$contrasena;
       }
@@ -34,5 +41,5 @@
           return $this->contrasena;
       }
       
-  
+      
   }?>
