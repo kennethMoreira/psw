@@ -4,13 +4,13 @@
 
   class UsuarioCollector extends Collector{
       
-        function createUsuario($usuario,$correo,$contrasena) {    
-        $insertrow = self::$db->insertRow("INSERT INTO usuario (Id,Usuario,Correo,Contraseña) VALUES (?,?,?,?)", array(null,"{$usuario}","{$correo}","{$contrasena}"));
+        function createUsuario($usuario,$tipo,$contrasena) {    
+        $insertrow = self::$db->insertRow("INSERT INTO usuario (id_usuario,Usuario,Tipo,Contraseña) VALUES (?,?,?,?)", array(null,"{$usuario}","{$tipo}","{$contrasena}"));
        }
 
        function ShowUsuarioNombre($usuario){
           $row=self::$db->getRows("Select * From Usuario where Usuario= ?",array("{$usuario}"));
-          $usuario=new usuario($row[0]{'Id'});
+          $usuario=new usuario($row[0]{'id_usuario'});
           return $usuario;
       }
   }  

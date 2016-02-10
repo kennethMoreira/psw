@@ -26,46 +26,50 @@
 		<div class="cuerpo container custom-container">
 			<div class="row">
 				<div class="col-sm-8 home-page-col-sm-8-first">
-					<!-- <div class="container custom-div">
-						<h1>Universidad de Guayaquil</h1>
-						<h3>Facultad de Odontolog&iacutea</h3>
-						<p>Reg&iacutestrese y reciba tratamiento odontol&oacutegico gratuito.</p>
-					</div> -->
+					
 					<img class="img-responsive" src="../img/image-02-estudiantes.jpg" alt="Estudiantes de Odontología"> 
 				</div>
 				<div class="col-sm-4 home-page-col-sm-4-second">
 					<form role="form">
 						<!-- Nombre completo -->
 						<div class="form-group">
-							<label for="nombres">Nombre completo:</label>
-							<input type="text" class="form-control" id="nombres">
+							<label for="nombre">Nombre:</label>
+							<input name="nombre" type="text" class="form-control" name="nombre">
+						</div>
+						<div class="form-group">
+							<label for="apellido">Apellido:</label>
+							<input name="apellido" type="text" class="form-control" id="apellido">
+						</div>
+						<div class="form-group">
+							<label for="edad">Edad:</label>
+							<input name="edad" type="text" class="form-control" id="edad">
 						</div>
 						<!-- Número de matrícula-->
 						<div class="form-group">
-							<label for="registration-number">N&uacutemero de matr&iacutecula:</label>
-							<input type="text" class="form-control" id="registration-number">
-						</div>
-						<!-- Nivel de estudio -->
-						<div class="form-group">
-							<label for="nivel-estudio">Nivel de estudio:</label>
-							<input type="number" min="100" max="500" step="100" class="form-control" id="nivel-estudio">
+							<label for="registration-number">Cedula o numero de de matricula:</label>
+							<input name="numero" type="text" class="form-control" id="registration-number">
 						</div>
 						<!-- Teléfono -->
 						<div class="form-group">
-							<label for="phone">Tel&eacutefono:</label>
-							<input type="tel" class="form-control" id="phone">
+							<label for="phone">Telefono:</label>
+							<input name="telefono" type="tel" class="form-control" id="phone">
+						</div>
+						<div class="form-group">
+							<label for="pwd">Usuario:</label>
+							<input name="user" type="user" class="form-control" id="user">
 						</div>
 						<!-- Email -->
 						<div class="form-group">
 							<label for="email">Email:</label>
-							<input type="email" class="form-control" id="email">
+							<input name="mail" type="email" class="form-control" id="email">
 						</div>
 						<!-- Contraseña -->
 						<div class="form-group">
-							<label for="pwd">Contrase&ntildea:</label>
-							<input type="password" class="form-control" id="pwd">
+							<label for="pwd">Contraseña:</label>
+							<input name="pass" type="password" class="form-control" id="pwd">
 							<button type="submit" class="btn btn-default btn-override">Registrar</button>
 						</div>
+
 					</form>
 				</div>
 			</div>

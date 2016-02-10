@@ -10,17 +10,17 @@
 	$usuarioobj= new usuario();
     $usuarioobj=$UsuarioCollectorobj->ShowUsuarioNombre($usuario);
 
-    if ($usuarioobj->getUsuario()==$usuario) {
+    if($usuarioobj->getUsuario()==$usuario){
         	if($seleccion=='1'){
-		echo "<meta http-equiv='Refresh' content='1;../../webpage/perfil-estudiante.php'>";
+		      echo "<meta http-equiv='Refresh' content='1;../../webpage/perfil-estudiante.php'>";
 		
-		}else{
-			 echo "<meta http-equiv='Refresh' content='1;../../webpage/perfil-paciente.php'>";
+		    }else{
+			     echo "<meta http-equiv='Refresh' content='1;../../webpage/perfil-paciente.php'>";
 			}
     }else{
         echo $usuarioobjobj;
         echo "<meta http-equiv='Refresh' content='1;../../webpage/iniciosesion.php'>";
-			}
+	}
     
 
 ?>

@@ -4,30 +4,29 @@ class Estudiante{
     private $Nombre;
     private $Apellido;
     private $Edad;
-    private $Email;
-    private $Usuario;
-    private $Universidad;
-    private $Semestre;
+    private $Numero;
     private $Telefono;
-    private $Direccion;    
+    private $User;
+    private $Email;
+    private $Pass;    
     
-    function construct($id_estudiante,$nombre,$apellido,$edad,$email,$usuario,$universidad,$semestre,$telefono,$direccion){
+    function construct($id_estudiante,$nombre,$apellido,$edad,$numero,$telefono,$user,$email,$pass){
         $this->Id_Estudiante=$id_estudiante;
         $this->Nombre=$nombre;
         $this->Apellido=$apellido;
-        $this->Edad=$edad;       
+        $this->Edad=$edad;    
+        $this->Numero=$numero;
+        $this->Telefono=$telefono;   
         $this->Email=$email;
         $this->Usuario=$usuario;
-        $this->Universidad=$universidad;
-        $this->Telefono=$telefono;
-        $this->Direccion=$direccion;
+        $this->Pass=$pass;
     }
     
-    function setID_Cliente($id_cliente){
-        $this->Id_Cliente=$id_cliente;        
+    function setID_Estudiante($id_estudiante){
+        $this->Id_Estudiante=$id_estudiante;        
     }
-    function getID_Cliente(){
-        return $this->Id_Cliente;
+    function getID_Estudiante(){
+        return $this->Id_Estudiante;
     }
     
     function setNombre($nombre){
@@ -51,6 +50,20 @@ class Estudiante{
         return $this->Edad;
     }
     
+    function setNumero($numero){
+        $this->Numero=$numero;
+    }
+    function getNumero(){
+        return $this->Numero;
+    }
+    
+    function setTelefono($telefono){
+        $this->Telefono=$telefono;
+    }
+    function getTelefono(){
+        return $this->Telefono;
+    }
+    
     function setEmail($email){
         $this->Email=$email;
     }
@@ -65,25 +78,11 @@ class Estudiante{
         return $this->Usuario;
     }
     
-    function setUniversidad($universidad){
-        $this->Universidad=$universidad;
+    function setPass($pass){
+        $this->Pass=$pass;
     }
-    function getUniversidad(){
-        return $this->Universidad;
-    }
-    
-    function setTelefono($telefono){
-        $this->Telefono=$telefono;
-    }
-    function getTelefono(){
-        return $this->Telefono;
-    }
-    
-    function setDireccion($direccion){
-        $this->Direccion=$direccion;
-    }
-    function getDireccion(){
-        return $this->Direccion;
+    function getPass(){
+        return $this->Pass;
     }
 
     

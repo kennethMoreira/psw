@@ -14,7 +14,7 @@
 	<div class="main row">	
 	<aside class="cuerpo col-md-3">
         <h3>Iniciar sesión</h3>
-        <form action='../mvc/ColectorDeObjetos/ingresarUsuario.php'  method="POST">
+        <form action='../mvc/ColectorDeObjetos/ingresarUsuario.php' method='POST'>
             <fieldset>
                 <label for="usuario">Usuario:</label>
                 <input name="usuario" type="user" class="form-control" id="user" required>
@@ -34,8 +34,8 @@
                 <br>
                     <br>
                 <center>
-                <input class="botonesGhost" type='submit' value='Ingresar'><br>
-                    </center>
+                    <input class="botonesGhost" type='submit' value='Ingresar'><br>
+                </center>
             </fieldset>
         </form>                
 

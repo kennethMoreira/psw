@@ -1,15 +1,15 @@
-<?php
+ <?php
   class usuario{
       
       private $idUsuario;
       private $usuario;
-      private $correo;
+      private $tipo;
       private $contrasena;
       
-      function construc($idUsuario,$usuario,$correo,$contrasena){
+      function construc($idUsuario,$usuario,$tipo,$contrasena){
           $this->idUsuario=$idUsuario;
           $this->usuario=$usuario;
-          $this->Correo=$correo;
+          $this->Tipo=$tipo;
           $this->Contraseña=$contrasena;
       }
       
@@ -27,11 +27,11 @@
          return $this->usuario;
       }
       
-      function setCorreo($correo){
-          $this->correo=$correo;
+      function setTipo($tipo){
+          $this->tipo=$tipo;
       }
-      function getCorreo(){
-          return $this->correo;
+      function getTipo(){
+          return $this->tipo;
       }
       
       function setContrasena($contrasena){
