@@ -1,5 +1,5 @@
  <?php
-  class usuario{
+  class Usuario{
       
       private $idUsuario;
       private $usuario;
@@ -10,7 +10,7 @@
           $this->idUsuario=$idUsuario;
           $this->usuario=$usuario;
           $this->Tipo=$tipo;
-          $this->ContraseÒa=$contrasena;
+          $this->Contrase√±a=$contrasena;
       }
       
       function setId_Usuario($idUsuario){

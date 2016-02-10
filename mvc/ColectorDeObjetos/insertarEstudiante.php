@@ -2,28 +2,29 @@
  
 	$nombre=$_POST["nombre"];
 	$apellido=$_POST["apellido"];
-	$email=$_POST["email"];
-	$numetarjeta=$_POST["numtarjeta"];
-	$nombre=$_POST["nombre"];
+	$edad=$_POST["edad"];
+	$numero=$_POST["numero"];
+	$telefono=$_POST["telefono"];
+	$user=$_POST["user"];
+	$email=$_POST["mail"];
+	$pass=$_POST["pass"];
 	
-    $usuario=$_POST["usuario"];
-	$contrasena=$_POST["contrasena"];
 	
-	include_once("ClienteCollector.php");
+	include_once("EstudianteCollector.php");
 	include_once("UsuarioCollector.php");
-	include_once("Cliente.php");
+	include_once("Estudiante.php");
 	
-	$clientecollectorobj=new ClienteCollector();
+	$estudiantecollectorobj=new EstudianteCollector();
 	$usuarioobj= new UsuarioCollector();
 	
 	$tipocliente=1;
-	$clientecollectorobj->createCliente($nombre,$apellido,$email,$numetarjeta,$tipocliente);
+	$estudiantecollectorobj->createEstudiante($nombre,$apellido,$email,$numetarjeta,$tipocliente);
 	
-	$clienteobj= new Cliente();
+	$estudianteobj= new Estudiante();
 
 	$id;
 	$usuarioobj->createUsuario($usuario,$contrasena,$id);
 	
 
-     echo "<meta http-equiv='Refresh' content='1;../../pages/ingresar.php'>";
+     echo "<meta http-equiv='Refresh' content='1;../../webpage/perfil-estudiante.php'>";
 ?>
