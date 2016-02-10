@@ -17,7 +17,8 @@
 
 			<div class="col-xs-12 col-sm-6 col-md-12">
 				<center>
-				<a href= "pacientesASerTratados.php" class="botonesGhost" >Aceptar</a>
+				<a href= "pacientesASerTratados.php" class="botonesGhost">Atras</a>
+				<a href= "pacientesASerTratados.php" class="botonesGhost">Confirmada</a>
 				</center>
 			</div>
 </div>
