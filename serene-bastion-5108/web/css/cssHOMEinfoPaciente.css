@@ -1,51 +1,20 @@
-header{
-  padding-top: 20px;
-  padding-bottom: 5px;
-  background-color: #65AADA;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  color: white;
+.cas {
+	background-color: #65AADA;
 }
 
-header img{
-	width: 90px;
-	height: 90px;
-}
 
 
 h3 {
 	text-align: center;
 }
 
-#imgHome{
-	text-align: center;
-	
-}
 
-#imgHome img{
-	text-align: center;
-	height: 785; 
-	width: 420;
-}
 
 .main {
 	background:#f2f2f2;
 }
 
 
-.image {
-	width: 500px;
-	height: auto;
-	padding-right: 20px;
-}
-
-.image img{
-	width: 200px;
-	height: 200px;
-	text-align: center;
-}
 .color1 {
 	width: 400px;
 	background: #E2E2E2;
@@ -62,11 +31,13 @@ h3 {
 
 }
 
-.boton{
+.botones {
 	text-align: center;
-
-
+	margin-top: 80px;
+	margin-bottom: 80px; 
 }
+
+
 .titul{
 	color: #AF0C0C;
 	text-align: center;
@@ -77,21 +48,31 @@ h3 {
 
 .color3{
 	padding-top: 50px;
+	font-family: 'Myriad Pro';
 }
+
 aside {
 	background:#648F9E;
 	color:#fff;
+	padding-bottom: 15px;
 }
 
-a:link{
-  text-decoration:none;
-  color: #C9C9C9;
+
+.informacion{
+	
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	font-family: 'Myriad Pro';
+	background-color: #F7F6F6;
 }
 
-footer {
-	 background-color: #8FBDD1;
-  	color: white;
-  	padding-top: 30px;
-  	font-size: 10px;
+.historial {
+	font-family: 'Myriad Pro';
+	margin-left: 80px;
+}
 
+.vid {
+	width: 105%;
+	height: 105%;
 }
