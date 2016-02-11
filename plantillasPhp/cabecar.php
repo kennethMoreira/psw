@@ -21,13 +21,10 @@
     <div class="cabecera">
         <div class="container">
 		<div class="row">
-			
 
-				
-					<a class=" " href="../index.php"><img src="../img/logo.png" alt="Inicio"></a>
+            <a class=" " href="../index.php"><img src="../img/logo.png" alt="Inicio"></a>
             <div class="logotipo hidden-xs hidden-sm">Sistema Dental</div>
 			</div>
-            
             
             <nav>
             <ul class="menu visible-lg visible-md hidden-xs hidden-sm nav nav-pills navbar-right">
