@@ -16,13 +16,26 @@
     <div class="hijocuerpo"> <img id="pasante" src="../img/pasante.png" alt=""> </div>
     <div class="hijocuerpo"><h1>Atención médica</h1></div>
     <div id="especificacion">En caso de que usted conozca la enfermedad a tratar seleccionelas en el recuadro de la izquierda, caso contrario separar cita en la parte derecha.</div>
+  
+ <form action="estudianteAsignadoAPaciente.php" method="post">
+
   <div class="cuadroa">
     <div class="cuerpoCentral"><h4>Cita general</h4>
-        <div><a href="estudianteAsignadoAPaciente.php" class="btn btn-primary">Siguiente</a></div>
+        <div><input name="citaG" type="submit" class="btn btn-primary" value="Siguiente"></div>
+        <?php
+        if (isset($_POST['citaG'])) {
+          $_SESSION['razon'] = "Cita General"; 
+        }
+
+        ?>
     </div>
   </div>
+</form>
+  <form action="atencion.php" method="post">
+
+
   <div class="cuadrob">
-       <form action="atencion.php" method="post">
+      
     <ul class="enfermedades">
       <ol>Caries </ol>
       <hr/>
@@ -58,11 +71,13 @@
 
       
       <?php
+
       //Si se pulsa el botón de enviar
       if (isset($_POST['next'])) {
         //Si el checkbox condiciones tiene valor y es igual a 1
           if ((isset($_POST['check'])) )
-            header('Location: estudianteAsignadoAPaciente.php');         
+            echo "<meta http-equiv='Refresh' content='1;estudianteAsignadoAPaciente.php'>";
+            
        else
             echo '<div style="color:red">Seleccione una opcion</div>';
 }

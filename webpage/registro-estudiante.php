@@ -46,14 +46,22 @@
 						</div>
 						<!-- Número de matrícula-->
 						<div class="form-group">
-							<label for="registration-number">Cedula o numero de de matricula:</label>
+							<label for="registration-number">Cedula:</label>
 							<input name="numero" type="text" class="form-control" id="registration-number">
 						</div>
+						<!-- Sexo -->
+
 						<!-- Teléfono -->
 						<div class="form-group">
 							<label for="phone">Telefono:</label>
 							<input name="telefono" type="tel" class="form-control" id="phone">
 						</div>
+						<!-- Universidad -->
+						<div class="form-group">
+							<label for="universidad">Universidad:</label>
+							<input name="universidad" type="user" class="form-control" id="universidad">
+						</div>
+						<!-- Nivel de estudio -->
 						<div class="form-group">
 							<label for="pwd">Usuario:</label>
 							<input name="user" type="user" class="form-control" id="user">
