@@ -1,5 +1,12 @@
 <?php
-	session_start();
+
+	include_once ("../mvc/ColectorDeObjetos/UsuarioCollector.php");
+    include_once ("../mvc/ColectorDeObjetos/PersonaCollector.php");
+    include_once ("../mvc/ColectorDeObjetos/Tipo_PersonaCollector.php");
+    session_start();
+$UsuarioCollectorObj = new UsuarioCollector();
+$PersonaCollectorObj = new PersonaCollector();
+$TipoCollectorObj = new Tipo_PersonaCollector();
 ?>
 
 <!DOCTYPE html>
@@ -14,13 +21,13 @@
 	<div class="main row">	
 	<aside class="cuerpo col-md-3">
         <h3>Iniciar sesión</h3>
-        <form action='../mvc/ColectorDeObjetos/ingresarUsuario.php' method='POST'>
+        <form action="iniciosesion.php" method="POST">
             <fieldset>
                 <label for="usuario">Usuario:</label>
-                <input name="usuario" type="user" class="form-control" id="user" required>
+                <input name="usuario" type="text" class="form-control" required>
 			     
-                <label for="pwd">Contraseña:</label>
-                <input name="contraseña" type="password" class="form-control" id="pwd" required>
+                <label for="name">Contraseña:</label>
+                <input name="clave" type="password" class="form-control" required>
                 
                 <div class="checkbox">
                     <label><input type="checkbox"> Recordarme</label>
@@ -28,14 +35,54 @@
                 
                 <label>Especialidad:</label>
                 <select name='selCombo' size=1> 
-                    <option value='1'>Estudiante</option>
-                    <option value='2'>Paciente</option>
+                    <option value='estudiante'>Estudiante</option>
+                    <option value='paciente'>Paciente</option>
                 </select>
                 <br>
                     <br>
-                <center>
+
+
+                    
+                <section>
+                    <?php 
+
+                        $usuarioValido = 0;
+                        foreach ($UsuarioCollectorObj->readUsuarios() as $c){
+                        if(isset($_POST['usuario']) and (isset($_POST['clave']))){
+
+                            if( $_POST['usuario']== $c->getUsuario() && $_POST['clave'] == $c->getContrasena()){
+                            $_SESSION['actualmente_ingresado'] = 1;
+                            $_SESSION['usuario'] = $c->getUsuario();
+                            $_SESSION['id_persona'] = $c->getId_persona();
+                            $_SESSION['usuario'] = $_POST['usuario'];
+                            $id_persona = $c->getId_persona();
+
+                            $usuarioValido=1;
+                        }
+                    }
+                    }
+                     
+                        if(isset($_SESSION['id_persona'])){
+                            $id_tipo = $PersonaCollectorObj->showTipo ($id_persona);
+                            $desc_tipo = $TipoCollectorObj->showDesc ($id_tipo->getid_tipo_persona());
+                            $tipo_usuario = $desc_tipo->getDescripcion();
+                            $_SESSION['tipo_user'] = $tipo_usuario;
+
+                            if ($_POST['selCombo'] == ($desc_tipo->getDescripcion())){
+                                header('Location: perfil-estudiante.php');
+                            }
+                            
+                                if ($_POST['selCombo'] == ($desc_tipo->getDescripcion())){
+                                header('Location: perfil-paciente.php');
+                                }
+
+                            
+
+                        }
+                    ?> 
+
                     <input class="botonesGhost" type='submit' value='Ingresar'><br>
-                </center>
+                </section>
             </fieldset>
         </form>                
 

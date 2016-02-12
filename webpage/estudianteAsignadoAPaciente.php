@@ -18,6 +18,9 @@
             
               <div class="cuerpo col-md-6">
               <p>
+                <?php 
+                $cita = $_SESSION['razon'];
+                 echo "<br><b>Razón de su cita:</b>" .$cita; ?>
                  <br>Su cita será programada para <br>
                   el día : 28/12/2015 <br>
                   a las 08:00, con los datos del estudiante<br>
