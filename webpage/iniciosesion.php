@@ -33,12 +33,7 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
                     <label><input type="checkbox"> Recordarme</label>
                 </div>
                 
-                <label>Especialidad:</label>
-                <select name='selCombo' size=1> 
-                    <option value='estudiante'>Estudiante</option>
-                    <option value='paciente'>Paciente</option>
-                </select>
-                <br>
+                
                     <br>
 
 
@@ -62,22 +57,24 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
                     }
                     }
                      
-                        if(isset($_SESSION['id_persona'])){
+                         if(isset($_SESSION['id_persona'])){
                             $id_tipo = $PersonaCollectorObj->showTipo ($id_persona);
-                            $desc_tipo = $TipoCollectorObj->showDesc ($id_tipo->getid_tipo_persona());
+                             $id = $id_tipo->getid_tipo_persona();
+                            $desc_tipo = $TipoCollectorObj->showDesc ($id);
                             $tipo_usuario = $desc_tipo->getDescripcion();
                             $_SESSION['tipo_user'] = $tipo_usuario;
-
-                            if ($_POST['selCombo'] == ($desc_tipo->getDescripcion())){
+                                 if ($desc_tipo->getDescripcion() == 'estudiante'){
                                 header('Location: perfil-estudiante.php');
-                            }
-                            
-                                if ($_POST['selCombo'] == ($desc_tipo->getDescripcion())){
+                            }else{
+                                if ($desc_tipo->getDescripcion() == 'paciente'){
                                 header('Location: perfil-paciente.php');
                                 }
-
+                            }
+                             
                             
-
+                            
+                                
+                            
                         }
                     ?> 
 

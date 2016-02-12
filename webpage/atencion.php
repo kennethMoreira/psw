@@ -24,7 +24,7 @@
         <div><input name="citaG" type="submit" class="btn btn-primary" value="Siguiente"></div>
         <?php
         if (isset($_POST['citaG'])) {
-          $_SESSION['razon'] = "Cita General"; 
+          $_SESSION['citaG'] = "Cita General"; 
         }
 
         ?>
