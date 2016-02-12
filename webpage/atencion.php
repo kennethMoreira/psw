@@ -62,10 +62,9 @@
       if (isset($_POST['next'])) {
         //Si el checkbox condiciones tiene valor y es igual a 1
           if ((isset($_POST['check'])) )
-          echo "<meta http-equiv='Refresh' content='1;estudianteAsignadoAPaciente.php'>";
-         
+            header('Location: estudianteAsignadoAPaciente.php');         
        else
-      echo '<div style="color:red">Seleccione una opcion</div>';
+            echo '<div style="color:red">Seleccione una opcion</div>';
 }
 
 ?>

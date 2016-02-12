@@ -1,23 +1,24 @@
  <?php
   class Usuario{
       
-      private $idUsuario;
+      private $id;
       private $usuario;
-      private $tipo;
       private $contrasena;
+      private $id_persona;
       
-      function construc($idUsuario,$usuario,$tipo,$contrasena){
-          $this->idUsuario=$idUsuario;
+      function __construct($id,$usuario,$contrasena,$id_persona){
+          $this->id=$id;
           $this->usuario=$usuario;
-          $this->Tipo=$tipo;
-          $this->Contraseña=$contrasena;
+          $this->contrasena=$contrasena;
+          $this->id_persona=$id_persona;
+
       }
       
-      function setId_Usuario($idUsuario){
-          $this->idUsuario=$idUsuario;
+      function setId($id){
+          $this->id=$id;
       }
-      function getId_Usuario(){
-          $this->idUsuario;
+      function getId(){
+          $this->id;
       }
       
       function setUsuario($usuario){
@@ -27,11 +28,11 @@
          return $this->usuario;
       }
       
-      function setTipo($tipo){
-          $this->tipo=$tipo;
+      function setId_persona($id_persona){
+          $this->id_persona=$id_persona;
       }
-      function getTipo(){
-          return $this->tipo;
+      function getId_persona(){
+          return $this->id_persona;
       }
       
       function setContrasena($contrasena){
