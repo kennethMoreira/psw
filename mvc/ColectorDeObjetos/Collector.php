@@ -3,9 +3,9 @@ include_once('dataBase.php');
 
 // Define configuration
 define("DB_HOST", "localhost");
-define("DB_USER", "root");
-define("DB_PASS", "");
-define("DB_NAME", "sistema-dental1");
+define("DB_USER", "postgres");
+define("DB_PASS", "postgres");
+define("DB_NAME", "sistema-dental");
 
 
 class Collector extends dataBase

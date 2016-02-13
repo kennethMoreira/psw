@@ -1,9 +1,9 @@
 <?php
-
+session_start();
 	include_once ("../mvc/ColectorDeObjetos/UsuarioCollector.php");
     include_once ("../mvc/ColectorDeObjetos/PersonaCollector.php");
     include_once ("../mvc/ColectorDeObjetos/Tipo_PersonaCollector.php");
-    session_start();
+    
 $UsuarioCollectorObj = new UsuarioCollector();
 $PersonaCollectorObj = new PersonaCollector();
 $TipoCollectorObj = new Tipo_PersonaCollector();
