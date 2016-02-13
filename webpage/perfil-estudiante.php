@@ -9,7 +9,7 @@
     
     <div class="container">
         <div class="row">
-            <?php echo "¡Bienvenido(a) ".$_SESSION["usuario"]."!"?>
+            <?php echo "¡Bienvenido(a) ".$_SESSION['usuario']."!";?>
             
             <div class="col-lg-3">
     <center>
@@ -17,7 +17,8 @@
             </center>
             </div>
 
-            <?php include_once("../mvc/ColectorDeObjetos/PersonaCollector.php");
+            <?php 
+            include_once("../mvc/ColectorDeObjetos/PersonaCollector.php");
             include_once("../mvc/ColectorDeObjetos/SexoCollector.php");
             $usuario =  $_SESSION['usuario'];
            
@@ -42,6 +43,8 @@
                 <span><b>Nombre: </b> " .$persona->getnombre(). " " .$persona->getapellido();
                 echo "<br>
                 <b>Cédula:</b> " .$persona->getcedula();
+                echo "<br>
+                <b>Email: </b> " .$persona->getemail();
                 echo "<br>
                 <b>Edad:</b> " .$persona->getedad();
                 echo "<br>

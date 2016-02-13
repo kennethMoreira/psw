@@ -36,33 +36,19 @@
 
   <div class="cuadrob">
       
-    <ul class="enfermedades">
-      <ol>Caries </ol>
-      <hr/>
-      <ol>Gingivitis</ol>
-      <hr/>
-      <ol>Periodontitis</ol>
-      <hr/>
-      <ol>Profilaxis</ol>
-      <hr/>
-      <ol>Alitosis</ol>
-      <hr/>
-      <ol>Afta</ol>
-    </ul>
-   
      
           <ul class="enfermedades" >
-      <ol><input type="checkbox" name="check" value="caries"><br></ol>
+      <ol><input type="submit" name="check" value="caries"><br></ol>
       <hr/>
-      <ol><input type="checkbox" name="check" value="gingivitis"><br></ol>
+      <ol><input type="submit" name="check" value="gingivitis"><br></ol>
       <hr/>
-      <ol><input type="checkbox" name="check" value="periodontitis"><br></ol>
+      <ol><input type="submit" name="check" value="periodontitis"><br></ol>
       <hr/>
-      <ol><input type="checkbox" name="check" value="profilaxis"><br></ol>
+      <ol><input type="submit" name="check" value="profilaxis"><br></ol>
       <hr/>
-      <ol><input type="checkbox" name="check" value="alitosis"><br></ol>
+      <ol><input type="submit" name="check" value="alitosis"><br></ol>
       <hr/>
-      <ol><input type="checkbox" name="check" value="afta"><br></ol>
+      <ol><input type="submit" name="check" value="afta"><br></ol>
       <hr/>
    </ul>  
      
