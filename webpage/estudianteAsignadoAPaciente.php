@@ -15,17 +15,38 @@
                     </center>
                 </div>
                 <br>
-            
+    
+        
               <div class="cuerpo col-md-6">
               <p>
-                <?php 
-                $cita = $_SESSION['citaG'];
-                 echo "<br><b>Razón de su cita: </b>" .$cita; 
-                 ?>
-                 
-                 <br>Su cita será programada para <br>
-                  el día : 28/12/2015 <br>
-                  a las 08:00, con los datos del estudiante<br>
+                
+                <?php
+
+
+              if(isset($_POST['confirmar'])){
+
+                include_once("ConsultaCollector.php");
+
+      $objConsultaCollector = new ConsultaCollector();
+      $objConsultaCollector->createConsulta();
+  ?>
+  
+  <section>
+    
+    <p>Cita creada con éxito.</p>
+
+  </section>
+  <?php
+    }else{
+      ?>
+      <section>
+      <form action="estudianteAsignadoAPaciente.php" method="post">
+        <?php
+
+
+                 echo "<br>Su cita será programada para el dia " ;
+                 echo "<br>a las "; 
+                 echo "con los datos del estudiante<br>
                   que se muestran a la derecha; en caso de no<br>
                   poder seleccione cancelar<br>
                   y vuelva a intentarlo cuando<br>
@@ -33,59 +54,56 @@
                   tiempo. Para confirrmar su<br>
                   cita seleccione aceptar.<br></p>
               </div>
-             
-              <div class="cuerpo table-responsive col-md-6">
-                <table class="table table-condensed table-hover">
+
+              <div class='cuerpo table-responsive col-md-6'>";
+              
+
+               echo " <table class='table table-condensed table-hover'>
                       <br>
                     <tr>
-                        <td > Nombres:</td>
-                        <td> Sergio Jonathan.</td>
+                        <td > Nombres: </td>
+                        <td> " ; echo".</td>
                     </tr>
                     <tr>
                         <td> Apellidos:</td>
-                        <td> Macías López.</td>
+                        <td> " ; echo"</td>
                     </tr>
                     <tr>
                         <td> Cédula:</td>
-                        <td> 0999999999</td>
+                        <td> " ; echo "</td>
                     </tr>
-                    <tr>
-                        <td> Matrícula:</td>
-                        <td> 20132369</td>
-                    </tr>  
+                    
+                    
                     <tr> 
-                       <td> Semestre:</td>
-                      <td> 5to</td>                      
-                      </tr>  
-                       <tr> 
-                       <td> Celular:</td>
-                      <td> 0989706346</td>                      
+                       <td> Telefono:</td>
+                      <td> " ; echo "</td>                      
                       </tr> 
                        <tr> 
                        <td> Ciudad:</td>
-                      <td> Guayaquil</td>                      
+                      <td> " ; echo "</td>                      
                       </tr>  
                      
                       
-                      
-                      
                   </table>
                   
-                 
+                 ";
+                 }?>
+
               </div>
               
               
                   <br>
                   <div class="col-md-12">
-                      <a href="cita-confirmada.php"><button type="button" class="btn btn-info">Confirmar</button> </a>
-               <a href="perfil-paciente.php"><button type="button" class="btn btn-info"> Cancelar</button> </a>
+                      <input type="button" class="btn btn-info" name="confirmar" value="Confirmar" /> 
+                      <a href="perfil-paciente.php"><button type="button" class="btn btn-info"> Cancelar</button> </a>
                   
                   </div>
                  
-              
+               </form>
+               </section>
           </div>
         
-              
+             
     </div>
             
              <?php include '../plantillasPhp/foot.php' ; ?>  
