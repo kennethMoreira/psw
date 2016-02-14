@@ -30,17 +30,16 @@
             include_once("../mvc/ColectorDeObjetos/EnfermedadCollector.php");
             $objEfermedadCollector = new EnfermedadCollector;
 ?>
-
+<select id="idEnfermedad">
     <?php 
 
       foreach ($objEfermedadCollector->readEnfermedad() as $c) {
-        echo "<input type='submit' name='".$c->getid_enfermedad()."' value='".$c->getnombre()."'/> <br>";
-        
-
+        echo "<option value='".$c->getid_enfermedad()."'>".$c->getnombre()."</option> <br>";
+        $_SESSION['enfermedad'] = $c->getnombre();
       }
        
       ?>
-
+</select>
 
     <br>
       <input type='submit' name='check' class='btn btn-primary' value='Siguiente'><br>

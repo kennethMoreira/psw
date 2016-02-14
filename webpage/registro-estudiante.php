@@ -1,5 +1,7 @@
 <?php
 	session_start();
+	
+								
 ?>
 
 <!DOCTYPE html>
@@ -7,21 +9,6 @@
 
     <?php include '../plantillasPhp/cabecar.php' ; ?>  
         
-		<nav class="navbar navbar-default custom-navbar">
-			<div class="container-fluid">
-				<!-- Botón de 'Inicio' -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="titu navbar-brand" href="#">Asistencia Dental Comunitaria</a>
-				</div>
-				<!-- Elementos de navegación 'Registro | Iniciar sesión' -->
-				
-			</div>
-		</nav>
 		
 		<div class="cuerpo container custom-container">
 			<div class="row">
@@ -30,19 +17,20 @@
 					<img class="img-responsive" src="../img/image-02-estudiantes.jpg" alt="Estudiantes de Odontología"> 
 				</div>
 				<div class="col-sm-4 home-page-col-sm-4-second">
-					<form role="form">
+
+					<form method="POST" action="../mvc/ColectorDeObjetos/insertar-estudiante.php">
 						<!-- Nombre completo -->
 						<div class="form-group">
-							<label for="nombre">Nombre:</label>
-							<input name="nombre" type="text" class="form-control" name="nombre">
+							<span>Nombre:</span>
+							<input name="nombre" type="text" class="input" required>
 						</div>
 						<div class="form-group">
 							<label for="apellido">Apellido:</label>
-							<input name="apellido" type="text" class="form-control" id="apellido">
+							<input name="apellido" type="text" class="form-control" >
 						</div>
 						<div class="form-group">
 							<label for="edad">Edad:</label>
-							<input name="edad" type="text" class="form-control" id="edad">
+							<input name="edad" type="text" class="form-control" >
 						</div>
 						<!-- Número de matrícula-->
 						<div class="form-group">
@@ -56,11 +44,24 @@
 							<label for="phone">Telefono:</label>
 							<input name="telefono" type="tel" class="form-control" id="phone">
 						</div>
+						<div class="form-group">
+							<label for="level">Nivel de estudio:</label>
+							<input name="nivel" class="form-control">
+						</div>
 						<!-- Universidad -->
 						<div class="form-group">
 							<label for="universidad">Universidad:</label>
 							<input name="universidad" type="user" class="form-control" id="universidad">
 						</div>
+
+						<div class="form-group">
+							<label for="sexo">Universidad:</label>
+							<SELECT NAME='sexo' SIZE=1 > 
+                     			<OPTION VALUE='masculino'>Masculino</OPTION>
+                     			<OPTION VALUE='femenino'>Femenino</OPTION>
+ 			                </SELECT>
+						</div>
+
 						<!-- Nivel de estudio -->
 						<div class="form-group">
 							<label for="pwd">Usuario:</label>
@@ -75,8 +76,14 @@
 						<div class="form-group">
 							<label for="pwd">Contraseña:</label>
 							<input name="pass" type="password" class="form-control" id="pwd">
-							<button type="submit" class="btn btn-default btn-override">Registrar</button>
+
+							<input type="submit" name="registro" class="btn btn-default" value="Registrar">
+							
 						</div>
+						<section>
+
+</section>
+
 
 					</form>
 				</div>

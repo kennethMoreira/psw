@@ -1,0 +1,2 @@
+﻿UPDATE persona 
+    SET id = NEXTVAL('id_persona');

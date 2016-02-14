@@ -46,9 +46,9 @@
         //horario
         //enfermedad
         //nivel de estudio
-        
+
       
-                 echo "<br>Razon de su cita: " .$_SESSION['idEnfermedad'];
+                 echo "<br>Razon de su cita: " .$_SESSION['enfermedad'];
                  echo "<br>Su cita será programada para el dia " ;
                  echo "<br>a las "; 
                  echo "con los datos del estudiante<br>
