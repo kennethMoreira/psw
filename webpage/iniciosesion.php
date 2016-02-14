@@ -46,7 +46,7 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
                         if(isset($_POST['usuario']) and (isset($_POST['clave']))){
 
                             if( $_POST['usuario']== $c->getUsuario() && $_POST['clave'] == $c->getContrasena()){
-                            $_SESSION['actualmente_ingresado'] = 1;
+                            
                             $_SESSION['usuario'] = $c->getUsuario();
                             $_SESSION['id_persona'] = $c->getId_persona();
                             $_SESSION['usuario'] = $_POST['usuario'];
@@ -62,6 +62,7 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
                              $id = $id_tipo->getid_tipo_persona();
                             $desc_tipo = $TipoCollectorObj->showDesc ($id);
                             $tipo_usuario = $desc_tipo->getDescripcion();
+
                             $_SESSION['tipo_user'] = $tipo_usuario;
                                  if ($desc_tipo->getDescripcion() == 'estudiante'){
                                 header('Location: perfil-estudiante.php');

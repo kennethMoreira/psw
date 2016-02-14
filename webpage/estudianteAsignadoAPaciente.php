@@ -8,6 +8,7 @@
     <?php include '../plantillasPhp/cabecar.php' ; ?>
         <div class="container">
             <div class="row">
+              <?php echo "¡Bienvenido(a) ".$_SESSION['usuario']."!";?>
                 <div class="col-sm-4 col-md-12"><br>
                     <center> 
                         <img class="persona" src="../img/pasante.png">
@@ -42,8 +43,12 @@
       <section>
       <form action="estudianteAsignadoAPaciente.php" method="post">
         <?php
-
-
+        //horario
+        //enfermedad
+        //nivel de estudio
+        
+      
+                 echo "<br>Razon de su cita: " .$_SESSION['idEnfermedad'];
                  echo "<br>Su cita será programada para el dia " ;
                  echo "<br>a las "; 
                  echo "con los datos del estudiante<br>

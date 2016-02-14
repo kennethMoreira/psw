@@ -1,6 +1,6 @@
 <head>
   <meta charset="UTF-8">
-  <title>Sistema Dental</title>
+  <title>Dental System</title>
   
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -23,7 +23,7 @@
 		<div class="row">
 
             <a class=" " href="../index.php"><img src="../img/logo.png" alt="Inicio"></a>
-            <div class="logotipo hidden-xs hidden-sm">Sistema Dental</div>
+            <div class="logotipo hidden-xs hidden-sm">Dental System</div>
 			</div>
             
             <nav>
@@ -31,6 +31,7 @@
                 <li role="presentation"><a href="nosotros.php">Quienes somos</a></li>
                 <li role="presentation"><a href="servicios.php">Servicios</a></li>
                 <li role="presentation"><a href="contacto.php">Contacto</a></li>
+                <li role="presentation"><a href="../admin/administracion.php">Administracion</a></li>
                 <li role="presentation"><a href="ayuda.php">Ayuda</a></li>
             </ul>
             </nav>

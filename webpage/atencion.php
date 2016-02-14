@@ -23,22 +23,24 @@
       
      
          
-            <form method="post" action="estudianteAsignadoAPaciente.php">  
+            <form method="POST" action="estudianteAsignadoAPaciente.php">  
         <label for="name">Seleccione la enfermedad: <span class="required"></span></label>
             <?php
             include_once("../mvc/ColectorDeObjetos/Enfermedad.php");
             include_once("../mvc/ColectorDeObjetos/EnfermedadCollector.php");
             $objEfermedadCollector = new EnfermedadCollector;
 ?>
-  <select name="idEnfermedad">
+
     <?php 
 
       foreach ($objEfermedadCollector->readEnfermedad() as $c) {
-        echo "<option value='".$c->getid_enfermedad()."'> ".$c->getnombre()."</option>";
+        echo "<input type='submit' name='".$c->getid_enfermedad()."' value='".$c->getnombre()."'/> <br>";
+        
+
       }
-      $enf = $c->getnombre();
+       
       ?>
-  </select>
+
 
     <br>
       <input type='submit' name='check' class='btn btn-primary' value='Siguiente'><br>
