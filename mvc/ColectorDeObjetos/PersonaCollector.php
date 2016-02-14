@@ -21,8 +21,8 @@ class PersonaCollector extends Collector
     return $idTipo;
   }
 
-   function createPersona ($nombre, $apellido, $edad, $cedula, $email, $tipo, $sexo, $nivel) {
-    $insertrow = self::$db->insertRow("INSERT INTO persona(id,nombre,apellido,edad,cedula,email,id_tipo_persona,id_sexo,nivel_estudio ) VALUES (?,?,?,?,?,?,?,?,?)", array(null, "{$nombre}", "{$apellido}", "{$edad}", "{$cedula}", "{$email}", "{$tipo}", "{$sexo}", "{$nivel}"));
+   function createPersona ($id,$nombre, $apellido, $edad, $cedula, $email, $tipo, $sexo, $nivel) {
+    $insertrow = self::$db->insertRow("INSERT INTO persona(id,nombre,apellido,edad,cedula,email,id_tipo_persona,id_sexo,nivel_estudio ) VALUES (?,?,?,?,?,?,?,?,?)", array("{$id}", "{$nombre}", "{$apellido}", "{$edad}", "{$cedula}", "{$email}", "{$tipo}", "{$sexo}", "{$nivel}"));
     
   }
 
