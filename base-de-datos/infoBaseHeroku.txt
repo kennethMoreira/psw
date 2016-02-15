@@ -1,0 +1,16 @@
+Connection Settings
+
+Host
+    ec2-54-225-199-245.compute-1.amazonaws.com
+Database
+    d6uua9gtn0inno
+User
+    wloultrlfzwnnc
+Port
+    5432
+Password
+    Hide 06rRViFiyARRCHpR1A3F4tzSOX 
+Psql
+    heroku pg:psql --app heroku-postgres-4b3f0df5 HEROKU_POSTGRESQL_AMBER
+URL
+    Hide postgres://wloultrlfzwnnc:06rRViFiyARRCHpR1A3F4tzSOX@ec2-54-225-199-245.compute-1.amazonaws.com:5432/d6uua9gtn0inno 
