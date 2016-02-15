@@ -7,7 +7,7 @@ $RootMenu->IsRoot = TRUE;
 $RootMenu->AddMenuItem(1, "mi_tipo_persona", $Language->MenuPhrase("1", "MenuText"), "tipo_personalist.php", -1, "", IsLoggedIn(), FALSE);
 $RootMenu->AddMenuItem(2, "mi_enfermedad", $Language->MenuPhrase("2", "MenuText"), "enfermedadlist.php", -1, "", IsLoggedIn(), FALSE);
 $RootMenu->AddMenuItem(3, "mi_usuario", $Language->MenuPhrase("3", "MenuText"), "usuariolist.php", -1, "", IsLoggedIn(), FALSE);
-$RootMenu->AddMenuItem(4, "mi_sysdiagrams", $Language->MenuPhrase("4", "MenuText"), "sysdiagramslist.php", -1, "", IsLoggedIn(), FALSE);
+
 $RootMenu->AddMenuItem(5, "mi_persona", $Language->MenuPhrase("5", "MenuText"), "personalist.php", -1, "", IsLoggedIn(), FALSE);
 $RootMenu->AddMenuItem(6, "mi_ciudad", $Language->MenuPhrase("6", "MenuText"), "ciudadlist.php", -1, "", IsLoggedIn(), FALSE);
 $RootMenu->AddMenuItem(7, "mi_direccion", $Language->MenuPhrase("7", "MenuText"), "direccionlist.php", -1, "", IsLoggedIn(), FALSE);
