@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Cache Product="PHPMaker" Version="12.0" >
+<CacheEntry Group="template" Key="template" DateTime="2016/01/18 21:18:54" Size="1537829" />
+<CacheEntry Group="control" Key="control" DateTime="2016/01/14 18:01:18" Size="49122" />
+<CacheEntry Group="tpl" Key="addopt_table.tpl" DateTime="2016/02/14 21:08:43" Size="300666" />
+<CacheEntry Group="tpl" Key="add_table.tpl" DateTime="2016/02/14 21:08:42" Size="341379" />
+<CacheEntry Group="tpl" Key="blobview_field.tpl" DateTime="2016/02/14 21:08:50" Size="93716" />
+<CacheEntry Group="tpl" Key="changepwd_other.tpl" DateTime="2016/02/14 21:08:34" Size="107009" />
+<CacheEntry Group="tpl" Key="custom_report.tpl" DateTime="2016/02/14 21:08:52" Size="65457" />
+<CacheEntry Group="tpl" Key="dbhelper_other.tpl" DateTime="2016/02/14 21:08:34" Size="21371" />
+<CacheEntry Group="tpl" Key="default_simple.tpl" DateTime="2016/02/14 21:08:36" Size="66343" />
+<CacheEntry Group="tpl" Key="delete_table.tpl" DateTime="2016/02/14 21:08:49" Size="307457" />
+<CacheEntry Group="tpl" Key="edit_table.tpl" DateTime="2016/02/14 21:08:46" Size="368276" />
+<CacheEntry Group="tpl" Key="ewconfig_other.tpl" DateTime="2016/02/14 21:08:34" Size="76894" />
+<CacheEntry Group="tpl" Key="ewemail_other.tpl" DateTime="2016/02/14 21:08:34" Size="12021" />
+<CacheEntry Group="tpl" Key="ewmysql_other.tpl" DateTime="2016/02/14 21:08:34" Size="34813" />
+<CacheEntry Group="tpl" Key="ewshared_other.tpl" DateTime="2016/02/14 21:08:34" Size="68721" />
+<CacheEntry Group="tpl" Key="ewupload_other.tpl" DateTime="2016/02/14 21:08:34" Size="17917" />
+<CacheEntry Group="tpl" Key="file_other.tpl" DateTime="2016/02/14 21:08:34" Size="13642" />
+<CacheEntry Group="tpl" Key="footer_other.tpl" DateTime="2016/02/14 21:08:34" Size="13746" />
+<CacheEntry Group="tpl" Key="forgotpwd_other.tpl" DateTime="2016/02/14 21:08:34" Size="102586" />
+<CacheEntry Group="tpl" Key="gridcls_table.tpl" DateTime="2016/02/14 21:08:41" Size="449120" />
+<CacheEntry Group="tpl" Key="grid_table.tpl" DateTime="2016/02/14 21:08:39" Size="168783" />
+<CacheEntry Group="tpl" Key="header_other.tpl" DateTime="2016/02/14 21:08:34" Size="25530" />
+<CacheEntry Group="tpl" Key="info_table.tpl" DateTime="2016/02/14 21:08:37" Size="152468" />
+<CacheEntry Group="tpl" Key="list_table.tpl" DateTime="2016/02/14 21:08:39" Size="606874" />
+<CacheEntry Group="tpl" Key="login_other.tpl" DateTime="2016/02/14 21:08:34" Size="85653" />
+<CacheEntry Group="tpl" Key="logout_other.tpl" DateTime="2016/02/14 21:08:36" Size="65292" />
+<CacheEntry Group="tpl" Key="lookup_other.tpl" DateTime="2016/02/14 21:08:34" Size="15222" />
+<CacheEntry Group="tpl" Key="master_table.tpl" DateTime="2016/02/14 21:08:37" Size="36940" />
+<CacheEntry Group="tpl" Key="menu_other.tpl" DateTime="2016/02/14 21:08:34" Size="16032" />
+<CacheEntry Group="tpl" Key="mobilemenu_other.tpl" DateTime="2016/02/14 21:08:34" Size="15998" />
+<CacheEntry Group="tpl" Key="phpmkrfn_other.tpl" DateTime="2016/02/14 21:08:34" Size="344572" />
+<CacheEntry Group="tpl" Key="register_content_html_other.tpl" DateTime="2016/02/14 21:08:34" Size="948" />
+<CacheEntry Group="tpl" Key="register_other.tpl" DateTime="2016/02/14 21:08:36" Size="334810" />
+<CacheEntry Group="tpl" Key="reportmenu_other.tpl" DateTime="2016/02/14 21:08:34" Size="16284" />
+<CacheEntry Group="tpl" Key="report_report.tpl" DateTime="2016/02/14 21:08:52" Size="431261" />
+<CacheEntry Group="tpl" Key="search_table.tpl" DateTime="2016/02/14 21:08:50" Size="323078" />
+<CacheEntry Group="tpl" Key="session_other.tpl" DateTime="2016/02/14 21:08:34" Size="10913" />
+<CacheEntry Group="tpl" Key="update_table.tpl" DateTime="2016/02/14 21:08:47" Size="318849" />
+<CacheEntry Group="tpl" Key="usereventjs_other.tpl" DateTime="2016/02/14 21:08:34" Size="1542" />
+<CacheEntry Group="tpl" Key="userfn_other.tpl" DateTime="2016/02/14 21:08:34" Size="1125" />
+<CacheEntry Group="tpl" Key="userglobaljs_other.tpl" DateTime="2016/02/14 21:08:34" Size="564" />
+<CacheEntry Group="tpl" Key="userpriv_other.tpl" DateTime="2016/02/14 21:08:36" Size="124866" />
+<CacheEntry Group="tpl" Key="view_table.tpl" DateTime="2016/02/14 21:08:45" Size="370138" />
+</Cache>

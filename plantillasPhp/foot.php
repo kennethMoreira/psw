@@ -15,7 +15,6 @@
 
                 </ul>
 			</div>
-			<a href="javascript:void(0)" class="bttop"><img src="assets/img/backtotop.jpg" alt=""/></a>
 		</div>
 	</div>
  <script src="../js/jquery.min.js"></script>
