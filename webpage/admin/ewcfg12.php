@@ -50,7 +50,7 @@ if (!defined("EW_USE_ADODB"))
 	define("EW_USE_ADODB", TRUE, TRUE); // Use ADOdb
 if (!defined("EW_USE_MYSQLI"))
 	define('EW_USE_MYSQLI', extension_loaded("mysqli"), TRUE); // Use MySQLi
-$EW_CONN["DB"] = array("conn" => NULL, "id" => "DB", "type" => "POSTGRESQL", "host" => "localhost", "port" => 5432, "user" => "postgres", "pass" => "postgres", "db" => "sistema-dental", "schema" => "public", "qs" => "\"", "qe" => "\"");
+$EW_CONN["DB"] = array("conn" => NULL, "id" => "DB", "type" => "POSTGRESQL", "host" => "ec2-54-225-199-245.compute-1.amazonaws.com", "port" => 5432, "user" => "wloultrlfzwnnc", "pass" => "06rRViFiyARRCHpR1A3F4tzSOX", "db" => "d6uua9gtn0inno", "schema" => "public", "qs" => "\"", "qe" => "\"");
 $EW_CONN[0] = &$EW_CONN["DB"];
 
 // Set up database error function
