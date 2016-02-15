@@ -9,9 +9,9 @@
 			</div>
 			<div class="col-md-6">
 				<ul class="footer-social">
-					<li><a href="facebook.com"><img class="iconos" src="../img/social-facebook-outline.png"></a></li>
-					<li><a href="twitter.com"><img class="iconos" src="../img/social-twitter-outline.png"></a></li>
-					<li><a href="instagram.com"><img class="iconos" src="../img/social-instagram-outline.png"></a></li>
+					<li><a href="https://www.facebook.com"><img class="iconos" src="../img/social-facebook-outline.png"></a></li>
+					<li><a href="https://www.twitter.com"><img class="iconos" src="../img/social-twitter-outline.png"></a></li>
+					<li><a href="https://instagram.com"><img class="iconos" src="../img/social-instagram-outline.png"></a></li>
 
                 </ul>
 			</div>
