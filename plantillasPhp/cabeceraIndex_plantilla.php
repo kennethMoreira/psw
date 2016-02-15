@@ -35,7 +35,7 @@
       </button>
       <!--logo-->
         <div class="logoI">
-        	<a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logoImg img-responsive"></a>
+        	<a class="navbar-brand" href="index.php"><img src="img/logo.png" class="logoImg img-responsive"></a>
 		</div>
     
     
@@ -47,8 +47,8 @@
     <div class="menus collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav navbar-right">
             <li><a href="webpage/iniciosesion.php" title="Inicie sesion"><img class="hidden-xs visible-lg icono" src="img/log-in.png"><div class="hidden-lg visible-xs visible-sm hidden-md">Inicie sesion</div></a></li>
-            <li><a href="webpage/registro.php" title="Registrar"><img class="hidden-xs visible-lg icono" src="img/registro.png"><div class="hidden-lg visible-xs visible-sm hidden-md">Registrarse</div></a></li>
-            <li><a href="webpage/ayuda.php" title="Ayuda"><img class="hidden-xs visible-lg icono" src="img/help.png"><div class="hidden-lg visible-xs visible-sm hidden-md">Ayuda</div></a></li>
+          
+            
             <li><a href="#"> </a></li>
         </ul>
     </div>

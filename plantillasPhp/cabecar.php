@@ -46,7 +46,7 @@
                            <ul class="dropdown-menu">
                                <li role="presentation"><a href="nosotros.php">Quienes somos</a></li>
                                <li role="presentation"><a href="servicios.php">Servicios</a></li><li role="presentation"><a href="contacto.php">Contacto</a></li>
-                               <li role="presentation"><a href="ayuda.php">Ayuda</a></li>                           </ul>
+                                                      </ul>
                 </nav>
             </div>
           </div>
