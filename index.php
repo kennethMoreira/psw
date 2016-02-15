@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 	session_start();
 ?>
@@ -16,7 +16,7 @@
                 
 
                 <div class="titu">Bienvenidos</div>
-=======
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -69,12 +69,12 @@
 				
 					<h3>Bienvenidos</h3>
 					
->>>>>>> refs/remotes/origin/master
+
 					Nuestro propósito es establecer una comunicación entre estudiantes de odontología y personas de escasos recursos económicos que padecen de enfermedades dentales.
 					<br>
 					<br>
 					Logramos que los estudiantes cumplan con los casos clínicos requeridos para aprobar sus materias prácticas, dando un tratamiento gratuito a las patologías bucales de las personas interesadas; siempre bajo la dirección de profesionales, asignados a la cátedra de las diferentes materias donde se dará tratamiento a los pacientes.
-<<<<<<< HEAD
+
                     
                 <div class="main row">
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -146,7 +146,7 @@
     <?php include 'plantillasPhp/footIndex.php' ; ?>  
     
     
-=======
+
 <br>
 <br>
 					
@@ -180,7 +180,6 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
->>>>>>> refs/remotes/origin/master
 </body>
 </html>
 
