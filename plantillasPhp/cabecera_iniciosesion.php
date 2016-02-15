@@ -30,7 +30,7 @@
             <ul class="menu visible-lg visible-md hidden-xs hidden-sm nav nav-pills navbar-right">
                 <li role="presentation"><a href="nosotros.php">Quienes somos</a></li>
                 <li role="presentation"><a href="servicios.php">Servicios</a></li>
-                <li role="presentation"><a href="contacto.php">Contacto</a></li>
+              <!--  <li role="presentation"><a href="contacto.php">Contacto</a></li> -->
                 <li role="presentation"><a href="ayuda.php">Ayuda</a></li>
             </ul>
             </nav>
