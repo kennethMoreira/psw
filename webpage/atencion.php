@@ -45,20 +45,17 @@ Listado de enfermedades disponibles:
       <input name='enfermedad' class='form-control' required>
 
     <br>
-      <input type='submit' name='check' class='btn btn-primary' value='Cita General'><br> 
+      <input type='submit' name='check' class='btn btn-primary' value='Siguiente'><br> 
 
       <?php
-        if(isset($_POST['enfermedad'])){
-          
-            $valor = $_SESSION['enfermedad'];
+      if(isset($_POST['check'])){       
+        if(isset($_POST['enfermedad'])){       
+            $valor = $_POST['enfermedad'];
             $objEfermedadCollector = new EnfermedadCollector;
-            $nombreEnfermedad = $objEfermedadCollector->showNombre($valor);
-            $enf = $nombreEnfermedad->getnombre();
-          
-
+            $_SESSION['$nombreEnfermedad'] = $objEfermedadCollector->showNombre($valor);
+            $_SESSION['$enf'] = $_SESSION['$nombreEnfermedad']->getnombre();
       }
-
-
+      }
       ?>
 
     

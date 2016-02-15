@@ -17,7 +17,7 @@
       }
 
       function showNombre($id){
-        $row=self::$db->getRows("Select * From enfermedad where Id= ?",array("{$id}"));
+        $row=self::$db->getRows("Select * From enfermedad where id= ?",array("{$id}"));
         $ObjEnf =new Enfermedad($row[0]{'id'}, $row[0]{'nombre'}, $row[0]{'descripcion'});
           
           return $ObjEnf;
