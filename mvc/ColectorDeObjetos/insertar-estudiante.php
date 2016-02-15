@@ -33,12 +33,11 @@
 	$PerCollectorObj = new PersonaCollector();
 	$UsCollectorObj = new UsuarioCollector();
 
-	$PerCollectorObj->createPersona($id,$nombre,$apellido,$edad,$cedula,$email,$tipo,$sexo,$nivel);
+	$PerCollectorObj->createPersona($nombre,$apellido,$edad,$cedula,$email,$tipo,$sexo,$nivel);
 
 	$tip;
 
 	
-	$UsCollectorObj->createUsuario($id,$usuario,$clave,$id);
 	echo "<meta http-equiv='Refresh' content='1;../../webpage/iniciosesion.php'>";
 
 }

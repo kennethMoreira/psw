@@ -22,7 +22,7 @@
     
 <body>
     
-     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+     <nav class="navbar navbar-default navbar-fixed-top">
     <!-- El logotipo y el icono que despliega el menú se agrupan
          para mostrarlos mejor en los dispositivos móviles -->
     <div class="menu navbar-header">
@@ -35,7 +35,7 @@
       </button>
       <!--logo-->
         <div class="logoI">
-        	<a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logoImg img-responsive"></a>
+        	<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=" " class="logoImg img-responsive"></a>
 		</div>
     
     
@@ -46,9 +46,9 @@
          otro elemento que se pueda ocultar al minimizar la barra -->
     <div class="menus collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="webpage/iniciosesion.php" title="Inicie sesion"><img class="hidden-xs visible-lg icono" src="img/log-in.png"><div class="hidden-lg visible-xs visible-sm hidden-md">Inicie sesion</div></a></li>
-            <li><a href="webpage/registro-estudiante.html" title="Registrar"><img class="hidden-xs visible-lg icono" src="img/registro.png"><div class="hidden-lg visible-xs visible-sm hidden-md">Registrarse</div></a></li>
-            <li><a href="webpage/ayuda.php" title="Ayuda"><img class="hidden-xs visible-lg icono" src="img/help.png"><div class="hidden-lg visible-xs visible-sm hidden-md">Ayuda</div></a></li>
+            <li><a href="webpage/iniciosesion.php" title="Inicie sesion"><img alt=" " class="hidden-xs visible-lg icono" src="img/log-in.png"><div class="hidden-lg visible-xs visible-sm hidden-md">Inicie sesion</div></a></li>
+            <li><a href="webpage/registro-estudiante.html" title="Registrar"><img alt=" " class="hidden-xs visible-lg icono" src="img/registro.png"><div class="hidden-lg visible-xs visible-sm hidden-md">Registrarse</div></a></li>
+            <li><a href="webpage/ayuda.php" title="Ayuda"><img alt=" " class="hidden-xs visible-lg icono" src="img/help.png"><div class="hidden-lg visible-xs visible-sm hidden-md">Ayuda</div></a></li>
             <li><a href="#"> </a></li>
         </ul>
     </div>

@@ -4,8 +4,8 @@
 
   class UsuarioCollector extends Collector{
       
-        function createUsuario($id,$usuario,$contrasena,$tip) {    
-        $insertrow = self::$db->insertRow("INSERT INTO usuario (id,usuario,contrasena,id_persona) VALUES (?,?,?,?)", array("{$id}","{$usuario}","{$contrasena}","{$tip}"));
+        function createUsuario($usuario,$contrasena) {    
+        $insertrow = self::$db->insertRow("INSERT INTO usuario (id,usuario,contrasena,id_persona) VALUES (?,?,?,?)", array(null,"{$usuario}","{$contrasena}",null));
        }
 
        function ShowUsuarioNombre($usuario){

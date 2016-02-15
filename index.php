@@ -22,8 +22,8 @@
                     
                 <div class="main row">
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            	<div class="imagen" align="center">
-				<img src="img/hacer.png" class="img-responsive">
+            	<div class="imagen">
+				<img src="img/hacer.png" alt=" " class="img-responsive">
                     <h3><b>¿Que hacemos?</b></h3>
                     <span>Brindar una facilidad de comunicacion entre paciente/doctor</span>
 				</div>
@@ -31,8 +31,8 @@
             
             
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="imagen" align="center">
-				<img src="img/objetivo.png" class="img-responsive">
+				<div class="imagen">
+				<img src="img/objetivo.png" alt=" " class="img-responsive">
                     <h3><b>Objetivos</b></h3>
                     <span>Liderar en el mercado de salud en Internet</span>
 				</div>
@@ -41,8 +41,8 @@
           
 
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="imagen" align="center">
-				<img src="img/mision.png" class="img-responsive">
+				<div class="imagen">
+				<img src="img/mision.png" alt=" " class="img-responsive">
                     <h3><b>Nuestra misión</b></h3>
                     <span>Ser la mejor aplicacion web, con servicios profesionales, integrales y personalizados para nuestros pacientes.</span>
 				</div>
@@ -50,8 +50,8 @@
 
          
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="imagen" align="center">
-				<img src="img/vision.png" class="img-responsive">
+				<div class="imagen" >
+				<img src="img/vision.png" alt=" " class="img-responsive">
                     <h3><b>Nuestra Visión</b></h3>
                     <span>Liderar en el cuidado de la salud bucal</span>
 				</div>
