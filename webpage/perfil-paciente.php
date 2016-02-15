@@ -57,7 +57,7 @@
             ?>
 
 
-                         <a class="editar col-md-12" href="editar-estudiante.php">Editar perfil</a>
+                   <!--      <a class="editar col-md-12" href="editar-estudiante.php">Editar perfil</a> -->
 
 
             <div class="col-lg-12">

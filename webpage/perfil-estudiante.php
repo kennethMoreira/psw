@@ -56,7 +56,7 @@
             </div> "
             
             ?>
-            <a class="editar col-lg-12 col-md-12 col-sm-12 col-xs-12" href="editar-estudiante.php">Editar perfil</a>
+           <!-- <a class="editar col-lg-12 col-md-12 col-sm-12 col-xs-12" href="editar-estudiante.php">Editar perfil</a> -->
 
 
             <div class="col-lg-12">
