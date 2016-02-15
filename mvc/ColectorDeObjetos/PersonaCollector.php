@@ -26,9 +26,14 @@ class PersonaCollector extends Collector
     
   }
 
+//¡ATENCIÓN EN ESTA PARTE!
 
- 
-
+//[01]
+//Obtiene el máximo valor de la columna [id], de la tabla [persona], incrementado en 1 para el nuevo registro
+function GetId() {
+   $sql = "select max(id) + 1 from persona"
+   return execute_scalar($sql,1);
+}
 
 }
 ?>
