@@ -2,7 +2,7 @@
 include_once('dataBase.php');
 
 // Define configuration
-define("DB_HOST", "ec2-54-83-17-9.compute-1.amazonaws.com");
+define("DB_HOST", "ec2-54-225-199-245.compute-1.amazonaws.com");
 define("DB_USER", "wloultrlfzwnnc");
 define("DB_PASS", "06rRViFiyARRCHpR1A3F4tzSOX");
 define("DB_NAME", "d6uua9gtn0inno");
