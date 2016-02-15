@@ -79,7 +79,12 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
                         }
                     ?> 
 
-                    <input class="botonesGhost" type='submit' value='Ingresar'><br>
+                    <input class="botonesGhost" type='submit' value='Ingresar'>
+                    <br>
+                    <a href="admin/administrador.php"> <button>Administrador</button></a>
+
+                    
+
                 </section>
             </fieldset>
         </form>                
