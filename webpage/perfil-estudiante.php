@@ -9,7 +9,7 @@
     
     <div class="container">
         <div class="row">
-            <?php echo "¡Bienvenido(a) ".$_SESSION['usuario']."!";?>
+            <?php echo "¡Bienvenido(a) ".$_SESSION['usuario']."!";?>w
             
             <div class="col-lg-3">
     <center>
