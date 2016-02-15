@@ -46,6 +46,7 @@
         //horario
         //enfermedad
         //nivel de estudio
+  
         
       
                  echo "<br>Razon de su cita: " .$_SESSION['idEnfermedad'];
