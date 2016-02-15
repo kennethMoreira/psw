@@ -1,5 +1,5 @@
 <?php
-	session_start();
+  session_start();
 ?>
 
 <!DOCTYPE html>
@@ -22,12 +22,8 @@
               <p>
                 
                 <?php
-
-
               if(isset($_POST['confirmar'])){
-
                 include_once("ConsultaCollector.php");
-
       $objConsultaCollector = new ConsultaCollector();
       $objConsultaCollector->createConsulta();
   ?>
@@ -43,17 +39,12 @@
       <section>
       <form action="estudianteAsignadoAPaciente.php" method="post">
         <?php
+
         //horario
         //enfermedad
         //nivel de estudio
-<<<<<<< HEAD
-  
-        
-=======
-
->>>>>>> 2a8daf3ceb013f0072cd7b7da0a265c1533881c3
       
-                 echo "<br>Razon de su cita: " .$_SESSION['enfermedad'];
+                 echo "<br>Razon de su cita: " .$_SESSION['enf'];
                  echo "<br>Su cita será programada para el dia " ;
                  echo "<br>a las "; 
                  echo "con los datos del estudiante<br>
@@ -64,10 +55,8 @@
                   tiempo. Para confirrmar su<br>
                   cita seleccione aceptar.<br></p>
               </div>
-
               <div class='cuerpo table-responsive col-md-6'>";
               
-
                echo " <table class='table table-condensed table-hover'>
                       <br>
                     <tr>

@@ -19,9 +19,7 @@
   
 
 
-  <div class="cuadrob">
-      
-     
+  <div class="cuadrob" align="left">     
          
             <form method="POST" action="estudianteAsignadoAPaciente.php">  
         <label for="name">Seleccione la enfermedad: <span class="required"></span></label>
@@ -30,26 +28,39 @@
             include_once("../mvc/ColectorDeObjetos/EnfermedadCollector.php");
             $objEfermedadCollector = new EnfermedadCollector;
 ?>
-<<<<<<< HEAD
+
 <br>
-=======
-<select id="idEnfermedad">
->>>>>>> 2a8daf3ceb013f0072cd7b7da0a265c1533881c3
+Listado de enfermedades disponibles:
+
+
     <?php 
 
       foreach ($objEfermedadCollector->readEnfermedad() as $c) {
-        echo "<option value='".$c->getid_enfermedad()."'>".$c->getnombre()."</option> <br>";
-        $_SESSION['enfermedad'] = $c->getnombre();
+        echo "Codigo: ".$c->getid_enfermedad().". Enfermedad:".$c->getnombre()."<br>";
       }
-       
+      echo "Digite el codigo de la enfermedad dental que desea tratarse";
+
       ?>
-<<<<<<< HEAD
-=======
-</select>
->>>>>>> 2a8daf3ceb013f0072cd7b7da0a265c1533881c3
+
+      <input name='enfermedad' class='form-control' required>
 
     <br>
       <input type='submit' name='check' class='btn btn-primary' value='Cita General'><br> 
+
+      <?php
+        if(isset($_POST['enfermedad'])){
+          
+            $valor = $_SESSION['enfermedad'];
+            $objEfermedadCollector = new EnfermedadCollector;
+            $nombreEnfermedad = $objEfermedadCollector->showNombre($valor);
+            $enf = $nombreEnfermedad->getnombre();
+          
+
+      }
+
+
+      ?>
+
     
     </form>
       

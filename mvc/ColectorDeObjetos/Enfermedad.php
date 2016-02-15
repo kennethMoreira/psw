@@ -16,7 +16,7 @@
           $this->id_enfermedad=$id_enfermedad;
       }
       function getid_enfermedad(){
-          $this->id_enfermedad;
+          return $this->id_enfermedad;
       }
       
       function setnombre($nombre){
