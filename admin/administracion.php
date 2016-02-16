@@ -1,5 +1,12 @@
 <?php
 	session_start();
+        include_once ("../mvc/ColectorDeObjetos/UsuarioCollector.php");
+    include_once ("../mvc/ColectorDeObjetos/PersonaCollector.php");
+    include_once ("../mvc/ColectorDeObjetos/Tipo_PersonaCollector.php");
+    
+$UsuarioCollectorObj = new UsuarioCollector();
+$PersonaCollectorObj = new PersonaCollector();
+$TipoCollectorObj = new Tipo_PersonaCollector();
 ?>
 
 <!DOCTYPE html>
@@ -8,22 +15,49 @@
     <?php include '../plantillasPhp/cabecar.php' ; ?>
 
     <div class="cuerpo container ">
-    	<a href="#">Administrar estudiantes</a> <br>
-    	<a href="#">Administrar pacientes</a> <br>
-    	<a href="#">Administrar enfermedades</a> <br>
-    	<a href="#">Administrar citas</a> <br>
-    	<a href="#">Administrar usuarios</a> <br>
-    	<a href="#">Administrar nivel de estudio</a> <br>
-    	<a href="#">Administrar horarios</a> <br>
-    	<a href="#">Administrar universidades</a> <br>
-    	<a href="#">Administrar telefonos</a> <br>
-    	<a href="#">Administrar ciudades</a> <br>
-    	<a href="#">Administrar personas</a> <br>
-    	<a href="#">Administrar diagnostico</a><br>
-    	<a href="#">Administrar los tipos de personas</a> <br>
-    	<a href="#">Administrar registros de actividad</a> <br>
-    	<a href="#">Administrar ayuda en linea</a> <br>
+        <?php
+        if(isset($_POST['usuario']) && (isset($_POST['clave']))){
+            if( $_POST['usuario']== 'admin' && $_POST['clave'] == 'admin'){
+                
+                //-------------------------
+                //-AQUI PONGAN SUS ENLACES-
+                //-------------------------
 
+                echo "<a href='registros.php'>Registros</a> <br>";
+            }
+        }else{
+    ?> 
+
+
+        <form action="administracion.php" method="POST">
+            <fieldset>
+                <label for="usuario">Usuario:</label>
+                <input name="usuario" type="text" class="form-control" required>
+                 
+                <label for="name">Contraseña:</label>
+                <input name="clave" type="password" class="form-control" required>
+                
+                <div class="checkbox">
+                    <label><input type="checkbox"> Recordarme</label>
+                </div>
+
+                    <br>
+    
+                <section>
+                   
+
+                    <input class="botonesGhost" type='submit' value='Ingresar'>
+                    <br>
+
+                </section>
+            </fieldset>
+        </form>                
+
+        <?php } ?>
+
+
+    	
+    	
 
 
     </div>

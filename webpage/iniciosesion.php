@@ -13,7 +13,7 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
 <html lang="en">
 
 
-    <?php include '../plantillasPhp/cabecera_iniciosesion.php' ; ?>  
+    <?php include '../plantillasPhp/cabecar.php' ; ?>  
     <div class="container-fluid">
 	<div class="col-md-9 hidden-xs hidden-sm">
         <img class="img-responsive" src="../img/dentistry.jpg" alt="fondo">
@@ -81,9 +81,6 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
 
                     <input class="botonesGhost" type='submit' value='Ingresar'>
                     <br>
-                    <a href="admin/administrador.php"> <button>Administrador</button></a>
-
-                    
 
                 </section>
             </fieldset>
