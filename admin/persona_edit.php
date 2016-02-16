@@ -3,7 +3,6 @@
   $id = $_GET['codigo'];
 
  include_once('PersonaCollector.php');
- include_once('UsuarioCollector.php');
 
  $PersCollectorObj = new PersonaCollector();
  $objPersona = $PersCollectorObj->showPersonas($id);

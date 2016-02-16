@@ -1,10 +1,8 @@
 <?php
 session_start();
 	include_once("PersonaCollector.php");
-	include_once("UsuarioCollector.php");
 
 	$persCollector = new PersonaCollector();
-	$usCollector = new UsuarioCollector();
 
 ?>
 
