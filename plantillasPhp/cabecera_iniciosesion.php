@@ -31,7 +31,7 @@
                 <li role="presentation"><a href="nosotros.php">Quienes somos</a></li>
                 <li role="presentation"><a href="servicios.php">Servicios</a></li>
               <!--  <li role="presentation"><a href="contacto.php">Contacto</a></li> -->
-                <li role="presentation"><a href="ayuda.php">Ayuda</a></li>
+               <!-- <li role="presentation"><a href="ayuda.php">Ayuda</a></li> -->
             </ul>
             </nav>
 		</div>
@@ -44,8 +44,9 @@
                        <a href="#" class ="dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span></a>
                            <ul class="dropdown-menu">
                                <li role="presentation"><a href="nosotros.php">Quienes somos</a></li>
-                               <li role="presentation"><a href="servicios.php">Servicios</a></li><li role="presentation"><a href="contacto.php">Contacto</a></li>
-                               <li role="presentation"><a href="ayuda.php">Ayuda</a></li>                           </ul>
+                               <li role="presentation"><a href="servicios.php">Servicios</a></li>
+                               <!--<li role="presentation"><a href="contacto.php">Contacto</a></li>
+                               <li role="presentation"><a href="ayuda.php">Ayuda</a></li> -->                          </ul>
                 </nav>
             </div>
           </div>
