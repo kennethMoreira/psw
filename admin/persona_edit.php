@@ -1,12 +1,20 @@
 <?php
-	session_start();
+  session_start();
+  $id = $_GET['codigo'];
+
+ include_once('PersonaCollector.php');
+ include_once('UsuarioCollector.php');
+
+ $PersCollectorObj = new PersonaCollector();
+ $objPersona = $PersCollectorObj->showPersonas($id);
+ 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 
-	<form id="frm_trans" name="frm_trans" action ="insert_registro.php" method ="post" class="form-horizontal">
+	<form action ="persona_update.php" method ="post" class="form-horizontal">
     <div class="form-group">
         <label class="control-label col-xs-3" >Inserte un codigo:</label>
         <input MaxLength="3" name="codigo"  class="form-control" placeholder="Codigo">
@@ -25,7 +33,7 @@
 	</div>					
 	<div class="form-group">
 		<label for="registration-number">Cedula:</label>
-		<input name="numero" type="text" class="form-control" id="registration-number" required>
+		<input name="numero" MaxLength="10" type="text" class="form-control" id="registration-number" required>
 	</div>
 	<div class="form-group">
 		<label for="phone">Telefono:</label>
@@ -64,12 +72,8 @@
     
     <br>
     <div class="form-group">
-		<input type="submit" name="registro" class="btn btn-default" value="Registrar">
-		<input type="reset" class="btn btn-primary" value="Limpiar">
-		<br>
-		<input type="button" value="Datos de las personas" OnClick="window.location='persona_list.php'" class="btn btn-primary">	<br>
-		<input type="button" value="Datos de los usuarios" OnClick="window.location='usuarios_list.php'" class="btn btn-primary">	<br>
-		<input type="button" value="Datos de los tipos de persona" OnClick="window.location='tipos_list.php'" class="btn btn-primary">	
+		<input type="submit" name="update" class="btn btn-default" value="Actualizar">
+		<input type="reset" class="btn btn-primary" value="Limpiar">	
     </div>
   </form>
 
