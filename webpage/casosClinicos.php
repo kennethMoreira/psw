@@ -27,19 +27,23 @@
                     <ol>Afta</ol>
                  </ul>
                  
+                  <form action='../mvc/ColectorDeObjetos/casosClinios.php' method='POST'>
+                 <fieldset>
                    <ul class="textocasos" >
-                    <ol>0</ol>
+                    <ol> <label for="caries">0 </label> </ol>
                     <hr/>
-                    <ol>0</ol>
+                    <ol><label for="gingivitis">0 </label></ol>
                     <hr/>
-                    <ol>0</ol>
+                    <ol><label for="peritonitis">0 </label></ol>
                     <hr/>
-                    <ol>0</ol>
+                    <ol><label for="profilaxis">0 </label></ol>
                     <hr/>
-                    <ol>0</ol>
+                    <ol><label for="alitosis">0 </label></ol>
                     <hr/>
-                    <ol>0</ol>
+                    <ol><label for="afta">0</label></ol>
                  </ul>
+		</fieldset>
+                 </form>
                  
              </div>
              

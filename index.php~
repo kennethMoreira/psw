@@ -1,4 +1,4 @@
-< HEAD
+<<<<<<< HEAD
 <?php
 	session_start();
 ?>
@@ -92,7 +92,7 @@
     
 </body>
 </html>
-
+=======
 
 <?php
 	session_start();
@@ -278,3 +278,4 @@
 </body>
 </html>
 
+>>>>>>> 8b0eee200abf18d1ab19afc44c8644003da15da7
