@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Sexo</title>
+<title>ciudad</title>
 <meta charset="utf-8">
 
 </head>
@@ -9,12 +9,12 @@
 <body>
 
 <header>
-  <h1>Administración Sexo</h1>
+  <h1>Administración ciudad</h1>
 </header>
 
-    <?php include 'sexo_list.php' ;
+    <?php include 'ciudad_list.php' ;
    echo "<br>" ;
-    echo "  <a href='sexo_Create.php' >Nuevo Sexo</a> " ;
+    echo "  <a href='ciudad_Create.php' >Nuevo ciudad</a> " ;
     echo "<br> ";
     echo "<br> ";
         echo "  <a href='../administracion.php' >Volver</a> " ;

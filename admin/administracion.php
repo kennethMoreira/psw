@@ -26,6 +26,7 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
                 echo "<a href='registros.php'>Registros</a> <br>";
 
               echo "<a href='sexo/sexoView.php'> Sexo</a> <br>";
+              echo "<a href='ciudad/ciudadView.php'> Ciudad</a> <br>";
 
           
             }

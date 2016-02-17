@@ -2,10 +2,10 @@
   session_start();
   $id = $_GET['id'];
 
- include_once('sexoCollector.php');
+ include_once('ciudadCollector.php');
 
- $sexoCollectorObj = new sexoCollector();
- $objPersona = $sexoCollectorObj->showSexos($id);
+ $ciudadCollectorObj = new ciudadCollector();
+ $objPersona = $ciudadCollectorObj->showciudadID($id);
  
 ?>
 
@@ -13,14 +13,14 @@
 <html lang="en">
 
 
-	<form action ="sexo_update.php" method ="post" class="form-horizontal">
+	<form action ="ciudad_update.php" method ="post" class="form-horizontal">
     <div class="form-group">
         <label class="control-label col-xs-3" >Inserte un id:</label>
         <input MaxLength="3" name="id"  class="form-control" placeholder="id">
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-3">descripcion:</label>
-            <input type="text" name="descripcion" class="form-control" placeholder="descripcion" required>
+        <label class="control-label col-xs-3">nombre:</label>
+            <input type="text" name="nombre" class="form-control" placeholder="nombre" required>
     </div>
     			
 	
@@ -31,5 +31,5 @@
 		<input type="reset" class="btn btn-primary" value="Limpiar">	
     </div>
   </form>
-<a href="sexoView.php">Volver</a>
+<a href="ciudadView.php">Volver</a>
 </html>
