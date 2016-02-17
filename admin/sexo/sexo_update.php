@@ -12,7 +12,7 @@ session_start();
 	$sexoCollectorObj->updateSexo($id,$descripcion);
 
 	
-	echo "Sexo actualizado con exito!<br><a href='sexo_list.php'>Ver los sexos actualizados</a>";
+	echo "Sexo actualizado con exito!<br><a href='sexoView.php'>Ver los sexos actualizados</a>";
 
 
 ?>

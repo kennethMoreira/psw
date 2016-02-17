@@ -12,14 +12,15 @@
   <h1>Administración Sexo</h1>
 </header>
 
-    <?php include 'sexo_list.php' ; ?>  
+    <?php include 'sexo_list.php' ; 
+    ?>  
 
     
 
  <br>
  <a href="sexo_Create.php" >Nuevo Sexo</a> 
- <br>
-  <a href="../administracion.php" >Volver a administracion</a> 
+ 
+<br> <br>
 
 
 <footer>
