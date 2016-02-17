@@ -24,7 +24,7 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
                 //-------------------------
 
                 echo "<a href='registros.php'>Registros</a> <br>";
-                
+          
             }
         }else{
     ?> 
