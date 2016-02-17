@@ -1,6 +1,6 @@
 <?php
-include_once('Tipo_Persona.php');
-include_once('../mvc/ColectorDeObjetos/Collector.php');
+	include_once('Tipo_Persona.php');
+	include_once('Collector.php');
 
   class Tipo_PersonaCollector extends Collector{
 

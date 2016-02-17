@@ -44,8 +44,10 @@ foreach ($persCollector->showPersona() as $c){
 <?php  
 }
 ?>
-
-</html
+</table>
+</div>
+<a href="registros.php" type="button">Volver a los registros</a>
+</html>
 
 
 

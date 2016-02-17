@@ -1,5 +1,30 @@
 <?php
   session_start();
+  include_once("../mvc/ColectorDeObjetos/EnfermedadCollector.php");
+  $objEfermedadCollector = new EnfermedadCollector;
+
+  include_once("../mvc/ColectorDeObjetos/HorarioCollector.php");
+  $objHorarioCollector = new HorarioCollector;
+
+  include_once("../mvc/ColectorDeObjetos/ConsultaCollector.php");
+  $objConsulaCollector = new ConsultaCollector;
+
+  include_once("../mvc/ColectorDeObjetos/UsuarioCollector.php");
+  $UsuarioCollectorObj = new UsuarioCollector();
+  
+  $idEnfermedad=$_POST['enfermedad'];
+  $idHorario=$_POST['fecha'];
+
+  $enfermedad = $objEfermedadCollector->showNombre($idEnfermedad);
+  
+  $horario = $objHorarioCollector->showHorario($idHorario);
+  $idHorario = $horario->getid();
+
+  $idEstudiante = '1';
+  $idUsuario = '2';
+
+  $objConsulaCollector->createConsulta($idHorario, $idEstudiante, $idUsuario, $idHorario);
+
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +33,7 @@
     <?php include '../plantillasPhp/cabecar.php' ; ?>
         <div class="container">
             <div class="row">
-              <?php echo "¡Bienvenido(a) ".$_SESSION['usuario']."!";?>
+              <?php echo "¡Bienvenido(a) ".$usuario."!";?>
                 <div class="col-sm-4 col-md-12"><br>
                     <center> 
                         <img class="persona" src="../img/pasante.png">
@@ -21,84 +46,26 @@
               <div class="cuerpo col-md-6">
               <p>
                 
-                <?php
-              if(isset($_POST['confirmar'])){
-                include_once("ConsultaCollector.php");
-      $objConsultaCollector = new ConsultaCollector();
-      $objConsultaCollector->createConsulta();
-  ?>
   
-  <section>
-    
-    <p>Cita creada con éxito.</p>
-
-  </section>
-  <?php
-    }else{
-      ?>
       <section>
-      <form action="estudianteAsignadoAPaciente.php" method="post">
+      <form action="../mvc/ColectorDeObjetos/insert-cita.php" method="post">
         <?php
-
-        //horario
-        //enfermedad
-        //nivel de estudio
       
-                 echo "<br>Razon de su cita: " .$_SESSION['enf'];
-                 echo "<br>Su cita será programada para el dia " ;
-                 echo "<br>a las "; 
-                 echo "con los datos del estudiante<br>
-                  que se muestran a la derecha; en caso de no<br>
-                  poder seleccione cancelar<br>
-                  y vuelva a intentarlo cuando<br>
-                  tenga disponibilidad de<br>
-                  tiempo. Para confirrmar su<br>
-                  cita seleccione aceptar.<br></p>
-              </div>
-              <div class='cuerpo table-responsive col-md-6'>";
-              
-               echo " <table class='table table-condensed table-hover'>
-                      <br>
-                    <tr>
-                        <td > Nombres: </td>
-                        <td> " ; echo".</td>
-                    </tr>
-                    <tr>
-                        <td> Apellidos:</td>
-                        <td> " ; echo"</td>
-                    </tr>
-                    <tr>
-                        <td> Cédula:</td>
-                        <td> " ; echo "</td>
-                    </tr>
-                    
-                    
-                    <tr> 
-                       <td> Telefono:</td>
-                      <td> " ; echo "</td>                      
-                      </tr> 
-                       <tr> 
-                       <td> Ciudad:</td>
-                      <td> " ; echo "</td>                      
-                      </tr>  
-                     
-                      
-                  </table>
+          echo "<br>Causa de su cita: " .$enfermedad->getnombre();
+          echo "<br>Su cita programada para el dia " .$horario->getfecha();
+          echo "<br>comenzara a las " .$horario->gethora_entrada(); 
+          echo "<br>y terminara a las " .$horario->gethora_salida();
                   
-                 ";
-                 }?>
+        ?>
 
-              </div>
+        </div>
               
-              
-                  <br>
-                  <div class="col-md-12">
-                      <input type="button" class="btn btn-info" name="confirmar" value="Confirmar" /> 
-                      <a href="perfil-paciente.php"><button type="button" class="btn btn-info"> Cancelar</button> </a>
-                  
-                  </div>
+        <br>
+        <div class="col-md-12">      
+          <a type="button" href="perfil-paciente.php" class="btn btn-info" name="confirmar">Aceptar</a> 
+        </div>
                  
-               </form>
+        </form>
                </section>
           </div>
         

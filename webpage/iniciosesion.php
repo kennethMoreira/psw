@@ -23,7 +23,7 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
         <h3>Iniciar sesión</h3>
         <form action="iniciosesion.php" method="POST">
             <fieldset>
-                <label for="usuario">Usuario:</label>
+                <label>Usuario:</label>
                 <input name="usuario" type="text" class="form-control" required>
 			     
                 <label for="name">Contraseña:</label>

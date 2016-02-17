@@ -19,7 +19,8 @@
             </div>
             
             
-            <?php include_once("../mvc/ColectorDeObjetos/PersonaCollector.php");
+            <?php 
+            include_once("../mvc/ColectorDeObjetos/PersonaCollector.php");
             include_once("../mvc/ColectorDeObjetos/SexoCollector.php");
             $usuario =  $_SESSION['usuario'];
            
@@ -31,6 +32,7 @@
             
             $sexo = $persona->getid_sexo();
             $id_sexo = $SexoCollectorObj->ShowSexo($sexo);
+            $idUsuario = $persona->getidPersona();
 
             echo"
             <div class='col-lg-3'>
@@ -40,8 +42,9 @@
                     Información Personal 
                 </div>
                 
-                <div class='cuerpo'>
-                <span><b>Nombre: </b> " .$persona->getnombre(). " " .$persona->getapellido();
+                <div class='cuerpo'>";
+                echo "<span><b>Usuario: </b> " .$idUsuario;
+                echo "<span><b>Nombre: </b> " .$persona->getnombre(). " " .$persona->getapellido();
                 echo "<br>
                 <b>Cédula:</b> " .$persona->getcedula();
                 echo "<br>

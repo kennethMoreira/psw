@@ -14,11 +14,12 @@
     return $ObjUser;
   }
 
-  function ShowUsuarioNombre($usuario){
-    $row=self::$db->getRows("SELECT * FROM usuario WHERE usuario= ? ",array("{$usuario}"));
-    $usuario = new Usuario($row[0]{'id'},$row[0]{'usuario'},$row[0]{'contrasena'},$row[0]{'id_persona'});
-    return $usuario;
-  }
+
+       function ShowUsuarioNombre($usuario){
+          $row=self::$db->getRows("SELECT * FROM usuario WHERE usuario= ?",array("{$usuario}"));
+          $usuario=new Usuario($row[0]{'0'});
+          return $usuario;
+      }
 
     function deleteUsuario($id){
       $deleterow = self::$db->getRow("DELETE FROM usuario WHERE id = ?", array("{$id}"));

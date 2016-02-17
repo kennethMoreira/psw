@@ -1,37 +1,44 @@
  <?php
   class Consulta{
       
-      private $id_enfermedad;
-      private $nombre;
-      private $descripcion;
+      private $id;
+      private $id_estudiante;
+      private $id_paciente;
+      private $id_horario;
       
-      function __construct($id_enfermedad, $nombre,$descripcion){
-          $this->id_enfermedad=$id_enfermedad;
-          $this->nombre=$nombre;
-          $this->descripcion=$descripcion;
+      function __construct($id, $id_estudiante,$id_paciente,$id_horario){
+          $this->id=$id;
+          $this->id_estudiante=$id_estudiante;
+          $this->id_paciente=$id_paciente;
+          $this->id_horario=$id_horario;
 
       }
       
-      function setid_enfermedad($id_enfermedad){
-          $this->id_enfermedad=$id_enfermedad;
+      function setid($id){
+          $this->id=$id;
       }
-      function getid_enfermedad(){
-          $this->id_enfermedad;
+      function getid(){
+          $this->id;
       }
       
-      function setnombre($nombre){
-          $this->nombre=$nombre;
+      function setid_estudiante($id_estudiante){
+          $this->id_estudiante=$id_estudiante;
       }
-      function getnombre(){
-         return $this->nombre;
+      function getid_estudiante(){
+         return $this->id_estudiante;
       }
 
-      function setdescripcion($descripcion){
-          $this->descripcion=$descripcion;
+      function setid_paciente($id_paciente){
+          $this->id_paciente=$id_paciente;
       }
-      function getdescripcion(){
-         return $this->descripcion;
+      function getid_paciente(){
+         return $this->id_paciente;
       }
       
-      
+      function setid_horario($id_horario){
+          $this->id_horario=$id_horario;
+      }
+      function getid_horario(){
+          $this->id_horario;
+      }
   }?>

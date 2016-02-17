@@ -18,7 +18,7 @@
           $this->id=$id;
       }
       function getId(){
-          $this->id;
+          return $this->id;
       }
       
       function setUsuario($usuario){

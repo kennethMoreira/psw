@@ -21,8 +21,8 @@ class PersonaCollector extends Collector
 
   function showPersonas($id) {
     $row = self::$db->getRows("SELECT * FROM persona where id= ? ", array("{$id}")); 
-    $ObjPersona = new Persona($row[0]{'id'},$row[0]{'nombre'},$row[0]{'apellido'},$row[0]{'edad'},$row[0]{'cedula'},$row[0]{'email'},$row[0]{'id_tipo_persona'},$row[0]{'id_sexo'});
-    return $ObjPersona;
+    $ObjRepresentante = new Persona($row[0]{'id'},$row[0]{'nombre'},$row[0]{'apellido'},$row[0]{'edad'},$row[0]{'cedula'},$row[0]{'email'},$row[0]{'id_tipo_persona'},$row[0]{'id_sexo'});
+    return $ObjRepresentante;
   }
 
   function deletePersona($id){

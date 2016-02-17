@@ -11,17 +11,12 @@ session_start();
 	$email=$_POST['mail'];
 	$usuario=$_POST['user'];
 	$clave=$_POST['pass'];
+	$tipo=$_POST['tipo'];
 
 	if ($_POST['sexo'] = 'masculino'){
 		$sexo = '1';
 	}else{
 		$sexo = '2';
-	}
-
-	if ($_POST['tipo'] = 'estudiante'){
-		$tipo = '1';
-	}else{
-		$tipo = '2';
 	}
 
 	$PerCollectorObj = new PersonaCollector();

@@ -1,7 +1,7 @@
 <?php
 
 include_once('Persona.php');
-include_once('Collector.php');
+include_once('../mvc/ColectorDeObjetos/Collector.php');
 
 class PersonaCollector extends Collector
 {
@@ -16,14 +16,17 @@ class PersonaCollector extends Collector
   }
 
   function updatePersona($codigo, $nombre, $apellido, $edad, $cedula, $email, $tipo, $sexo) {
-    $update = self::$db->getRow("Update persona set nombre='$nombre',apellido='$apellido',edad='$edad',cedula='$cedula',email='$email',tipo='$tipo',sexo='$sexo' where id='$codigo'");             
-    return 1;
+    $insertrow = self::$db->updateRow("UPDATE persona SET nombre = ? , apellido = ? , edad = ? , cedula = ? , email  = ? ,  id_tipo_persona = ? , id_sexo = ?  WHERE id = ? ", array( "{$nombre}", "{$apellido}", "{$edad}", "{$cedula}", "{$email}", "{$tipo}", "{$sexo}","{$codigo}"));   
   }
 
   function showPersonas($id) {
     $row = self::$db->getRows("SELECT * FROM persona where id= ? ", array("{$id}")); 
     $ObjRepresentante = new Persona($row[0]{'id'},$row[0]{'nombre'},$row[0]{'apellido'},$row[0]{'edad'},$row[0]{'cedula'},$row[0]{'email'},$row[0]{'id_tipo_persona'},$row[0]{'id_sexo'});
     return $ObjRepresentante;
+  }
+
+  function deletePersona($id){
+    $deleterow = self::$db->getRow("DELETE FROM persona WHERE id = ?", array("{$id}"));
   }
 
  

@@ -4,7 +4,7 @@
 
   class EnfermedadCollector extends Collector{
       
-       
+  
 
        function readEnfermedad(){
            	$rows = self::$db->getRows("SELECT * FROM enfermedad");        
@@ -17,10 +17,10 @@
       }
 
       function showNombre($id){
-        $row=self::$db->getRows("Select * From enfermedad where id= ?",array("{$id}"));
+        $row=self::$db->getRows("SELECT * FROM enfermedad WHERE id = ?",array("{$id}"));
         $ObjEnf =new Enfermedad($row[0]{'id'}, $row[0]{'nombre'}, $row[0]{'descripcion'});
           
-          return $ObjEnf;
+        return $ObjEnf;
       }
 
 
