@@ -22,7 +22,7 @@
 		<input type="submit" name="registro" class="btn btn-default" value="Registrar">
 		<input type="reset" class="btn btn-primary" value="Limpiar">
 		<br>
-		<a href="tipo_list">Volver</a>
+		<a href="tipo_list.php">Volver</a>
     </div>
   </form>
 
