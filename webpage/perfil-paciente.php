@@ -1,5 +1,9 @@
 <?php
 	session_start();
+    include_once("../mvc/ColectorDeObjetos/PersonaCollector.php");
+    include_once("../mvc/ColectorDeObjetos/SexoCollector.php");
+    $usuario =  $_SESSION['usuario'];
+
 ?>
 
 <!DOCTYPE html>
@@ -20,9 +24,6 @@
             
             
             <?php 
-            include_once("../mvc/ColectorDeObjetos/PersonaCollector.php");
-            include_once("../mvc/ColectorDeObjetos/SexoCollector.php");
-            $usuario =  $_SESSION['usuario'];
            
 
             $PersonaCollectorObj = new PersonaCollector;
@@ -41,8 +42,9 @@
                 <div class='titu'>
                     Información Personal 
                 </div>
-                
+
                 <div class='cuerpo'>";
+
                 echo "<span><b>Usuario: </b> " .$idUsuario;
                 echo "<span><b>Nombre: </b> " .$persona->getnombre(). " " .$persona->getapellido();
                 echo "<br>
@@ -58,13 +60,11 @@
             </div> "
             
             ?>
-
-
                    <!--      <a class="editar col-md-12" href="editar-estudiante.php">Editar perfil</a> -->
 
 
             <div class="col-lg-12">
-                <a class="botonesGhost" href="atencion.php">Solicitar consulta</a>
+                <a class="botonesGhost" href="atencion.php?id_paciente=<?php echo $idUsuario ?>">Solicitar consulta</a>
                 
                 
             </div>

@@ -8,15 +8,21 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-
-	<form id="frm_trans" name="frm_trans" action ="insert_registro.php" method ="post" class="form-horizontal">
+<head>
+	<link rel="stylesheet" href="../css/generico.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container col-lg-6 col-md-6">
+	<form name="frm_trans" action ="insert_registro.php" method ="post" class="form-horizontal">
+		<label class="cuerpo"><h3>Llene el formulario para crear un nuevo registro</h3></label>
+<br>
     <div class="form-group">
-        <label class="control-label col-xs-3" >Inserte un codigo:</label>
+        <label >Inserte un codigo:</label>
         <input MaxLength="3" name="codigo"  class="form-control" placeholder="Codigo" required>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-3">Nombre:</label>
+        <label>Nombre:</label>
             <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
     </div>
     <div class="form-group">
@@ -72,14 +78,21 @@
 	
     
     <br>
-    <div class="form-group">
+    
 		<input type="submit" name="registro" class="btn btn-default" value="Registrar">
 		<input type="reset" class="btn btn-primary" value="Limpiar">
-		<br>
-		<input type="button" value="Datos de las personas" OnClick="window.location='persona_list.php'" class="btn btn-primary">	<br>
-		<input type="button" value="Datos de los usuarios" OnClick="window.location='usuario_list.php'" class="btn btn-primary">	<br>
-		<input type="button" value="Datos de los tipos de persona" OnClick="window.location='tipo_list.php'" class="btn btn-primary">	
-    </div>
+		<input type="button" value="Volver a la administracion" OnClick="window.location='administracion.php'" class="btn btn-primary">
+		</div>
+		<div class="col-lg-6 col-md-6">
+			<br>
+			<br>
+			<br>
+		<input type="button" value="Datos de las personas" OnClick="window.location='persona_list.php'" class="btn btn-primary">	<br><br>
+		<input type="button" value="Datos de los usuarios" OnClick="window.location='usuario_list.php'" class="btn btn-primary">	<br><br>
+		<input type="button" value="Datos de los tipos de persona" OnClick="window.location='tipo_list.php'" class="btn btn-primary"><br>
+		
+</div>
+    
   </form>
-
+</body>
 </html>

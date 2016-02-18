@@ -12,18 +12,8 @@
   include_once("../mvc/ColectorDeObjetos/UsuarioCollector.php");
   $UsuarioCollectorObj = new UsuarioCollector();
   
-  $idEnfermedad=$_POST['enfermedad'];
-  $idHorario=$_POST['fecha'];
 
-  $enfermedad = $objEfermedadCollector->showNombre($idEnfermedad);
   
-  $horario = $objHorarioCollector->showHorario($idHorario);
-  $idHorario = $horario->getid();
-
-  $idEstudiante = '1';
-  $idUsuario = '2';
-
-  $objConsulaCollector->createConsulta($idHorario, $idEstudiante, $idUsuario, $idHorario);
 
 ?>
 
@@ -46,7 +36,21 @@
               <div class="cuerpo col-md-6">
               <p>
                 
+  <?php
+  $idEnfermedad=$_POST['enfermedad'];
+  $idHorario=$_POST['fecha'];
+
+  $enfermedad = $objEfermedadCollector->showNombre($idEnfermedad);
   
+  $horario = $objHorarioCollector->showHorario($idHorario);
+  $idHorario = $horario->getid();
+
+  $idEstudiante = '1';
+
+  $id_Paciente = $_GET['id_paciente'];
+  
+  $objConsulaCollector->createConsulta($idHorario, $idEstudiante, $id_Paciente, $idHorario);
+  ?>
       <section>
       <form action="../mvc/ColectorDeObjetos/insert-cita.php" method="post">
         <?php
@@ -62,7 +66,7 @@
               
         <br>
         <div class="col-md-12">      
-          <a type="button" href="perfil-paciente.php" class="btn btn-info" name="confirmar">Aceptar</a> 
+          <a type="button" href="perfil-paciente.php" class="btn btn-info" name="confirmar">Volver al perfil</a> 
         </div>
                  
         </form>

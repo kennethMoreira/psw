@@ -16,11 +16,11 @@
 <form action ="tipo_update.php" method ="post" class="form-horizontal">
     <div class="form-group">
         <label class="control-label col-xs-3" >Inserte un codigo:</label>
-        <input MaxLength="3" name="codigo"  class="form-control" placeholder="Codigo">
+        <input MaxLength="3" name="codigo"  class="form-control" placeholder="Codigo" value = "<?php echo $objTipo->getId_Tipo(); ?>">
     </div>
 	<div class="form-group">
 		<label>Descripcion</label>
-		<input name="descripcion" type="descripcion" class="form-control">
+		<input name="descripcion" type="descripcion" class="form-control" value = "<?php echo $objTipo->getDescripcion(); ?>">
 	</div>					
     
     <br>

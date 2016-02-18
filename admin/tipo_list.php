@@ -26,7 +26,7 @@ foreach ($tipoCollectorObj->ReadTipo() as $c){
      <td><?php echo $c->getDescripcion() ?></td>
      
      <td><a href="tipo_edit.php?codigo=<?php echo $c->getid_tipo() ?>">Editar</a></td>
-     <!-- <td><a href="tipo_delete.php?codigo=<?php echo $c->getid_tipo() ?>">Eliminar</a></td>-->
+     <td><a href="tipo_delete.php?codigo=<?php echo $c->getid_tipo() ?>">Eliminar</a></td>
 
   </tr>
   </tbody> 

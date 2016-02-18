@@ -29,7 +29,9 @@ class PersonaCollector extends Collector
     $deleterow = self::$db->getRow("DELETE FROM persona WHERE id = ?", array("{$id}"));
   }
 
- 
+  function deletePersonaT($id){
+    $deleterow = self::$db->getRow("DELETE FROM persona WHERE id_tipo_persona = ?", array("{$id}"));
+  }
 
   function showTipo($id){
     $row=self::$db->getRows("Select * From persona where Id= ?",array("{$id}"));

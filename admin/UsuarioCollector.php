@@ -40,6 +40,11 @@ include_once('../mvc/ColectorDeObjetos/Collector.php');
     $insertrow = self::$db->updateRow("UPDATE usuario SET usuario = ? , contrasena = ? , id_persona = ?  WHERE id = ? ", array( "{$usuario}", "{$clave}", "{$idPersona}", "{$codigo}"));   
   }
 
+  function showEstudiantes($id) {
+    $row = self::$db->getRows("SELECT * FROM usuario where id_persona= ? ", array("{$id}")); 
+    $ObjUser = new Usuario($row[0]{'id'},$row[0]{'usuario'},$row[0]{'contrasena'},$row[0]{'id_persona'});
+    return $ObjUser;
+  }
  
 
 

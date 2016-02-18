@@ -61,7 +61,6 @@
 
             <div class="col-lg-12">
                 <a class="botonesGhost" href="casosClinicos.php">Mis casos clinicos</a>
-                <a class="botonesGhost" href="pacientesASerTratados.php">Mis pacientes</a>
             </div>
                  
     </div>
