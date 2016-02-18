@@ -12,7 +12,6 @@ session_start();
 	$sexoCollectorObj->updateSexo($id,$descripcion);
 
 	
-	echo "Sexo actualizado con exito!<br><a href='sexoView.php'>Ver los sexos actualizados</a>";
-
-
-?>
+	?>
+<br>
+ <input type="button" value="Sexo actualizado con exito!" OnClick="window.location='sexoView.php'" class="btn btn-primary">   

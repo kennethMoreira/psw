@@ -11,7 +11,7 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
 
 <!DOCTYPE html>
 <html lang="en">
-<?php include '../plantillasPhp/cabecar.php' ; ?>
+<?php include '../plantillasPhp/cabecar.php';?>
                 <!--//
                 //-AQUI PONGAN SUS ENLACES-
               
