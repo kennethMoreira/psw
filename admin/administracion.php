@@ -20,6 +20,11 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
     <input type="button" value="Crear un nuevo registro" OnClick="window.location='registros.php'" class="btn btn-primary">    <br>
         
         <a href='sexo/sexoView.php'> Sexo</a> <br>
+        <a href='ciudad/ciudadView.php'> Ciudad</a> <br>";
+            <a href='direccion/direccionView.php'> Direccion</a> <br>
+                        <a href='telefono/telefonoView.php'> Telefono</a> <br>
+
+
 </div>
 
     <?php include '../plantillasPhp/foot.php' ; ?>  
