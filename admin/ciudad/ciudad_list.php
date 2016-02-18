@@ -8,6 +8,7 @@ session_start();
 
 <!doctype html>
 <html lang="es">
+<title>Listar Ciudades</title>
 	<div class="table-responsive">
     <table>
         <thead>
@@ -27,8 +28,13 @@ foreach ($ciudadCollector->showciudad() as $c){
      <td><?php echo $c->getnombre() ?></td>
      
 
-     <td><a href="ciudad_edit.php?id=<?php echo $c->getidciudad() ?>">Editar</a></td>
-     <td><a href="ciudad_delete.php?id=<?php echo $c->getidciudad() ?>">Eliminar</a></td>
+     <td><input type="button" value="Editar" OnClick="window.location='ciudad_edit.php?id=<?php echo $c->getidciudad() ?>'" class="btn btn-primary">
+     </td>
+     
+     <td>
+     <input type="button" value="Eliminar" OnClick="window.location='ciudad_delete.php?id=<?php echo $c->getidciudad() ?>'" class="btn btn-primary">
+     </td>
+     
   </tr>
   </tbody> 
  

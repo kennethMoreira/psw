@@ -4,6 +4,8 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<title>Crear Ciudad</title>
+
 
 
 	<form id="frm_trans" name="frm_trans" action ="ciudad_insert.php" method ="post" class="form-horizontal">
@@ -22,7 +24,8 @@
 		<input type="submit" name="registro" class="btn btn-default" value="Registrar">
 		<input type="reset" class="btn btn-primary" value="Limpiar">
 		<br>
-		<a href="ciudadView.php">Volver</a>
+		         <input type="button" value="Volver" OnClick="window.location='ciudadView.php'" class="btn btn-primary">   
+
     </div>
   </form>
 

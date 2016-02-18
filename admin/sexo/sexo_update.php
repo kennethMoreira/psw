@@ -14,4 +14,4 @@ session_start();
 	
 	?>
 <br>
- <input type="button" value="Sexo actualizado con exito!" OnClick="window.location='sexoView.php'" class="btn btn-primary">   
+ <input type="button" value="Sexo actualizado con éxito!" OnClick="window.location='sexoView.php'" class="btn btn-primary">   

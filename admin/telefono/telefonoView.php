@@ -13,13 +13,13 @@
 </header>
 
     <?php include 'telefono_list.php' ;
-   echo "<br>" ;
-    echo "  <a href='telefono_Create.php' >Nuevo telefono</a> " ;
-    echo "<br> ";
-    echo "<br> ";
-        echo "  <a href='../administracion.php' >Volver</a> " ;
-
+   
     ?>  
+    <br>
+     <input type="button" value="Nuevo teléfono" OnClick="window.location='telefono_Create.php'" class="btn btn-primary">   
+
+     <input type="button" value="Volver" OnClick="window.location='../administracion.php'" class="btn btn-primary">   
+
 
     
 

@@ -12,7 +12,17 @@ session_start();
 	$ciudadCollectorObj->updateciudad($id,$nombre);
 
 	
-	echo "ciudad actualizada con exito!<br><a href='ciudadView.php'>Ver los ciudades actualizadas</a>";
+	echo "ciudad actualizada con éxito!<br>";
 
 
 ?>
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>Actualizar Ciudades</title>
+</head>
+<body>
+<input type="button" value="Ver las ciudades actualizadas" OnClick="window.location='ciudadView.php'" class="btn btn-primary">  
+</body>
+</html>
+ 

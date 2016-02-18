@@ -11,4 +11,4 @@
  echo "Sexo eliminado exito!<br>";
 
 ?>
-         <input type="button" value="Ver los sexox actualizados" OnClick="window.location='sexoView.php'" class="btn btn-primary">  
+         <input type="button" value="Ver los sexos actualizados" OnClick="window.location='sexoView.php'" class="btn btn-primary">  

@@ -13,14 +13,12 @@
 </header>
 
     <?php include 'ciudad_list.php' ;
-   echo "<br>" ;
-    echo "  <a href='ciudad_Create.php' >Nuevo ciudad</a> " ;
-    echo "<br> ";
-    echo "<br> ";
-        echo "  <a href='../administracion.php' >Volver</a> " ;
+  
 
     ?>  
-
+    <br>
+<input type="button" value="Nueva Ciudad" OnClick="window.location='ciudad_Create.php'" class="btn btn-primary">
+ <input type="button" value="Volver" OnClick="window.location='../administracion.php'" class="btn btn-primary"> 
     
 
  

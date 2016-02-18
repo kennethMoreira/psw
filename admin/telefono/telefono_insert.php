@@ -8,6 +8,18 @@ session_start();
     $tipotelefonoObj = new telefonoCollector();
     $tipotelefonoObj->createtelefono($id,$numero, $id_persona);
 
-    echo "telefono creado con exito!<br><a href='telefonoView.php'>Volver</a>";
+    echo "telefono creado con exito!<br>";
 
 ?>
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>Insertar Teléfono</title>
+
+</head>
+
+<body>
+ <input type="button" value="Volver" OnClick="window.location='telefonoView.php'" class="btn btn-primary">   
+
+</body>
+</html>

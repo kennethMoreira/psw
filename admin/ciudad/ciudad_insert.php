@@ -8,6 +8,16 @@ session_start();
     $tipociudadObj = new ciudadCollector();
     $tipociudadObj->createciudad($id,$nombre);
 
-    echo "ciudad creada con exito!<br><a href='ciudadView.php'>Volver</a>";
+    echo "ciudad creada con éxito!<br>";
 
 ?>
+
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>Insertar Ciudad</title>
+</head>
+<body>
+         <input type="button" value="Volver" OnClick="window.location='ciudadView.php'" class="btn btn-primary">  
+</body>
+</html>

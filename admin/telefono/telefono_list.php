@@ -29,8 +29,13 @@ foreach ($telefonoCollector->showtelefono() as $c){
           <td><?php echo $c->getid_persona() ?></td>
      
 
-     <td><a href="telefono_edit.php?id=<?php echo $c->getidtelefono() ?>">Editar</a></td>
-     <td><a href="telefono_delete.php?id=<?php echo $c->getidtelefono() ?>">Eliminar</a></td>
+     <td>
+ <input type="button" value="Editar" OnClick="window.location='telefono_edit.php?id=<?php echo $c->getidtelefono() ?>'" class="btn btn-primary">
+     </td>
+     
+     <td>
+      <input type="button" value="Eliminar" OnClick="window.location='telefono_delete.php?id=<?php echo $c->getidtelefono() ?>'" class="btn btn-primary">
+     </td>
   </tr>
   </tbody> 
  
