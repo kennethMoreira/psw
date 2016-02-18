@@ -15,7 +15,7 @@ session_start();
 </head>
 <body>
   <div class="cuerpo container">
-    <h4>Listado de tipo de personas almacenados en la base de datos</h4>
+    <h4><b>Listado de tipo de personas almacenados en la base de datos</b></h4>
 ¡ATENCION! Si borra un tipo de persona, automaticamente las personas que contengan ese id del tipo de persona tendran '0'
 <br>
 	<div class="table-responsive">

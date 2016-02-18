@@ -18,7 +18,7 @@
 </head>
 <body>
   <div class="container cuerpo">
-<h4>Actualizar un usuario</h4>
+<h4><b>Actualizar un usuario</b></h4>
 	<br>
 
 <form action ="usuario_update.php" method ="post" class="form-horizontal">

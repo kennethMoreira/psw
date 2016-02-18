@@ -25,7 +25,7 @@ $tipoCollectorObj = new Tipo_PersonaCollector();
 </head>
 <body>
   <div class="container cuerpo">
-<h2>Actualizar una persona</h2>
+<h2><b>Actualizar una persona</b></h2>
 
 <form action ="persona_update.php" method ="post" class="form-horizontal">
     <div class="form-group">

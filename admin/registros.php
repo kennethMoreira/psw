@@ -14,9 +14,9 @@
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 <body>
-	<div class="container col-lg-6 col-md-6">
+	<div class="cuerpo container col-lg-6 col-md-6">
 	<form name="frm_trans" action ="insert_registro.php" method ="post" class="form-horizontal">
-		<label class="cuerpo"><h3>Llene el formulario para crear un nuevo registro</h3></label>
+		<label><h2><b>Llene el formulario para crear un nuevo registro</b></h2></label>
 <br>
     <div class="form-group">
         <label >Inserte un codigo:</label>

@@ -15,7 +15,7 @@ session_start();
 </head>
 <body>
   <div class="container cuerpo">
-    <h2>Listado de usuarios registrados en la base de datos </h2>
+    <h4><b>Listado de usuarios registrados en la base de datos </b></h4>
 	<div class="table-responsive">
     <table class="table table-condensed table-bordered">
         <thead>

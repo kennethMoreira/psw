@@ -18,12 +18,12 @@
 </head>
 <body>
   <div class="container cuerpo">
-<h4>Actualizar un tipo de persona</h4>
+<h4><b>Actualizar un tipo de persona</b></h4>
 <br>
 
 <form action ="tipo_update.php" method ="post" class="form-horizontal">
     <div class="form-group">
-        <label class="control-label col-xs-3" >Inserte un codigo:</label>
+        <label>Inserte un codigo:</label>
         <input MaxLength="3" name="codigo"  placeholder="Codigo" value = "<?php echo $objTipo->getId_Tipo(); ?>">
     </div>
 	<div class="form-group">
