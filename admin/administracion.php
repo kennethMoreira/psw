@@ -22,7 +22,11 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
   <br>  <input type="button" value="Administrar Ciudades" OnClick="window.location='ciudad/ciudadView.php'" class="btn btn-primary">    <br>
    <br> <input type="button" value="Administrar direcciones" OnClick="window.location='direccion/direccionView.php'" class="btn btn-primary">    <br>
    <br> <input type="button" value="Administrar teléfonos" OnClick="window.location='telefono/telefonoView.php'" class="btn btn-primary">    <br>
-        
+   <br> <input type="button" value="Administrar Enfermedades" OnClick="window.location='crudEnfermedad/index.php'" class="btn btn-primary">    <br>
+   <br> <input type="button" value="Administrar Consulta Por Enfermedad" OnClick="window.location='crudConsultaPorEnfermedad/index.php'" class="btn btn-primary">    <br>
+   <br> <input type="button" value="Administrar Diagnostico" OnClick="window.location='crudDiagnostico/index.php'" class="btn btn-primary">    <br> 
+   <br> <input type="button" value="Administrar registro de actividades" OnClick="window.location='crudRegistroActividad/index.php'" class="btn btn-primary">    <br>
+   <br> <input type="button" value="Administrar Ayudas" OnClick="window.location='crudAyuda/index.php'" class="btn btn-primary">    <br>   
       
 
 
