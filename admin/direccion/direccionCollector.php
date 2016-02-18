@@ -16,13 +16,16 @@ class direccionCollector extends Collector
   }
 
    function createdireccion ($id, $parroquia, $calle_principal, $numero, $descripcion, $id_persona, $id_ciudad) {
-    $new_row = self::$db->getRow("INSERT INTO direccion(id,parroquia,calle_principal,numero,descripcion,id_persona,id_ciudad) VALUES (?,?,?,?,?,?,?)", array("{$id}","{$parroquia}","{$calle_principal}","{$numero}","{$descripcion}","{$descripcion}","{$id_persona}","{$id_ciudad}"));
+    $new_row = self::$db->getRow("INSERT INTO direccion (id,parroquia,calle_principal,numero,descripcion,id_persona,id_ciudad) VALUES (?,?,?,?,?,?,?)", array("{$id}","{$parroquia}","{$calle_principal}","{$numero}","{$descripcion}","{$id_persona}","{$id_ciudad}"));
     
   }
 
+
   
 function updatedireccion($id, $parroquia, $calle_principal, $numero, $descripcion, $id_persona, $id_ciudad) {
-    $insertrow = self::$db->updateRow("UPDATE direccion SET parroquia = ? , calle_principal = ? , numero = ? , descripcion = ? , id_persona  = ? ,  id_ciudad = ?   WHERE id = ? ", array( "{$parroquia}", "{$calle_principal}", "{$numero}", "{$descripcion}", "{$id_persona}", "{$id_ciudad}", "{$sexo}","{$id}"));   
+   $update = self::$db->getRow("Update direccion set parroquia='$parroquia', calle_principal='$calle_principal', numero='$numero', descripcion='$descripcion', id_persona='$id_persona', id_ciudad='$id_ciudad' where id='$id'");             
+    return 1;
+       
   }
 
   function deletedireccion($id){
@@ -32,7 +35,7 @@ function updatedireccion($id, $parroquia, $calle_principal, $numero, $descripcio
 
   function showdireccionID($id) {
     $row = self::$db->getRows("SELECT * FROM direccion where id= ? ", array("{$id}")); 
-    $ObjRepresentante = new direccion($row[0]{'id'},$row[0]{'parroquia'});
+    $ObjRepresentante = new direccion($row[0]{'id'},$row[0]{'parroquia'},$row[0]{'calle_principal'},$row[0]{'numero'},$row[0]{'descripcion'},$row[0]{'id_persona'},$row[0]{'id_ciudad'});
     return $ObjRepresentante;
   }
 
