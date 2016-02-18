@@ -3,7 +3,7 @@ include_once("enfermedadCollector.php");
 $enfermedadCollectorObj = new enfermedadCollector();
 ?>
 <table>
-<tr><td><a href="formularioEnfermedadInsert.php"><button> Nuevo </button></a></td></tr>
+<tr><td><a href="formularioEnfermedadInsert.php">Nuevo</a></td></tr>
 <tr>
 	<th>ID</th>
 	<th>Enfermedad</th>

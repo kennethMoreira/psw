@@ -30,7 +30,7 @@ class enfermedadCollector extends Collector
     }
 
 function createEnfermedad($id, $nombre, $descripcion) {    
-    $insertrow = self::$db->insertRow("INSERT INTO enfermedad (id, nombre, descripcion) VALUES (?, ?, ?)", 	array("{$id}", "{$nombre}", "{$descripcion}"));
+    $insertrow = self::$db->insertRow("INSERT INTO enfermedad (id, nombre, descripcion) VALUES (?, ?, ?)", 	array("{$nombre}", "{$nombre}", "{$descripcion}"));
   }  
 
   function showEnfermedad($id) {
