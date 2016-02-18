@@ -29,11 +29,11 @@ $tipoCollectorObj = new Tipo_PersonaCollector();
 
 <form action ="persona_update.php" method ="post" class="form-horizontal">
     <div class="form-group">
-        <label class="control-label col-xs-3" >Inserte un codigo:</label>
+        <label >Inserte un codigo:</label>
         <input MaxLength="3" name="codigo"   placeholder="Codigo" value = "<?php echo $objPersona->getidPersona(); ?>">
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-3">Nombre:</label>
+        <label>Nombre:</label>
             <input type="text" name="nombre" placeholder="Nombre" required  value = "<?php echo $objPersona->getnombre(); ?>">
     </div>
     <div class="form-group">
