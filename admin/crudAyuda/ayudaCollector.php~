@@ -20,10 +20,10 @@ class ayudaCollector extends Collector
   
   
   function readAyudas(){
-        $rows = self::$db->getRows("SELECT * FROM ayuda Order by id_ayuda");
+        $rows = self::$db->getRows("SELECT * FROM ayuda Order by id");
         $arrayayuda = array();
         foreach ($rows as $c){
-            $aux = new Ayuda($c{'id_ayuda'},$c{'nombre'},$c{'email'},$c{'mensaje'});
+            $aux = new Ayuda($c{'id'},$c{'nombre'},$c{'email'},$c{'mensaje'});
             array_push($arrayayuda, $aux);
           }
         return $arrayayuda;
@@ -35,16 +35,16 @@ function createAyuda($nombre, $email, $mensaje) {
 
   function showAyuda($id) {
     $row = self::$db->getRows("SELECT * FROM ayuda where id_ayuda= ? ", array($id)); 
-    $Objayuda = new ayuda($row[0]{'id_ayuda'},$row[0]{'nombre'},$row[0]{'email'},$row[0]{'mensaje'});
+    $Objayuda = new ayuda($row[0]{'id'},$row[0]{'nombre'},$row[0]{'email'},$row[0]{'mensaje'});
     return $Objayuda;
   }
 
   function updateAyuda($id,$nombre,$email,$mensaje) {    
-    $insertrow = self::$db->updateRow("UPDATE ayuda SET nombre = ? , email  = ? ,  mensaje = ?  WHERE id_ayuda = ? ", array( "{$nombre}", "{$email}","{$mensaje}",$id));
+    $insertrow = self::$db->updateRow("UPDATE ayuda SET nombre = ? , email  = ? ,  mensaje = ?  WHERE id = ? ", array( "{$nombre}", "{$email}","{$mensaje}",$id));
   }  
 
   function deleteAyuda($id) {    
-    $deleterow = self::$db->deleteRow("DELETE FROM ayuda WHERE id_ayuda = ?", array($id));
+    $deleterow = self::$db->deleteRow("DELETE FROM ayuda WHERE id = ?", array($id));
   }  
 
 

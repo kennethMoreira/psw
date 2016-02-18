@@ -8,8 +8,8 @@
 	<body>
 		<h1>Administracion</h1>
 
-		<h2>Ayudas</h2>
-		<?php include_once "ayudaVista.php" ?>
+		<h2>Registro de actividad</h2>
+		<?php include_once "registroActividadVista.php" ?>
 
 	</body>
 </html>

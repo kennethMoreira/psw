@@ -4,6 +4,12 @@ $ayudaCollectorObj = new ayudaCollector();
 ?>
 <table>
 <tr><td><a href="formularioAyudaInsert.php">Nuevo</a></td></tr>
+<tr>
+		<th>ID</th>
+		<th>nombre</th>
+		<th>Email</th>
+		<th>Mensaje</th>
+	</tr>
 <?php
 foreach ($ayudaCollectorObj->readAyudas() as $c){
   echo "<tr>";
