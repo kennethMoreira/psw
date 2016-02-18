@@ -18,28 +18,35 @@ $tipoCollectorObj = new Tipo_PersonaCollector();
 
 <!DOCTYPE html>
 <html lang="en">
-
+<meta charset="UTF-8">
+<head>
+  <link rel="stylesheet" href="../css/generico.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container cuerpo">
+<h2>Actualizar una persona</h2>
 
 <form action ="persona_update.php" method ="post" class="form-horizontal">
     <div class="form-group">
         <label class="control-label col-xs-3" >Inserte un codigo:</label>
-        <input MaxLength="3" name="codigo"  class="form-control" placeholder="Codigo" value = "<?php echo $objPersona->getidPersona(); ?>">
+        <input MaxLength="3" name="codigo"   placeholder="Codigo" value = "<?php echo $objPersona->getidPersona(); ?>">
     </div>
     <div class="form-group">
         <label class="control-label col-xs-3">Nombre:</label>
-            <input type="text" name="nombre" class="form-control" placeholder="Nombre" required  value = "<?php echo $objPersona->getnombre(); ?>">
+            <input type="text" name="nombre" placeholder="Nombre" required  value = "<?php echo $objPersona->getnombre(); ?>">
     </div>
     <div class="form-group">
 		<label for="apellido">Apellido:</label>
-		<input name="apellido" type="text" class="form-control" placeholder="Apellido" required  value = "<?php echo $objPersona->getapellido(); ?>">
+		<input name="apellido" type="text" placeholder="Apellido" required  value = "<?php echo $objPersona->getapellido(); ?>">
 	</div>
 	<div class="form-group">
 		<label for="edad">Edad:</label>
-		<input name="edad" type="text" class="form-control" required  value = "<?php echo $objPersona->getedad(); ?>">
+		<input name="edad" type="text" required  value = "<?php echo $objPersona->getedad(); ?>">
 	</div>					
 	<div class="form-group">
 		<label for="registration-number">Cedula:</label>
-		<input name="numero" MaxLength="10" type="text" class="form-control" id="registration-number" required value = "<?php echo $objPersona->getcedula(); ?>">
+		<input name="numero" MaxLength="10" type="text" id="registration-number" required value = "<?php echo $objPersona->getcedula(); ?>">
 	</div>
 	<div class="form-group">
 		<label for="sexo">Sexo:</label>
@@ -82,5 +89,6 @@ $tipoCollectorObj = new Tipo_PersonaCollector();
 		<input type="reset" class="btn btn-primary" value="Limpiar">	
     </div>
   </form>
-
+</div>
+</body>
 </html>
