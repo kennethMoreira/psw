@@ -43,6 +43,9 @@ class PersonaCollector extends Collector
     
   }
 
+  function edit($tipo, $id) {
+    $insertrow = self::$db->updateRow("UPDATE persona SET id_tipo_persona = ?  WHERE id_tipo_persona = ? ", array( "{$tipo}", "{$id}"));   
+  }
 //¡ATENCIÓN EN ESTA PARTE!
 
 

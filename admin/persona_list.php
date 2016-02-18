@@ -8,8 +8,16 @@ session_start();
 
 <!doctype html>
 <html lang="es">
-	<div class="table-responsive">
-    <table>
+<meta charset="UTF-8">
+<head>
+  <link rel="stylesheet" href="../css/generico.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<div class="cuerpo container table-responsive">
+    <h2>Listado de personas registradas en la base de datos</h2>
+
+    <table class="table table-condensed table-bordered">
         <thead>
             <tr>
                 <th>Codigo</th>
@@ -46,7 +54,9 @@ foreach ($persCollector->showPersona() as $c){
 ?>
 </table>
 </div>
-<a href="registros.php" type="button">Volver a los registros</a>
+<br><br>
+<input type="button" value="Volver a los registros" OnClick="window.location='registros.php'" class="btn btn-primary"> 
+</body>
 </html>
 
 

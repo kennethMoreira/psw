@@ -8,6 +8,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="UTF-8">
 <head>
 	<link rel="stylesheet" href="../css/generico.css">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -19,27 +20,27 @@
 <br>
     <div class="form-group">
         <label >Inserte un codigo:</label>
-        <input MaxLength="3" name="codigo"  class="form-control" placeholder="Codigo" required>
+        <input MaxLength="3" name="codigo" placeholder="Codigo" required>
     </div>
     <div class="form-group">
         <label>Nombre:</label>
-            <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
+            <input type="text" name="nombre" placeholder="Nombre" required>
     </div>
     <div class="form-group">
 		<label for="apellido">Apellido:</label>
-		<input name="apellido" type="text" class="form-control" placeholder="Apellido" required>
+		<input name="apellido" type="text" placeholder="Apellido" required>
 	</div>
 	<div class="form-group">
 		<label for="edad">Edad:</label>
-		<input name="edad" type="text" class="form-control" placeholder="Edad" required>
+		<input name="edad" type="text" placeholder="Edad" required>
 	</div>					
 	<div class="form-group">
 		<label for="registration-number">Cedula:</label>
-		<input name="numero" type="text" class="form-control" id="registration-number" placeholder="Cedula" required>
+		<input name="numero" type="text" id="registration-number" placeholder="Cedula" required>
 	</div>
 	<div class="form-group">
 		<label for="phone">Telefono:</label>
-		<input name="telefono" type="tel" class="form-control" id="phone" placeholder="Telefono" required>
+		<input name="telefono" type="tel" id="phone" placeholder="Telefono" required>
 	</div>
 	<div class="form-group">
 		<label for="tipo">Tipo de persona:</label>
@@ -62,17 +63,17 @@
 	</div>
 	<div class="form-group">
 		<label for="pwd">Usuario:</label>
-		<input name="user" type="user" class="form-control" id="user" placeholder="Usuario" required>
+		<input name="user" type="user" id="user" placeholder="Usuario" required>
 	</div>
 						<!-- Email -->
 	<div class="form-group">
 		<label for="email">Email:</label>
-		<input name="mail" type="email" class="form-control" id="email" placeholder="E-mail" required>
+		<input name="mail" type="email"  id="email" placeholder="E-mail" required>
 	</div>
 						<!-- Contraseña -->
 	<div class="form-group">
 		<label for="pwd">Contraseña:</label>
-		<input name="pass" type="password" class="form-control" id="pwd" placeholder="Contraseña" required>
+		<input name="pass" type="password" id="pwd" placeholder="Contraseña" required>
 	</div>
 							
 	
