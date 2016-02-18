@@ -8,6 +8,7 @@ session_start();
     $tipoSexoObj = new sexoCollector();
     $tipoSexoObj->createSexo($id,$descripcion);
 
-    echo "Sexo creado con exito!<br><a href='sexoView.php'>Volver</a>";
+    echo "Sexo creado con exito!";
 
 ?>
+         <input type="button" value="Volver" OnClick="window.location='sexoView.php'" class="btn btn-primary">  

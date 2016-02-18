@@ -13,15 +13,13 @@
 </header>
 
     <?php include 'sexo_list.php' ;
-   echo "<br>" ;
-    echo "  <a href='sexo_Create.php' >Nuevo Sexo</a> " ;
-    echo "<br> ";
-    echo "<br> ";
-        echo "  <a href='../administracion.php' >Volver</a> " ;
-
+   
     ?>  
 
-    
+        <br>
+<input type="button" value="Nuevo Sexo" OnClick="window.location='sexo_Create.php'" class="btn btn-primary">
+ <input type="button" value="Volver" OnClick="window.location='../administracion.php'" class="btn btn-primary">   
+
 
  
 

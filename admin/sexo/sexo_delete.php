@@ -8,6 +8,7 @@
  $SexoCollectorObj = new sexoCollector();
  $SexoCollectorObj->deleteSexo($id);
 
- echo "Sexo eliminado exito!<br><a href='sexoView.php'>Ver los sexos actualizados</a>";
+ echo "Sexo eliminado exito!<br>";
 
 ?>
+         <input type="button" value="Ver los sexox actualizados" OnClick="window.location='sexoView.php'" class="btn btn-primary">  

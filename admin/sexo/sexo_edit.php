@@ -31,5 +31,7 @@
 		<input type="reset" class="btn btn-primary" value="Limpiar">	
     </div>
   </form>
-<a href="sexoView.php">Volver</a>
+
+ <input type="button" value="Volver" OnClick="window.location='sexoView.php'" class="btn btn-primary">   
+
 </html>

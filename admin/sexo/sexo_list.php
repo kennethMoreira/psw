@@ -23,12 +23,19 @@ foreach ($sexoCollector->showSexo() as $c){
 ?>
   <tbody>
   <tr>
-     <td><?php echo $c->getidSexo() ?></td>
+     <td><?php echo $c->getidSexo() ?>     </td>
      <td><?php echo $c->getdescripcion() ?></td>
      
 
-     <td><a href="sexo_edit.php?id=<?php echo $c->getidSexo() ?>">Editar</a></td>
-     <td><a href="sexo_delete.php?id=<?php echo $c->getidSexo() ?>">Eliminar</a></td>
+     <td>
+        <input type="button" value="Editar" OnClick="window.location='sexo_edit.php?id=<?php echo $c->getidsexo() ?>'" class="btn btn-primary">
+     </td>
+     
+     
+     <td>
+      <input type="button" value="Eliminar" OnClick="window.location='sexo_delete.php?id=<?php echo $c->getidsexo() ?>'" class="btn btn-primary">
+    </td>
+
   </tr>
   </tbody> 
  

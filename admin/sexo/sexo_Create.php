@@ -22,7 +22,9 @@
 		<input type="submit" name="registro" class="btn btn-default" value="Registrar">
 		<input type="reset" class="btn btn-primary" value="Limpiar">
 		<br>
-		<a href="sexoView.php">Volver</a>
+	
+         <input type="button" value="Volver" OnClick="window.location='sexoView.php'" class="btn btn-primary">   
+
     </div>
   </form>
 
