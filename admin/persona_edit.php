@@ -18,10 +18,6 @@ $tipoCollectorObj = new Tipo_PersonaCollector();
 
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-
-<body>
-=======
 <meta charset="UTF-8">
 <head>
   <link rel="stylesheet" href="../css/generico.css">
@@ -31,7 +27,6 @@ $tipoCollectorObj = new Tipo_PersonaCollector();
   <div class="container cuerpo">
 <h2>Actualizar una persona</h2>
 
->>>>>>> 8793a54a4529963d2855496c38be6483d7b4bcde
 <form action ="persona_update.php" method ="post" class="form-horizontal">
     <div class="form-group">
         <label class="control-label col-xs-3" >Inserte un codigo:</label>
@@ -94,9 +89,6 @@ $tipoCollectorObj = new Tipo_PersonaCollector();
 		<input type="reset" class="btn btn-primary" value="Limpiar">	
     </div>
   </form>
-<<<<<<< HEAD
-=======
 </div>
->>>>>>> 8793a54a4529963d2855496c38be6483d7b4bcde
 </body>
 </html>

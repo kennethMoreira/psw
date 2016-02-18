@@ -19,7 +19,6 @@
   		}
   	}
 
-
  	$tipoCollectorObj = new Tipo_PersonaCollector();
  	$tipoCollectorObj->deleteTipo($id);
 
