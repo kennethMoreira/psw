@@ -68,17 +68,17 @@ $tipoCollectorObj = new Tipo_PersonaCollector();
 	</div>
 	<div class="form-group">
 		<label for="pwd">Usuario:</label>
-		<input name="user" type="user" class="form-control" id="user" value = "<?php echo $objUser->getUsuario(); ?>">
+		<input name="user" type="user" id="user" value = "<?php echo $objUser->getUsuario(); ?>">
 	</div>
 						<!-- Email -->
 	<div class="form-group">
 		<label for="email">Email:</label>
-		<input name="mail" type="email" class="form-control" id="email" value = "<?php echo $objPersona->getemail(); ?>">
+		<input name="mail" type="email" id="email" value = "<?php echo $objPersona->getemail(); ?>">
 	</div>
 						<!-- Contraseña -->
 	<div class="form-group">
 		<label for="pwd">Contraseña:</label>
-		<input name="pass" class="form-control" id="pwd" value = "<?php echo $objUser->getContrasena(); ?>">
+		<input name="pass" id="pwd" value = "<?php echo $objUser->getContrasena(); ?>">
 	</div>
 							
 	
