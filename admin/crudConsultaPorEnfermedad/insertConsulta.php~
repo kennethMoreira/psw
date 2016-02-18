@@ -19,7 +19,7 @@ $consultaCollectorObj->createConsulta($id, $secuencia,$id_consultaE, $id_enferme
 
 echo "cosnulta Agregada exitosamente. </br>";
 ?>
-<a href='index.php'><button> volver </button> </a>
+<div><a href="index.php">Volver al Inicio</a></div>
 </div>
 </body>
 </html>

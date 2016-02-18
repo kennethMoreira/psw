@@ -19,5 +19,5 @@ id_consulta: <input type="text" name="id_consulta"/>
 id_enfermedad: <input type="text" name="id_enfermedad"/>
 </p>
 <input type="submit" value="Guardar" />
-<a href='index.php'><button> volver </button> </a> 
+
 </form>

@@ -13,7 +13,7 @@ $id_registro_actividad= $_POST["id_registro_actividad"];
 include_once("diagnosticoCollector.php");
 
 $diagnosticoCollectorObj = new diagnosticoCollector();
-$diagnosticoCollectorObj->createDiagnostico($id, $descripcion,$id_registro_actividad);
+$diagnosticoCollectorObj->createDiagnostico($descripcion,$id_registro_actividad);
 
 echo "Diagnostico Agregada exitosamente. </br>";
 ?>

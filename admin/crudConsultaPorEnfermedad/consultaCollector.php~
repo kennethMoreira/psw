@@ -30,7 +30,7 @@ class consultaCollector extends Collector
     }
 
 function createConsulta($id, $secuencia, $id_consultaE, $id_enfermedad) {    
-    $insertrow = self::$db->insertRow("INSERT INTO consulta_por_enfermedad (id, secuencia, id_consulta, id_enfermedad) VALUES (?,?, ?, ?)", array($id, $secuencia , $id_consultaE, $id_enfermedad));
+    $insertrow = self::$db->insertRow("INSERT INTO consulta_por_enfermedad (id, secuencia, id_consulta, id_enfermedad) VALUES (?, ?, ?)", array($id, $secuencia , $id_consultaE, $id_enfermedad));
   }  
 
   function showConsulta($id) {

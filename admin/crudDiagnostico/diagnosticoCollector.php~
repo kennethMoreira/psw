@@ -30,7 +30,7 @@ class diagnosticoCollector extends Collector
     }
 
 function createDiagnostico($id, $descripcion, $id_registro_actividad) {    
-    $insertrow = self::$db->insertRow("INSERT INTO diagnostico (id, descripcion, id_registro_actividad) VALUES (?, ?, ?)", array($id, "{$descripcion}", $id_registro_actividad));
+    $insertrow = self::$db->insertRow("INSERT INTO diagnostico (id, descripcion, id_registro_actividad) VALUES (?, ?, ?)", array($id "{$descripcion}", $id_registro_actividad));
   }  
 
   function showDiagnostico($id) {

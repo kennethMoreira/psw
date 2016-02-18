@@ -29,7 +29,7 @@ id_registro_actividad: <input type="text" name="id_registro_actividad"  value="<
 <p>
 
 <input type="submit" value="Guardar"/>
-<a href="index.php"> <button> Cancelar </button></a>
+<a href="index.php"><button> Cancelar </button></a>
 </form>
 </body>
 </html>
