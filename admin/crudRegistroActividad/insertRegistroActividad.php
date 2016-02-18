@@ -7,13 +7,14 @@
 <?php
 
 $id=$_POST["id"];
+$id_consulta_enfermedad=$_POST["id_consulta_enfermedad"];
 $cantidad=$_POST["cantidad"];
 
 include_once("registroActividadCollector.php");
 
 $registroActividadCollectorObj = new registroActividadCollector();
 
-$registroActividadCollectorObj->createRegistroActividad($id,$cantidad);
+$registroActividadCollectorObj->createRegistroActividad($id, $id_consulta_enfermedad, $cantidad);
 
 echo "Nuevo registro de actividad Agregado correctamente </br>";
 ?>

@@ -29,8 +29,8 @@ class ayudaCollector extends Collector
         return $arrayayuda;
     }
 
-function createAyuda($nombre, $email, $mensaje) {    
-    $insertrow = self::$db->insertRow("INSERT INTO ayuda (nombre, email, mensaje) VALUES (?, ?, ?)", array("{$nombre}", "{$email}", "{$mensaje}"));
+function createAyuda($id_ayuda, $nombre, $email, $mensaje) {    
+    $insertrow = self::$db->insertRow("INSERT INTO ayuda (id_ayuda, nombre, email, mensaje) VALUES (?, ?, ?, ?)", array($id_ayuda, "{$nombre}", "{$email}", "{$mensaje}"));
   }  
 
   function showAyuda($id) {

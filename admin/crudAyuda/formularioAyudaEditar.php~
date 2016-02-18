@@ -13,9 +13,10 @@ include_once("ayuda.php");
 $ayudaCollectorObj = new ayudaCollector();
 $Objayuda = $ayudaCollectorObj->showAyuda($id);
 ?>
-
-
-<h2>Editar Ayuda</h2>
+<div class="col-md-6">
+				<form class="form-horizontal" id="formAyuda" method="post">
+				<div class="form-group">
+<label class="col-sm-2 control-label">Editar Ayuda</label>
 <form action="editarAyuda.php" method="post" >
 <p>
 Id: <input type="text" name="id_ayuda" value="<?php echo $Objayuda->getid_ayuda(); ?>" readonly disabled />

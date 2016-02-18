@@ -18,8 +18,8 @@ class registroActividadCollector extends Collector
         return $arrayRegistroActividad;
     }
 
-function createRegistroActividad($id_consulta_enfermedad, $cantidad) {
-  $insertrow = self::$db->insertRow("INSERT INTO registro_actividad (id_consulta_enfermedad,cantidad) VALUES (?, ?)", array($id_consulta_enfermedad, $cantidad));
+function createRegistroActividad($id, $id_consulta_enfermedad, $cantidad) {
+  $insertrow = self::$db->insertRow("INSERT INTO registro_actividad (id, id_consulta_enfermedad,cantidad) VALUES (?, ?, ?)", array($id, $id_consulta_enfermedad, $cantidad));
   }  
 
 
