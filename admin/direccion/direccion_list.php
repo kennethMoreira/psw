@@ -36,8 +36,14 @@ foreach ($direccionCollector->showdireccion() as $c){
      <td><?php echo $c->getid_persona() ?></td>
      <td><?php echo $c->getid_ciudad() ?></td>
 
-     <td><a href="direccion_edit.php?id=<?php echo $c->getiddireccion() ?>">Editar</a></td>
-     <td><a href="direccion_delete.php?id=<?php echo $c->getiddireccion() ?>">Eliminar</a></td>
+     <td>
+ <input type="button" value="Editar" OnClick="window.location='direccion_edit.php?id=<?php echo $c->getiddireccion() ?>'" class="btn btn-primary">
+
+     </td>
+     <td>
+     <input type="button" value="Eliminar" OnClick="window.location='direccion_delete.php?id=<?php echo $c->getiddireccion() ?>'" class="btn btn-primary">
+
+     </td>
   </tr>
   </tbody> 
  

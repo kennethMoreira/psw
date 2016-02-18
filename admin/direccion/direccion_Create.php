@@ -43,7 +43,8 @@
 		<input type="submit" name="registro" class="btn btn-default" value="Registrar">
 		<input type="reset" class="btn btn-primary" value="Limpiar">
 		<br>
-		<a href="direccionView.php">Volver</a>
+		
+        <input type="button" value="Volver" OnClick="window.location='direccionView.php'" class="btn btn-primary">
     </div>
   </form>
 

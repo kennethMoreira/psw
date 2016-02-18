@@ -16,7 +16,8 @@ session_start();
 	$direccionCollectorObj->updatedireccion($id,$parroquia,$calle_principal,$numero,$descripcion,$id_persona,$id_ciudad);
 
 	
-	echo "direccion actualizada con exito!<br><a href='direccionView.php'>Ver las direcciones actualizadas</a>";
+	echo "direccion actualizada con éxito!<br>";
 
 
 ?>
+ <input type="button" value="Volver" OnClick="window.location='direccionView.php'" class="btn btn-primary">   

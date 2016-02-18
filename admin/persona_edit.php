@@ -19,7 +19,7 @@ $tipoCollectorObj = new Tipo_PersonaCollector();
 <!DOCTYPE html>
 <html lang="en">
 
-
+<body>
 <form action ="persona_update.php" method ="post" class="form-horizontal">
     <div class="form-group">
         <label class="control-label col-xs-3" >Inserte un codigo:</label>
@@ -82,5 +82,5 @@ $tipoCollectorObj = new Tipo_PersonaCollector();
 		<input type="reset" class="btn btn-primary" value="Limpiar">	
     </div>
   </form>
-
+</body>
 </html>

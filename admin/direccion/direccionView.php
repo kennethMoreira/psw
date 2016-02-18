@@ -9,19 +9,16 @@
 <body>
 
 <header>
-  <h1>Administración direccion</h1>
+  <h1>Administración dirección</h1>
 </header>
 
     <?php include 'direccion_list.php' ;
-   echo "<br>" ;
-    echo "  <a href='direccion_Create.php' >Nuevo direccion</a> " ;
-    echo "<br> ";
-    echo "<br> ";
-        echo "  <a href='../administracion.php' >Volver</a> " ;
+  
 
     ?>  
-
-    
+    <br>
+<input type="button" value="Nueva direccion" OnClick="window.location='direccion_Create.php'" class="btn btn-primary">
+ <input type="button" value="Volver" OnClick="window.location='../administracion.php'" class="btn btn-primary">   
 
  
 

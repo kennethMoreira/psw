@@ -5,7 +5,7 @@
  include_once('sexoCollector.php');
 
  $sexoCollectorObj = new sexoCollector();
- $objPersona = $sexoCollectorObj->showSexos($id);
+ $objSexo = $sexoCollectorObj->showSexos($id);
  
 ?>
 
@@ -16,11 +16,11 @@
 	<form action ="sexo_update.php" method ="post" class="form-horizontal">
     <div class="form-group">
         <label class="control-label col-xs-3" >Inserte un id:</label>
-        <input MaxLength="3" name="id"  class="form-control" placeholder="id">
+        <input MaxLength="3" name="id"  class="form-control" placeholder="id" value="<?php echo $objSexo->getidSexo();?> "required>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-3">descripcion:</label>
-            <input type="text" name="descripcion" class="form-control" placeholder="descripcion" required>
+            <input type="text" name="descripcion" class="form-control" placeholder="descripcion" value="<?php echo $objSexo->getdescripcion();?>" >
     </div>
     			
 	
