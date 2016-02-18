@@ -7,17 +7,19 @@
 
  	$TipoCollectorObj = new UsuarioCollector();
 	$persCollector = new PersonaCollector();
+	$pers = new PersonaCollector();
 
   	$id = $_GET['codigo'];
+  	$tipo = '0';
 
-  	foreach ($persCollector->showPersona() as $c){
-  		if($c->getid_tipo_persona() = $id){
-  			$TipoCollectorObj->deleteUsuario($id);
- 			
+  	foreach ($pers->showPersona() as $c) {
+  		$tipoP = $c->getid_tipo_persona();
+  		if ($tipoP = $id){
+		  	$persCollector->edit($tipo,$tipoP);
   		}
   	}
-  	
-  	$persCollector->deletePersonaT($id);
+
+
  	$tipoCollectorObj = new Tipo_PersonaCollector();
  	$tipoCollectorObj->deleteTipo($id);
 

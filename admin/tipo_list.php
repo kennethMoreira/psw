@@ -8,8 +8,18 @@ session_start();
 
 <!doctype html>
 <html lang="es">
+<meta charset="UTF-8">
+<head>
+  <link rel="stylesheet" href="../css/generico.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+  <div class="cuerpo container">
+    <h4>Listado de tipo de personas almacenados en la base de datos</h4>
+¡ATENCION! Si borra un tipo de persona, automaticamente las personas que contengan ese id del tipo de persona tendran '0'
+<br>
 	<div class="table-responsive">
-    <table>
+    <table class="table table-condensed table-bordered">
         <thead>
           <tr>
             <th>Codigo</th>
@@ -35,8 +45,10 @@ foreach ($tipoCollectorObj->ReadTipo() as $c){
 ?>
 </table>
 </div>
-<a href="registros.php" type="button">Volver a los registros</a>
-<a href="create_tipo.php">Crear nuevo registro</a>
+<input type="button" value="Volver a los registros" OnClick="window.location='registros.php'" class="btn btn-primary"> 
+<input type="button" value="Crear nuevo tipo de persona" OnClick="window.location='create_tipo.php'" class="btn btn-primary"> 
+</div>
+</body>
 </html>
 
 
