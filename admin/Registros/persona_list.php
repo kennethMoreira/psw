@@ -10,6 +10,7 @@ session_start();
 <html lang="es">
 <meta charset="UTF-8">
 <head>
+  <title>Listado de personas</title>
   <link rel="stylesheet" href="../../css/generico.css">
   <link rel="stylesheet" href="../../css/bootstrap.min.css">
 </head>
@@ -53,9 +54,9 @@ foreach ($persCollector->showPersona() as $c){
 }
 ?>
 </table>
-</div>
 <br><br>
 <input type="button" value="Volver a los registros" OnClick="window.location='registros.php'" class="btn btn-primary"> 
+</div>
 </body>
 </html>
 
