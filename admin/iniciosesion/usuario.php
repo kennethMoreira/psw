@@ -18,6 +18,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
+echo "Codigo: " .$persona->getidPersona();
 echo "<br><b>Nombre: </b> " .$persona->getnombre(). " " .$persona->getapellido();
                 echo "<br>
                 <b>Cédula:</b> " .$persona->getcedula();
