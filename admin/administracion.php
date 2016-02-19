@@ -17,7 +17,7 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
               
             -->
 <div class="container cuerpo">
-    <input type="button" value="Crear un nuevo registro" OnClick="window.location='registros.php'" class="btn btn-primary">    <br>
+    <input type="button" value="Crear un nuevo registro" OnClick="window.location='Registros/registros.php'" class="btn btn-primary">    <br>
   <br>  <input type="button" value="Administrar Sexos" OnClick="window.location='sexo/sexoView.php'" class="btn btn-primary">    <br>
   <br>  <input type="button" value="Administrar Ciudades" OnClick="window.location='ciudad/ciudadView.php'" class="btn btn-primary">    <br>
    <br> <input type="button" value="Administrar direcciones" OnClick="window.location='direccion/direccionView.php'" class="btn btn-primary">    <br>
