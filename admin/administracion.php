@@ -13,6 +13,7 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
 <html lang="en">
 <head><style>.btn {margin:5px 0px 5px 0px;}</style></head>
 <?php include '../plantillasPhp/cabecarAdmin.php';?>
+
 <div class="container cuerpo">
 <div class="form-group">
 	<div class="row">
@@ -59,5 +60,7 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
 	</div>
 </div>
 
-    <?php include '../plantillasPhp/foot.php' ; ?>  
+ <?php include '../plantillasPhp/foot.php' ; ?>  
 </html>
+   
+

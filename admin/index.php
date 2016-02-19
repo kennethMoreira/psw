@@ -15,6 +15,8 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
     <?php include '../plantillasPhp/cabecar.php' ; ?>
 
     <div class="cuerpo container ">
+    <br>
+    <br>
         <?php
         if(isset($_POST['usuario']) && (isset($_POST['clave']))){
             if( $_POST['usuario']== 'admin' && $_POST['clave'] == 'admin'){
@@ -53,8 +55,13 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
         </form>                
 
         <?php } ?>
+<br>
+<br>
+<br>
+<br>
 
     </div>
+    </html>
 
     <?php include '../plantillasPhp/foot.php' ; ?>  
             
