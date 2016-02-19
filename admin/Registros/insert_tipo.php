@@ -15,8 +15,6 @@ session_start();
 		$TipoPersonaObj->createTipo($codigo,$descripcion);
 	}
 
-
-
-	echo "Tipo de persona registrado con exito!<br><a href='tipo_list.php'>Volver</a>";
+	echo"<script>alert('Tipo de persona registrado con exito');window.location.href=\"tipo_list.php\"</script>";
 
 ?>

@@ -21,7 +21,7 @@ session_start();
 	$objUsuario = $userCollector->showUser($codigo);
 
 	if (($objPersona->getidPersona() != '') || ($objUsuario->getUsuario() != null)){
-		echo"<script>alert('Codigo o usuario duplicado');window.location.href=\"registros.php\"</script>";
+		echo"<script>alert('Codigo duplicado');window.location.href=\"registros.php\"</script>";
 	}else{
 		$PerCollectorObj->createPersona($codigo,$nombre,$apellido,$edad,$cedula,$email,$tipo,$sexo);
 		
