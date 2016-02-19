@@ -8,12 +8,18 @@
 <form action="insertAyuda.php" method="post" >
 
 <p>
-Nombre: <input type="text" name="nombre" autofocus required />
+Id: <input type="text" name="id_ayuda" autofocus required />
+<br/>
+Nombre: <input type="text" name="nombre" />
 <br/>
 Email: <input type="text" name="email"/>	
 <br/>
 Mensaje: <input type="text" name="mensaje"/>
 </p>
+<a href="index.php">Cancelar</a>
 <input type="submit" value="Submit!" />
 
 </form>
+</html>
+</body>
+

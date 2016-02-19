@@ -64,6 +64,6 @@
         <div class="visible-lg hidden-xs hidden-sm visible-md cajaFantasma">
             <h2 class="logo">Sistema <span class="light">Dental</span></h2>
             <p class="tagline">Amamos tu sonrisa</p>
-            <a class="ghost" href="webpage/iniciosesion.php">Inicia sesion</a>
+            <a class="ghost" href="admin/index.php"><center>Inicia sesion<br><span>como administrador</span></center></a>
         </div>
     </div>

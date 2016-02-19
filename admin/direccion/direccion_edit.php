@@ -12,10 +12,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<title>Editar Dirección</title>
+<link rel="icon" type="image/png" href="../../img/favicon.ico"/>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
    
 </head>
 <body>
-<div class="container-fluid">   
+<div class="container">  
+<h1>Editar dirección</h1> 
 	<form action ="direccion_update.php" method ="post" class="form-horizontal">
     <div class="form-group">
         <label class="control-label col-sm-3" >Inserte un id:</label>

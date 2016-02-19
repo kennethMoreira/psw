@@ -1,17 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Administracion</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1"/>
+	</head>
 <?php
 include_once("registroActividadCollector.php");
 $registroActividadCollectorObj = new registroActividadCollector();
 ?>
-<tr><td><a href="formularioRegistroActividadInsert.php">Nuevo</a></td></tr>
-<table>
-	<tr>
-		<th>ID</th>
-		<th>Id_consulta_enfermedad</th>
-		<th>Cantidad</th>
-	</tr>
+<link rel="stylesheet" href="../../css/bootstrap.min.css">
+<body>
+<div class="row">
+  <div class="col-md-5">
+    <a href="formularioRegistroActividadInsert.php">Nuevo</a>
+  </div>
+ </div>
 
+
+<div class="row">
+  <div class="col-md-6">
+    <table id="tabla_consulta_enfermedad" class="table table-bordered">
+	    <tr>
+		    <th>ID</th>
+		    <th>Id_consulta_enfermedad</th>
+		    <th>Cantidad</th>
+	    </tr>
 <?php
-
 foreach ($registroActividadCollectorObj->readRegistroActividad() as $c){
   echo "<tr>";
   echo "<td>".$c->getId_Registro_actividad()."</td>";
@@ -22,5 +37,10 @@ foreach ($registroActividadCollectorObj->readRegistroActividad() as $c){
   echo "</tr>"; 
 }
 ?>
-</table>
-<H1>Administración Registro Actividad</H1>
+  </table>
+  </div>
+ </div>
+<div><a href="../administracion.php">Volver a la administracion</a></div>
+<div><H1>Administración Registro Actividad</H1></div>
+</body>
+</html>

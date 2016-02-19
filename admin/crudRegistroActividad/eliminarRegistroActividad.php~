@@ -8,7 +8,7 @@
 //obtener el valor de ID que viene del metodo GET a traves de HTTP
 $id=$_GET["id"];
 
-include_once("regsitroActividadCollector.php");
+include_once("registroActividadCollector.php");
 
 $registroActividadCollectorObj = new registroActividadCollector();
 //Ejecuto el metodo para eliminar el objeto Demo indicando el id

@@ -22,7 +22,7 @@ Id: <input type="text" name="id" value="<?php echo $ObjRegistroActividad->getId_
 id_consulta_enfermedad: <input type="text" name="id_consulta_enfermedad"  value="<?php echo $ObjRegistroActividad->getId_consulta_enfermedad(); ?>" autofocus required />
 </p>
 <p>
-cantidad: <input type="text" name="cantidad"  value="<?php echo $ObjCantidad->getCantidad(); ?>" required />
+cantidad: <input type="text" name="cantidad"  value="<?php echo $ObjRegistroActividad->getCantidad(); ?>" required />
 </p>
 <p>
 <a href="index.php">Cancelar</a>
