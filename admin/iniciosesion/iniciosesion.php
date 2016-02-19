@@ -27,10 +27,7 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
                 <label for="name">Contraseña:</label>
                 <input name="clave" type="password" class="form-control" required>
                 
-                <div class="checkbox">
-                    <label><input type="checkbox"> Recordarme</label>
-                </div>
-                
+               
                 
                     <br>
 
@@ -69,7 +66,6 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
             </fieldset>
         </form>                
 
-        <h3>Regístrate</h3>
         
     </aside>
     </div>
