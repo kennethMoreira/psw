@@ -1,7 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Administracion</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1"/>
+	</head>
 <?php
 include_once("registroActividadCollector.php");
 $registroActividadCollectorObj = new registroActividadCollector();
 ?>
+<link rel="stylesheet" href="../../css/bootstrap.min.css">
+
 <div class="row">
   <div class="col-md-5">
     <a href="formularioRegistroActividadInsert.php">Nuevo</a>

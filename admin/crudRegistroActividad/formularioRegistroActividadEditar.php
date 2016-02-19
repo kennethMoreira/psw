@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Administración - Registro de actividad</title>
+<title>Editar</title>
 <body>
 <?php
 //obtener el valor de ID que viene del metodo GET a traves de HTTP

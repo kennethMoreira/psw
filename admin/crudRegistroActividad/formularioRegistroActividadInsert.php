@@ -19,3 +19,5 @@ cantidad: <input type="text" name="cantidad"/>
 <input type="submit" value="Submit!" />
 
 </form>
+</body>
+</html>
