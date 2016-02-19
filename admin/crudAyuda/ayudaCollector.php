@@ -1,18 +1,6 @@
 <?php
 
 include_once("ayuda.php");
-
-
-//if(@file_exists('./Collector') ) {
-//    include_once("./Collector.php");
-//}else if(@file_exists('../Collector')){
-//   include_once("../Collector.php");
-//}else if(@file_exists('Collector.php')){
-//  include_once("Collector.php");
-//}
-//else if(@file_exists('./../Collector.php')){
-// include_once("./../Collector.php");
-//}
 include_once("Collector.php");
 
 class ayudaCollector extends Collector

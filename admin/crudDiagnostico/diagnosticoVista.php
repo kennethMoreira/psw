@@ -5,9 +5,9 @@ $diagnosticoCollectorObj = new diagnosticoCollector();
 <table>
 <tr><td><a href="formularioDiagnosticoInsert.php"><button> Nuevo </button></a></td></tr>
 <tr>
-	<th>ID</th>
-	<th>Descripcion</th>
-	<th>Id_registro_actividad</th>
+	<th>ID|| </br></th>
+	<th>Descripcion|| </br></th>
+	<th>Id_registro_actividad|| </br></th>
 </tr>
 <?php
 foreach ($diagnosticoCollectorObj->readDiagnostico() as $c){

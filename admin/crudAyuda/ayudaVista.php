@@ -2,7 +2,14 @@
 include_once("ayudaCollector.php");
 $ayudaCollectorObj = new ayudaCollector();
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ayuda</title>
+<meta charset="utf-8">
 <link rel="stylesheet" href="../../css/bootstrap.min.css">
+</head>
+<body>
 <div class="row">
   <div class="col-md-5">
     <a href="formularioAyudaInsert.php">Nuevo</a>
@@ -36,6 +43,10 @@ $ayudaCollectorObj = new ayudaCollector();
  
  <div><a href="../administracion.php">Volver a la administracion</a></div>
 <div><H1>Administración Ayuda</H1></div>
+<footer>
+</footer>
 
+</body>
+</html>
 
 
