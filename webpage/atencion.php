@@ -2,7 +2,7 @@
 	session_start();
   include_once("../mvc/ColectorDeObjetos/EnfermedadCollector.php");
   include_once("../mvc/ColectorDeObjetos/HorarioCollector.php");
-  include_once("../admin/UsuarioCollector.php");
+  include_once("../admin/Registros/UsuarioCollector.php");
   $objEfermedadCollector = new EnfermedadCollector;
   $objHorarioCollector = new HorarioCollector;
   $objUserCollector = new UsuarioCollector;
