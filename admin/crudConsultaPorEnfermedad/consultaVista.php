@@ -5,10 +5,10 @@ $consultaCollectorObj = new consultaCollector();
 <table>
 <tr><td><a href="formularioConsultaInsert.php"><button> Nuevo </button></a></td></tr>
 <tr>
-	<th>ID</th>
-	<th>Secuencia</th>
-	<th>Id_consulta</th>
-	<th>Enfermedad</th>
+	<th>ID|| </br></th>
+	<th>Secuencia||</th>
+	<th>Id_consulta||</br></th>
+	<th>Enfermedad||</br></th>
 </tr>
 <?php
 foreach ($consultaCollectorObj->readConsulta() as $c){

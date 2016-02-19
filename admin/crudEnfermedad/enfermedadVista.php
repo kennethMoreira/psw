@@ -5,9 +5,9 @@ $enfermedadCollectorObj = new enfermedadCollector();
 <table>
 <tr><td><a href="formularioEnfermedadInsert.php"><button> Nuevo </button></a></td></tr>
 <tr>
-	<th>ID</th>
-	<th>Enfermedad</th>
-	<th>Descripcion</th>
+	<th>ID|| </br></th>
+	<th>Enfermedad|| </br></th>
+	<th>Descripcion|| </br></th>
 </tr>
 
 <?php
