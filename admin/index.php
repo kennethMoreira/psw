@@ -15,6 +15,7 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
     <?php include '../plantillasPhp/cabecar.php' ; ?>
 
     <div class="cuerpo container ">
+        <a href="iniciosesion/iniciosesion.php">Inicio sesion como usuario</a>
     <br>
     <br>
         <?php
@@ -32,6 +33,8 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
 
         <form action="index.php" method="POST">
             <fieldset>
+                
+                <br>
                 <label for="usuario">Usuario:</label>
                 <input name="usuario" type="text" class="form-control" required>
                  

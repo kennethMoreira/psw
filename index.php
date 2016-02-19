@@ -12,7 +12,7 @@
         
             
             <div class="cuerpoCentral" >
-                
+              <center>
 
                 <div class="titu">Bienvenidos</div>
 					Nuestro propósito es establecer una comunicación entre estudiantes de odontología y personas de escasos recursos económicos que padecen de enfermedades dentales.
@@ -58,7 +58,7 @@
 			</div>
             
            </div>
-                
+              </center>  
                 </div>		
               
         
