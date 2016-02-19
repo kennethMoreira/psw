@@ -12,7 +12,7 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
 <!DOCTYPE html>
 <html lang="en">
 <head><style>.btn {margin:5px 0px 5px 0px;}</style></head>
-<?php include '../plantillasPhp/cabecar.php';?>
+<?php include '../plantillasPhp/cabecarAdmin.php';?>
 <div class="container cuerpo">
 <div class="form-group">
 	<div class="row">

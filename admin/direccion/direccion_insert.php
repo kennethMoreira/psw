@@ -15,6 +15,25 @@ session_start();
     $tipodireccionObj = new direccionCollector();
     $tipodireccionObj->createdireccion($id,$parroquia,$calle_principal,$numero,$descripcion,$id_persona,$id_ciudad);
 
-    echo "direccion creada con exito!<br><a href='direccionView.php'>Volver</a>";
+
 
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insertar Dirección</title>
+    <link rel="icon" type="image/png" href="../../img/favicon.ico"/>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+ <h1>Dirección Creada con éxito!</h1>
+         <input type="button" value="Volver" OnClick="window.location='direccionView.php'" class="btn btn-primary">  
+         </div>
+         
+</body>
+</html>

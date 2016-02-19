@@ -8,17 +8,25 @@ session_start();
 
 <!doctype html>
 <html lang="es">
-	<div class="table-responsive">
-    <table>
+<head>
+<title>Listar Direcciones</title>
+  <link rel="icon" type="image/png" href="../../img/favicon.ico"/>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+	<div class="container">
+    <table class="table table-hover">
         <thead>
             <tr>
-                <th>id</th>
-                <th>parroquia</th>
-                <th>calle principal</th>
-                <th>numero</th>
-                <th>descripcion</th>
-                <th>id persona</th>
-                <th> id ciudad</th>
+                <th>Id</th>
+                <th>Parroquia</th>
+                <th>Calle principal</th>
+                <th>Numero</th>
+                <th>Descripcion</th>
+                <th>Id persona</th>
+                <th>Id ciudad</th>
                
            </tr>
         </thead>

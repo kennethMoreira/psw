@@ -8,12 +8,20 @@ session_start();
 
 <!doctype html>
 <html lang="es">
+
+<head>
 <title>Listar Ciudades</title>
-	<div class="table-responsive">
-    <table>
+  <link rel="icon" type="image/png" href="../../img/favicon.ico"/>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+	<div class="container" >
+    <table class="table table-hover">
         <thead>
             <tr>
-                <th>id</th>
+                <th>Id</th>
                 <th>Nombre</th>
                
            </tr>
@@ -36,8 +44,8 @@ foreach ($ciudadCollector->showciudad() as $c){
      </td>
      
   </tr>
-  </tbody> 
- 
+
+
 <?php  
 }
 ?>
