@@ -23,7 +23,7 @@ class consultaCollector extends Collector
         $rows = self::$db->getRows("SELECT * FROM consulta_por_enfermedad Order by id");
         $arrayconsulta = array();
         foreach ($rows as $c){
-            $aux = new consulta($c{'id'},$c{'secuencia'},$c{'id_consuta'},$c{'id_enfermedad'});
+            $aux = new consulta($c{'id'},$c{'secuencia'},$c{'id_consulta'},$c{'id_enfermedad'});
             array_push($arrayconsulta, $aux);
           }
         return $arrayconsulta;
