@@ -11,11 +11,11 @@ $TipoCollectorObj = new Tipo_PersonaCollector();
 
 <!DOCTYPE html>
 <html lang="en">
-<head><style>.btn {margin:5px 0px 5px 0px;}</style></head>
+
 <?php include '../plantillasPhp/cabecarAdmin.php';?>
 
-<div class="container cuerpo">
-<div class="form-group">
+<div class="container cuerpo form-group">
+
 	<div class="row">
 		<div class="col-sm-4"><input type="button" value="Crear un nuevo registro" OnClick="window.location='Registros/registros.php'" class="btn btn-primary btn-block"></div>
 	</div>
