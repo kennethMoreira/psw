@@ -22,6 +22,6 @@
  	$tipoCollectorObj = new Tipo_PersonaCollector();
  	$tipoCollectorObj->deleteTipo($id);
 
-	echo "Tipo de usuario borrado con exito!<br><a href='tipo_list.php'>Ver los registros actualizados</a>";
+  echo "<script>alert('Tipo de persona borrado con exito!');window.location.href=\"tipo_list.php\"</script>";
 
 ?>

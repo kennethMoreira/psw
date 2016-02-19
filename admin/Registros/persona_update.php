@@ -10,18 +10,12 @@ session_start();
 	$usuario=$_POST['user'];
 	$clave=$_POST['pass'];
 	$tipo=$_POST['tipo'];
-
-	if ($_POST['sexo'] = 'masculino'){
-		$sexo = '1';
-	}else{
-		$sexo = '2';
-	}
+	$sexo = $_POST['sexo'];
 
  	include_once('PersonaCollector.php');
 	$PerCollectorObj = new PersonaCollector();
 	$PerCollectorObj->updatePersona($codigo,$nombre,$apellido,$edad,$cedula,$email,$tipo,$sexo);
 
-	echo "Usuario actualizado con exito!<br><a href='persona_list.php'>Ver los registros actualizados</a>";
-
+	echo "<script>alert('Persona actualizada con exito!');window.location.href=\"persona_list.php\"</script>";
 
 ?>

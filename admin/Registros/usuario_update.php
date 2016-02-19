@@ -10,7 +10,8 @@ session_start();
 	$userCollectorObj = new UsuarioCollector();
 	$userCollectorObj->updateUsuario($codigo,$usuario,$clave,$idPersona);
 
-	echo "Usuario actualizado con exito!<br><a href='usuario_list.php'>Ver los usuarios actualizados</a>";
+	echo "<script>alert('Usuario actualizado con exito!');window.location.href=\"usuario_list.php\"</script>";
+
 
 
 ?>

@@ -11,6 +11,7 @@
  $PersCollectorObj = new PersonaCollector();
  $PersCollectorObj->deletePersona($id);
 
- echo "Usuario borrada con exito!<br><a href='persona_list.php'>Ver los registros actualizados</a>";
+echo "<script>alert('Usuario borrada con exito!');window.location.href=\"usuario_list.php\"</script>";
+ 
 
 ?>

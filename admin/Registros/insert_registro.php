@@ -12,18 +12,21 @@ session_start();
 	$usuario=$_POST['user'];
 	$clave=$_POST['pass'];
 	$tipo=$_POST['tipo'];
-
-	if ($_POST['sexo'] = 'masculino'){
-		$sexo = '1';
-	}else{
-		$sexo = '2';
-	}
+	$sexo = $_POST['sexo'];
 
 	$PerCollectorObj = new PersonaCollector();
-	$PerCollectorObj->createPersona($codigo,$nombre,$apellido,$edad,$cedula,$email,$tipo,$sexo);
-
 	$userCollector = new UsuarioCollector();
-	$userCollector->createUsuario($codigo,$usuario,$clave,$codigo);
+
+	$objPersona = $PerCollectorObj->showPersonas($codigo);
+	$objUsuario = $userCollector->showUser($codigo);
+
+	if (($objPersona->getidPersona() != '') || ($objUsuario->getUsuario() != null)){
+		echo"<script>alert('Codigo o usuario duplicado');window.location.href=\"registros.php\"</script>";
+	}else{
+		$PerCollectorObj->createPersona($codigo,$nombre,$apellido,$edad,$cedula,$email,$tipo,$sexo);
+		
+		$userCollector->createUsuario($codigo,$usuario,$clave,$codigo);
+	}
 
 	echo "Usuario registrado con exito!<br><a href='registros.php'>Volver a registros</a>";
 

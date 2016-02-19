@@ -8,7 +8,6 @@ session_start();
 	$tipoCollectorObj = new Tipo_PersonaCollector();
 	$tipoCollectorObj->updateTipo($codigo,$descripcion);
 
-	echo "Tipo de persona actualizado con exito!<br><a href='tipo_list.php'>Ver los tipos de personas actualizados</a>";
-
+	echo "<script>alert('Tipo de persona actualizado con exito!');window.location.href=\"tipo_list.php\"</script>";
 
 ?>

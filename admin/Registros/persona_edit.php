@@ -49,10 +49,10 @@ $tipoCollectorObj = new Tipo_PersonaCollector();
 		<input name="numero" MaxLength="10" type="text" id="registration-number" required value = "<?php echo $objPersona->getcedula(); ?>">
 	</div>
 	<div class="form-group">
-		<label for="sexo">Sexo:</label>
+		<label>Sexo:</label>
 			<SELECT NAME='sexo' SIZE=1 > 
-				<OPTION VALUE='masculino'>Masculino</OPTION>
-				<OPTION VALUE='femenino'>Femenino</OPTION>
+				<OPTION VALUE='1'>Masculino</OPTION>
+				<OPTION VALUE='2'>Femenino</OPTION>
 			</SELECT>
 	</div>
 	<div class="form-group">

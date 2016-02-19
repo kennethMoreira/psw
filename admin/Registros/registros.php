@@ -10,12 +10,16 @@
 <html lang="en">
 <meta charset="UTF-8">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Crear un nuevo registro</title>
 	<link rel="stylesheet" href="../../css/generico.css">
 	<link rel="stylesheet" href="../../css/bootstrap.min.css">
 </head>
 <body>
-	<div class="cuerpo container col-lg-6 col-md-6">
+	<div class="cuerpo container">
+
 	<form name="frm_trans" action ="insert_registro.php" method ="post" class="form-horizontal">
+		<div class=" col-lg-6 col-md-6">
 		<label><h2><b>Llene el formulario para crear un nuevo registro</b></h2></label>
 <br>
     <div class="form-group">
@@ -57,8 +61,8 @@
 		<label for="sexo">Sexo:</label>
 			<SELECT NAME='sexo' SIZE=1 > 
 
-				<OPTION VALUE='masculino'>Masculino</OPTION>
-				<OPTION VALUE='femenino'>Femenino</OPTION>
+				<OPTION VALUE='1'>Masculino</OPTION>
+				<OPTION VALUE='2'>Femenino</OPTION>
 			</SELECT>
 	</div>
 	<div class="form-group">
@@ -83,7 +87,7 @@
 		<input type="submit" name="registro" class="btn btn-default" value="Registrar">
 		<input type="reset" class="btn btn-primary" value="Limpiar">
 		<input type="button" value="Volver a la administracion" OnClick="window.location='../administracion.php'" class="btn btn-primary">
-		</div>
+	</div>	
 		<div class="col-lg-6 col-md-6">
 			<br>
 			<br>
@@ -91,9 +95,9 @@
 		<input type="button" value="Datos de las personas" OnClick="window.location='persona_list.php'" class="btn btn-primary">	<br><br>
 		<input type="button" value="Datos de los usuarios" OnClick="window.location='usuario_list.php'" class="btn btn-primary">	<br><br>
 		<input type="button" value="Datos de los tipos de persona" OnClick="window.location='tipo_list.php'" class="btn btn-primary"><br>
-		
-</div>
-    
+		    </div>
   </form>
+</div>
+
 </body>
 </html>
