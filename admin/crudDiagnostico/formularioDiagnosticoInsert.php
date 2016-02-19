@@ -12,7 +12,7 @@
 id: <input type="text" name="id" autofocus required />
 <br/>
 
-Nombre: <input type="text" name="descripcion" autofocus required />
+Descripcion: <input type="text" name="descripcion" autofocus required />
 <br/>
 	
 <br/>
